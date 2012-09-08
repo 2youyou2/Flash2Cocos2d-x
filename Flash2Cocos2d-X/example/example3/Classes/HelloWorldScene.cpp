@@ -1,6 +1,5 @@
 #include "HelloWorldScene.h"
 #include "CConnectionData.h"
-#include "CCocos2dCommand.h"
 #include "CXLog.h"
 #include "cocos2d.h"
 //#include "vld.h"

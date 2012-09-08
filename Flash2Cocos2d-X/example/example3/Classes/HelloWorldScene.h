@@ -2,9 +2,11 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
-#include "CCocos2dCommand.h"
 #include "Box2D/Box2D.h"
 #include "SimpleAudioEngine.h"
+#include "CArmature.h"
+
+using namespace cocos2d;
 
 enum MoveType{NOTHING, MOVELEFT = -1, MOVERIGHT = 1, STAND, SQUAT, JUMP};
 
