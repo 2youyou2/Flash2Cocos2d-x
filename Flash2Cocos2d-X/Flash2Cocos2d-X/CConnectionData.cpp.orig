@@ -1,0 +1,243 @@
+#include "CConnectionData.h"
+
+CCConnectionData *CCConnectionData::mSharedConnectionData = NULL;
+
+CCConnectionData *CCConnectionData::sharedConnectionData() {
+    if (mSharedConnectionData == NULL) {
+        mSharedConnectionData = new CCConnectionData();
+        if (!sharedConnectionData || !mSharedConnectionData->init()) {
+            CC_SAFE_DELETE(mSharedConnectionData);
+        }
+    }
+    return mSharedConnectionData;
+}
+
+CCConnectionData::CCConnectionData(void) {
+}
+
+
+CCConnectionData::~CCConnectionData(void) {
+    CC_SAFE_DELETE( armarureDatas );
+    CC_SAFE_DELETE( animationDatas );
+	CC_SAFE_DELETE( mSharedConnectionData );
+}
+
+bool CCConnectionData::init() {
+    bool bRet = false;
+    do {
+
+        armarureDatas = new CCDictionary();
+        CCAssert(armarureDatas, "create CCConnectionData::armarureDatas fail!");
+
+        animationDatas = new CCDictionary();
+        CCAssert(animationDatas, "create CCConnectionData::animationDatas fail!");
+
+        bRet = true;
+    } while (0);
+
+    return bRet;
+}
+
+CCArray *CCConnectionData::getArmatureData(std::string _id) {
+    return (CCArray *)armarureDatas->objectForKey(_id);
+}
+
+CCArmatureAniData* CCConnectionData::getAnimationData(std::string _id) {
+    return (CCArmatureAniData*)animationDatas->objectForKey(_id);
+}
+
+void CCConnectionData::addData(const char* _xml) {
+    //CCXLOG("Enter CCConnectionData::addData");
+
+
+    unsigned long	size;
+    char			*pFileContent = (char*)CCFileUtils::sharedFileUtils()->getFileData(_xml , "r", &size);
+
+
+    TiXmlDocument	document;
+    document.Parse(pFileContent, 0, TIXML_ENCODING_UTF8);
+
+
+    TiXmlElement	*root = document.RootElement();
+    if( !root ) {
+        return;
+    }
+
+    TiXmlElement	*skeleton = root->FirstChildElement("skeleton");
+
+
+    while (skeleton) {
+        std::string			_name = skeleton->Attribute(NAME.c_str());
+        //CCLOG(_name.c_str());
+        CCArmatureAniData	*_aniData = (CCArmatureAniData*)animationDatas->objectForKey(_name);
+
+        if (_aniData) {
+            return;
+        }
+
+        _aniData =  CCArmatureAniData::create();
+
+        animationDatas->setObject( _aniData, _name);
+
+        //std::vector<PCCArmatureData> newDatas;
+        CCArray *_newDatas = CCArray::create();
+        armarureDatas->setObject(_newDatas, _name);
+
+        TiXmlElement* child = skeleton->FirstChildElement();
+
+        while( child ) {
+            //CCLOG(child->Attribute(NAME.c_str()));
+            std::string value = child->Value();
+
+            if( value.compare("bone")==0 ) {
+                CCArmatureData *_armatureData = CCArmatureData::create();
+                _armatureData->name.append( child->Attribute(NAME.c_str()) );
+
+                if( child->Attribute(PARENT.c_str()) ) {
+                    _armatureData->parent.append( child->Attribute(PARENT.c_str()) );
+                }
+                child->QueryFloatAttribute(X.c_str(), &(_armatureData->x));
+                child->QueryFloatAttribute(Y.c_str(), &(_armatureData->y));
+                _armatureData->y = -_armatureData->y;
+                child->QueryFloatAttribute(Z.c_str(), &(_armatureData->z));
+                child->QueryFloatAttribute(WIDTH.c_str(), &(_armatureData->width));
+                child->QueryFloatAttribute(HEIGHT.c_str(), &(_armatureData->height));
+                child->QueryFloatAttribute(REGISTRATION_POINT_X.c_str(), &(_armatureData->registrationPointX));
+                child->QueryFloatAttribute(REGISTRATION_POINT_Y.c_str(), &(_armatureData->registrationPointY));
+                _armatureData->registrationPointY = -_armatureData->registrationPointY;
+
+                //CCXLOG( "%s, %f, %f, %f, %f" , armatureData->name.c_str(), armatureData->width, armatureData->height, armatureData->registrationPointX, armatureData->registrationPointY);
+
+                ((CCArray*)armarureDatas->objectForKey(_name))->addObject( _armatureData );
+            } else if( value.compare("animation")==0 ) {
+                std::string _aniName;
+                std::string _boneName;
+                CCBoneAniData* _boneAniData;
+
+                _aniName = child->Attribute(NAME.c_str());
+                //CCLOG(_aniName.c_str());
+
+                _boneAniData = CCBoneAniData::create();
+                _aniData->addAnimation(_aniName, _boneAniData);
+                child->QueryIntAttribute(FRAME.c_str(), &(_boneAniData->frame));
+
+
+
+                TiXmlElement *eventFrame = child->FirstChildElement(EVENT_FRAME.c_str());
+                if(eventFrame) {
+                    CCEventFrame* _eventFrame;
+                    int _frame = 0;
+                    while( eventFrame ) {
+                        //CCLOG(eventFrame->Attribute(NAME.c_str()));
+                        int _frames;
+                        eventFrame->QueryIntAttribute(FRAME.c_str(), &_frames);
+                        _eventFrame = CCEventFrame::create(eventFrame->Attribute(NAME.c_str()), _frames);
+                        _boneAniData->eventList->addObject(_eventFrame);
+                        _frame += _eventFrame->frame;
+
+                        eventFrame = eventFrame->NextSiblingElement(EVENT_FRAME.c_str());
+                    }
+
+                    _boneAniData->eventList->insertObject(CCEventFrame::create("init", _boneAniData->frame - _frame), 0);
+                }
+
+                TiXmlElement *frame = child->FirstChildElement();
+
+
+                while(frame) {
+                    _boneName = frame->Value();
+                    //CCLOG(_boneName.c_str());
+                    if (_boneName != EVENT_FRAME) {
+                        if (_boneAniData->getAnimation(_boneName)) {
+                            frame = frame->NextSiblingElement();
+                            continue;
+                        }
+
+                        _boneAniData->addAnimation(getFrameNodeList(child, _boneName), _boneName);
+                    }
+                    frame = frame->NextSiblingElement();
+                }
+            }
+
+            child = child->NextSiblingElement();
+
+        }
+
+        skeleton = skeleton->NextSiblingElement("skeleton");
+
+    }
+
+    //CCLOG("%s", animationDatas["zombie"]->getAnimation("run")->toString().c_str() );
+    //animationDatas["zombie"]->getAnimation("run")->toString().c_str();
+
+    //CCXLOG("Finish CCConnectionData::addData");
+}
+
+CCFrameNodeList* CCConnectionData::getFrameNodeList(TiXmlElement* _frameXMLList, std::string _boneName) {
+    CCFrameNodeList* _nodeList = CCFrameNodeList::create();
+    float _scale, _delay;
+
+
+    TiXmlElement *_boneFrame= _frameXMLList->FirstChildElement(_boneName.c_str());
+
+    if( _boneFrame ) {
+        if( _boneFrame->QueryFloatAttribute(SCALE.c_str(), &_scale) == TIXML_SUCCESS ) {
+            _nodeList->scale = _scale;
+        }
+        if( _boneFrame->QueryFloatAttribute(DELAY.c_str(), &_delay) == TIXML_SUCCESS ) {
+            _nodeList->delay = _delay;
+        }
+    }
+
+    while( _boneFrame ) {
+        _nodeList->addFrame( getFrameNode( _boneFrame ) );
+        _boneFrame = _boneFrame->NextSiblingElement(_boneName.c_str());
+    }
+    return _nodeList;
+}
+
+CCFrameNode* CCConnectionData::getFrameNode(TiXmlElement* _nodeXML) {
+    float _x, _y, _scale_x, _scale_y, _rotation, _off_r, _alpha = 0;
+    int _frame = 0;
+
+    CCFrameNode* _node;
+
+    if( _nodeXML->QueryFloatAttribute(ROTATION.c_str(), &_rotation) == TIXML_SUCCESS &&
+            _nodeXML->QueryFloatAttribute(X.c_str(), &_x) == TIXML_SUCCESS &&
+            _nodeXML->QueryFloatAttribute(Y.c_str(), &_y) == TIXML_SUCCESS) {
+        //_rotation = _rotation * Math.PI / 180;
+        _node = CCFrameNode::create(_x, -_y, _rotation);
+    } else {
+        CCLOG( "Create FrameNode:%s fail!", _nodeXML->Value());
+    }
+
+    if( _nodeXML->QueryFloatAttribute(SCALE_X.c_str(), &_scale_x) == TIXML_SUCCESS ) {
+        _node->scaleX = _scale_x;
+    }
+    if( _nodeXML->QueryFloatAttribute(SCALE_Y.c_str(), &_scale_y) == TIXML_SUCCESS ) {
+        _node->scaleY = _scale_y;
+    }
+    if( _nodeXML->QueryFloatAttribute(OFF_R.c_str(), &_off_r) == TIXML_SUCCESS ) {
+        _node->offR = _off_r;
+    }
+    if( _nodeXML->QueryFloatAttribute(ALPHA.c_str(), &_alpha) == TIXML_SUCCESS ) {
+        _node->alpha = _alpha * 255;
+    }
+    if( _nodeXML->QueryIntAttribute(FRAME.c_str(), &_frame) == TIXML_SUCCESS ) {
+        _node->frame = _frame;
+    }
+
+    //_node->toString();
+
+    return _node;
+}
+
+void CCConnectionData::removeAll(bool _deletMe) {
+    if( animationDatas ) {
+        animationDatas->removeAllObjects();
+    }
+    if( armarureDatas) {
+        armarureDatas->removeAllObjects();
+    }
+	//delete this;
+}

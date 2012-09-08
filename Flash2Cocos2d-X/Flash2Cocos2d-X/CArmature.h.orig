@@ -1,0 +1,132 @@
+#pragma once
+
+#include "CAnimation.h"
+
+typedef struct _CCSkeletonFactory *PCCSkeletonFactory;
+
+typedef struct _CCArmatureData : public CCObject {
+    static  _CCArmatureData *create() {
+        _CCArmatureData *pArmatureData = new _CCArmatureData();
+        if (pArmatureData) {
+            pArmatureData->autorelease();
+            return pArmatureData;
+        }
+        CC_SAFE_DELETE(pArmatureData);
+        return NULL;
+    }
+
+    std::string name;
+    std::string parent;
+    float x;
+    float y;
+    float z;
+    float registrationPointX;
+    float registrationPointY;
+    float width;
+    float height;
+} CCArmatureData, *PCCArmatureData;
+
+class CCBoneDisplayFactory {
+public:
+    virtual CCSprite* createBoneDisplay(std::string _boneName) = 0;
+};
+
+class CCArmatureDisplayFactory {
+public:
+    virtual CCSprite* createArmatureDisplay(std::string _armatureName) = 0;
+};
+
+/*骨架，管理自身的骨骼数据*/
+class CCArmature : public CCNode,
+    public CCBoneDisplayFactory,
+    public CCArmatureDisplayFactory
+
+{
+
+public:
+    /**
+    * 骨架生成方法
+    * @param _name 骨架名
+    * @param _animationName 动画名
+    * @param _textureMix 贴图数据
+    */
+    static CCArmature *create(std::string _name, std::string _animationName, std::string _plistPath, std::string _imagePath, bool _isRadian = false, bool _useLocalXYZ = false, std::string _eachImageSuffix = ".png");
+
+
+private:
+    static CCSpriteFrameCache* cache;
+    static std::string eachImageSuffix;
+
+public:
+    /**
+    * 构造函数
+    * @param _display 包含所有骨骼显示对象的显示容器
+    * @param _isRadian 骨骼旋转角度是否采用弧度制，比如 Starling 使用的是弧度制
+    */
+    CCArmature();
+    ~CCArmature(void);
+
+    virtual bool init(std::string _name, std::string _animationName, std::string _plistPath, std::string _imagePath, bool _isRadian = false, bool _useLocalXYZ = false, std::string _eachImageSuffix = ".png");
+
+    /**
+    * 更新 Tween、Bone、Animation
+    */
+    void	update(float dt);
+    /**
+    * 删除，回收
+    */
+    void	remove();
+    /**
+    * 获取骨架显示对象
+    * @return 返回骨架的显示对象
+    */
+    CCNode	*getDisplay();
+    /**
+    * 绑定骨骼
+    * @param _name 骨骼名
+    * @param _parentName 绑定到父骨骼名
+    * @param _display 骨骼的显示对象
+    * @param _index 显示对象绑定到深度，如果是替换原有显示对象，则使用原显示对象的深度。-1:则添加到最高处，-2:则不执行addChild操作
+    * @return 返回生成的 Bone 实例
+    */
+    CCBone	*addBone(std::string _name, std::string _parentName = NULL, CCNode* _display=NULL, int _index = -1);
+    /**
+    * 获取骨架中的骨骼
+    * @param _name 骨骼名称
+    */
+    CCBone	*getBone(std::string _name);
+    /**
+    * 删除骨骼
+    * @param _name 骨骼名称
+    */
+    void	removeBone(std::string _name);
+
+private:
+    /**
+    * @param _cache CCSpriteFrameCache
+    * @param _fullName 贴图全称
+    * @return 返回 CCSprite 实例
+    */
+    CCSprite* getTextureDisplay(CCSpriteFrameCache* _cache, std::string _fullName);
+    /**
+    * 骨骼生成接口
+    */
+    CCSprite* createBoneDisplay(std::string _boneName);
+
+    CCSprite* createArmatureDisplay(std::string _armatureName);
+
+public:
+    std::string						name;
+    CCARmatureAnimation				*animation;
+    bool							isRadian;
+    CCNode							*display;
+    /*std::map<std::string, CCBone*>	boneDic;
+    std::vector<CCBone*>			boneList;*/
+	CCDictionary					*boneDic;
+	CCArray							*boneList;
+
+private:
+    CCBoneDisplayFactory		*mBoneDisplayFactory;
+    CCArmatureDisplayFactory	*mArmaureDisplayFactory;
+};
+

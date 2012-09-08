@@ -1,0 +1,47 @@
+#pragma once
+
+#include "CEventFrame.h"
+#include "CFrameNodeList.h"
+
+/*单个动作动画数据*/
+class CCBoneAniData : public CCObject
+{
+public:
+	static CCBoneAniData *create();
+public:
+
+	CCBoneAniData(void);
+	~CCBoneAniData(void);
+
+	virtual bool init();
+
+	/**
+	* 添加骨骼的动画数据
+	* @param _frameNodeList
+	* @param _boneName
+	*/
+	void addAnimation(CCFrameNodeList* _frameNodeList, std::string _boneName);
+	/**
+	* 获取骨骼动画数据
+	* @param _boneName
+	* @return 返回骨骼动画数据
+	*/
+	CCFrameNodeList* getAnimation(std::string _boneName);
+	//返回的字符很多，直接使用CCLOG打印可能会出错，原因为分配的内存太小。
+	std::string toString();
+
+public:
+
+	/**
+	* 动画数据实际持续的帧数
+	*/
+	int		frame;
+	/**
+	* 事件帧列表
+	*/
+	CCArray *eventList;
+
+private:
+	CCDictionary *frameNodeListDic;
+};
+

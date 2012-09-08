@@ -1,0 +1,55 @@
+#include "CArmatureAniData.h"
+
+
+CCArmatureAniData *CCArmatureAniData::create(){
+	CCArmatureAniData *pArmatureAniData = new CCArmatureAniData();
+	if (pArmatureAniData && pArmatureAniData->init()) {
+		pArmatureAniData->autorelease();
+		return pArmatureAniData;
+	}
+	CC_SAFE_DELETE(pArmatureAniData);
+	return NULL;
+}
+
+CCArmatureAniData::CCArmatureAniData(void)
+{
+}
+
+
+CCArmatureAniData::~CCArmatureAniData(void){
+	CC_SAFE_DELETE( boneAniDataDic );
+}
+
+bool CCArmatureAniData::init(){
+	bool bRet = false;
+	do {
+
+		boneAniDataDic = new CCDictionary();
+		CCAssert(boneAniDataDic, "create CCArmatureAniData::boneAniDataDic fail!");
+
+		bRet = true;
+	} while (0);
+
+	return bRet;
+}
+
+void CCArmatureAniData::remove(){
+	/*for each(var _boneAniData:BoneAniData in boneAniDataDic) {
+	_boneAniData.remove();
+	}*/
+	/*boneAniDataDic.clear();*/
+	animationNames.clear();
+}
+
+void CCArmatureAniData::addAnimation(std::string _animationName, CCBoneAniData* _boneAniData){
+	boneAniDataDic->setObject(_boneAniData, _animationName);
+	animationNames.push_back(_animationName);
+}
+
+CCBoneAniData *CCArmatureAniData::getAnimation(std::string _animationName){
+	return (CCBoneAniData *)boneAniDataDic->objectForKey( _animationName );
+}
+
+std::vector<std::string>  CCArmatureAniData::getAnimationNames(){
+	return animationNames;
+}

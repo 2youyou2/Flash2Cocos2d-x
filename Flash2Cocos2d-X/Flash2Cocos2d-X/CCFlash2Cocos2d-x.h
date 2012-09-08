@@ -1,0 +1,20 @@
+#include "cocos2d.h"
+using namespace cocos2d;
+
+#include "CAnimation.h"
+#include "CArmature.h"
+#include "CArmatureAniData.h"
+#include "CBaseCommand.h"
+#include "CBaseNode.h"
+#include "CBone.h"
+#include "CBoneAniData.h"
+#include "CCocos2dCommand.h"
+#include "CConnectionData.h"
+#include "CEventFrame.h"
+#include "CFrameNode.h"
+#include "CFrameNodeList.h"
+#include "CMathHelper.h"
+#include "CProcessBase.h"
+#include "CTween.h"
+#include "CTweenNode.h"
+

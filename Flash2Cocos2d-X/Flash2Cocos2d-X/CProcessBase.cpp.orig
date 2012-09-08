@@ -1,0 +1,60 @@
+#include "CProcessBase.h"
+
+
+CCProcessBase::CCProcessBase(void){
+	mScale = 1;
+	mIsComplete = true;
+	mIsPause = false;
+	mCurrentFrame = 0;
+}
+
+
+CCProcessBase::~CCProcessBase(void){
+}
+
+
+void CCProcessBase::remove() {
+	mScale = 1;
+	mIsComplete = true;
+	mIsPause = false;
+	mCurrentFrame = 0;
+}
+void CCProcessBase::pause() {
+	mIsPause = true;
+}
+
+
+void CCProcessBase::resume() {
+	mIsPause = false;
+}
+
+void CCProcessBase::stop() {
+	mIsComplete = true;
+	mCurrentFrame = 0;
+}
+
+void CCProcessBase::playTo(void * _to, int _toFrames, int _listFrames, bool _loop, int _ease) {
+	mIsComplete = false;
+	mIsPause = false;
+	mCurrentFrame = 0;
+	mTotalFrames = _toFrames;
+	mEase = _ease;
+}
+
+void CCProcessBase::update(float dt) {
+	if (mIsComplete || mIsPause) {
+		return;
+	}
+	mCurrentFrame += mScale;
+	if( mTotalFrames == 0 )
+	{
+		CCLOG( "mTotalFrames is zero!" );
+		return;
+	}
+	mCurrentPrecent = mCurrentFrame / mTotalFrames;
+	mCurrentFrame = (int)(mCurrentFrame) % mTotalFrames;
+	updateHandler();
+}
+
+void CCProcessBase::updateHandler() {
+}
