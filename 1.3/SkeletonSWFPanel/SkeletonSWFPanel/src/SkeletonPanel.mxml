@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark" 
+		  xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%" xmlns:local="*"
+		  creationComplete="onCreationCompleteHandler()">
+	<fx:Declarations>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import akdcl.skeleton.utils.ConstValues;
+			
+			import mx.events.DragEvent;
+			import mx.events.ListEvent;
+			
+			import spark.events.GridSelectionEvent;
+			
+			import flash.net.SharedObject;
+			
+			[Bindable] 
+			private var flaData:FLAData;
+			
+			private var shareObject:SharedObject;
+			
+			private function onCreationCompleteHandler():void{
+				flaData = FLAData.instance;
+				shareObject = SharedObject.getLocal("akdcl/skeleton/SkeletonPanel","/");
+				
+				
+				numFrameRate.value = shareObject.data["StageFrameRate"] || 60;
+				sliderFrameRate.value = shareObject.data["StageFrameRate"] || 60;
+				
+				armatureList.dataProvider = flaData.armaturesMC;
+				movementList.dataProvider = flaData.movementsMC;
+				textureList.dataProvider = flaData.texturesMC;
+				
+				armatureList.addEventListener(GridSelectionEvent.SELECTION_CHANGE, onArmatureChangeHandler);
+				
+				movementList.addEventListener(GridSelectionEvent.SELECTION_CHANGE, onMovementChangeHandler);
+				
+				//textureList.addEventListener(GridSelectionEvent.SELECTION_CHANGE, onTextureChangeHandler);
+				
+				boneTree.addEventListener(ListEvent.CHANGE, onMovementBoneChangeHandler);
+				boneTree.addEventListener(DragEvent.DRAG_COMPLETE, onBoneDragCompleteHandler);
+				
+				flaData.addEventListener(FLAData.SOURCE_UPDATE, onFLADataHandler);
+				flaData.addEventListener(FLAData.ARMATURE_UPDATE, onFLADataHandler);
+				flaData.addEventListener(FLAData.MOVEMENT_UPDATE, onFLADataHandler);
+				flaData.addEventListener(FLAData.BONE_UPDATE, onFLADataHandler);
+				
+			}
+			
+			private function onFLADataHandler(_e:Event):void{
+				switch(_e.type){
+					case FLAData.SOURCE_UPDATE:
+						armatureList.selectedIndex = 0;
+						flaData.updateArmature(armatureList.selectedItem as XML);
+						break;
+					case FLAData.ARMATURE_UPDATE:
+						boneTree.dataProvider = flaData.bonesMC;
+						updateTexture();
+						movementList.selectedIndex = 0;
+						flaData.updateMovement(movementList.selectedItem as XML);
+						break;
+					case FLAData.MOVEMENT_UPDATE:
+						var _durationTo:int = flaData.durationTo;
+						var _durationTween:int = flaData.durationTween;
+						if(_durationTo < 0){
+							numDurationTo.value = 0;
+							numDurationTo.enabled = false;
+							sliderDurationTo.value = 0;
+							sliderDurationTo.enabled = false;
+						}else{
+							numDurationTo.value = _durationTo;
+							numDurationTo.enabled = true;
+							sliderDurationTo.value = _durationTo;
+							sliderDurationTo.enabled = true;
+						}
+						if(_durationTween < 0){
+							numDurationTween.value = 0;
+							numDurationTween.enabled = false;
+							sliderDurationTween.value = 0;
+							sliderDurationTween.enabled = false;
+							checkLoop.selected = false;
+							checkLoop.enabled = false;
+							sliderTween.value = 0;
+							sliderTween.enabled = false;
+							numScale.enabled = false;
+							numDelay.enabled = false;
+							sliderScale.enabled = false;
+							sliderDelay.enabled = false;
+						}else{
+							numDurationTween.value = _durationTween;
+							numDurationTween.enabled = true;
+							sliderDurationTween.value = _durationTween;
+							sliderDurationTween.enabled = true;
+							checkLoop.selected = flaData.loop;
+							checkLoop.enabled = true;
+							sliderTween.value = flaData.tweenEasing;
+							sliderTween.enabled = true;
+							numScale.enabled = true;
+							numDelay.enabled = true;
+							sliderScale.enabled = true;
+							sliderDelay.enabled = true;
+						}
+						
+						boneTree.selectedIndex = 0;
+						flaData.updateMovementBone(boneTree.selectedItem as XML);
+						break;
+					case FLAData.BONE_UPDATE:
+						var _boneScale:Number = flaData.boneScale;
+						var _boneDelay:Number = flaData.boneDelay;
+						numScale.value = _boneScale;
+						numDelay.value = _boneDelay;
+						sliderScale.value = _boneScale;
+						sliderDelay.value = _boneDelay;
+						break;
+				}
+			}
+			
+			private function updateTexture():void{
+				armatureContainer.addChild(flaData.container);
+				armatureContainerGroup.width = flaData.container.width;
+				armatureContainerGroup.height = flaData.container.height;
+				
+				flaData.container.stage.frameRate = numFrameRate.value;
+			}
+			
+			private function onArmatureChangeHandler(_e:Event):void{
+				flaData.updateArmature(armatureList.selectedItem as XML);
+			}
+			
+			private function onMovementChangeHandler(_e:Event):void{
+				flaData.updateMovement(movementList.selectedItem as XML);
+			}
+			
+			private function onMovementBoneChangeHandler(_e:Event):void{
+				flaData.updateMovementBone(boneTree.selectedItem as XML);
+			}
+			
+			private function onBoneDragCompleteHandler(_e:DragEvent):void{
+				flaData.updateBoneParent(boneTree.lastMoveNode);
+			}
+			
+			
+			protected function sliderFrameRate_changeHandler(event:Event):void
+			{
+				// TODO Auto-generated method stub
+				shareObject.data["StageFrameRate"] = sliderFrameRate.value;
+				numFrameRate.value = sliderFrameRate.value;
+			}
+			
+			protected function numFrameRate_changeHandler(event:Event):void
+			{
+				// TODO Auto-generated method stub
+				shareObject.data["StageFrameRate"] = sliderFrameRate.value;
+				sliderFrameRate.value = numFrameRate.value ;
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+	</fx:Declarations>
+	<s:HGroup width="100%" height="100%" gap="0">
+		<s:DataGrid id="armatureList" maxWidth="200" width="100%" height="100%">
+			<s:columns>
+				<s:ArrayList>
+					<s:GridColumn dataField="{FLAData.AT_NAME}" headerText="Armature"/>
+				</s:ArrayList>
+			</s:columns>
+		</s:DataGrid>
+		<s:DataGrid id="movementList" maxWidth="150" width="100%" height="100%" sortableColumns="false">
+			<s:columns>
+				<s:ArrayList>
+					<s:GridColumn dataField="{FLAData.AT_NAME}" headerText="Movement"/>
+				</s:ArrayList>
+			</s:columns>
+		</s:DataGrid>
+		<s:Group width="100%" height="100%">
+			<s:Label x="10" y="2" height="24" fontWeight="bold" text="Bone" verticalAlign="middle"/>
+			<local:DragTree id="boneTree" y="25" width="100%" height="100%" labelField="{FLAData.AT_NAME}"
+							dragEnabled="{!flaData.isSWFSource}" 
+							dropEnabled="{!flaData.isSWFSource}" 
+							/>
+		</s:Group>
+		<s:DataGrid id="textureList" maxWidth="350" width="100%" height="100%">
+			<s:columns>
+				<s:ArrayList>
+					<s:GridColumn dataField="{FLAData.AT_NAME}" headerText="Texture List"/>
+				</s:ArrayList>
+			</s:columns>
+		</s:DataGrid>
+	</s:HGroup>
+	<s:HGroup width="100%" height="380" gap="0">
+		<s:Group width="170" height="100%">
+			<s:Label x="10" y="10" width="100" height="24" text="Tween time" verticalAlign="middle"/>
+			<s:NumericStepper id="numDurationTo" x="105" y="10" width="55" height="24" textAlign="right" 
+							  minimum="0" maximum="300" snapInterval="1" value="@{flaData.durationTo}"/>
+			<s:HSlider id="sliderDurationTo" x="10" y="40" width="150" 
+					   minimum="0" maximum="300" snapInterval="1" value="@{flaData.durationTo}"/>
+			<s:Label x="10" y="60" width="100" height="24" text="Animation time" verticalAlign="middle"/>
+			<s:NumericStepper id="numDurationTween" x="105" y="60" width="55" height="24" textAlign="right" 
+							  minimum="0" maximum="1000" snapInterval="1" value="@{flaData.durationTween}"/>
+			<s:HSlider id="sliderDurationTween" x="10" y="90" width="150"
+					   minimum="0" maximum="1000" snapInterval="1" value="@{flaData.durationTween}"/>
+			<s:CheckBox id="checkLoop" x="105" y="176" width="60" height="24" label="Loop"
+						selected="@{flaData.loop}"/>
+			<s:Label x="10" y="198" width="100" height="24" text="Keyframe easing" verticalAlign="middle"/>
+			<s:HSlider id="sliderTween" x="10" y="228" width="150"
+					   minimum="-1" maximum="2" snapInterval="0.05" value="@{flaData.tweenEasing}"/>
+			<s:Label x="10" y="268" width="100" height="24" text="Bone animation scale" verticalAlign="middle"/>
+			<s:NumericStepper id="numScale" x="105" y="268" width="55" height="24"
+							  minimum="0" maximum="400" snapInterval="1" textAlign="right" value="@{flaData.boneScale}"/>
+			<s:HSlider id="sliderScale" x="10" y="298" width="150"
+					   minimum="0" maximum="400" snapInterval="5" value="@{flaData.boneScale}"/>
+			<s:Label x="10" y="318" width="100" height="24" text="Bone Animation delay" verticalAlign="middle"/>
+			<s:NumericStepper id="numDelay" x="105" y="318" width="55" height="24" textAlign="right" 
+							  minimum="-100" maximum="100" snapInterval="1" value="@{flaData.boneDelay}"/>
+			<s:HSlider id="sliderDelay" x="10" y="348" width="150"
+					   minimum="-100" maximum="100" snapInterval="5" value="@{flaData.boneDelay}"/>
+			<s:Label x="10" y="114" width="100" height="24" text="Stage frameRate" verticalAlign="middle"/>
+			<s:NumericStepper id="numFrameRate" x="105" y="114" width="55" height="24"
+							  change="numFrameRate_changeHandler(event)" maximum="100" minimum="0"
+							  snapInterval="1" textAlign="right" value="@{flaData.stageFrameRate}"/>
+			<s:HSlider id="sliderFrameRate" x="10" y="144" width="150"
+					   change="sliderFrameRate_changeHandler(event)" maximum="100" minimum="0"
+					   snapInterval="1" value="@{flaData.stageFrameRate}"/>
+		</s:Group>
+		<s:Scroller width="100%" height="100%">
+			<s:Group>
+				<s:Group id="armatureContainerGroup">
+					<mx:UIComponent id="armatureContainer"/>
+				</s:Group>
+			</s:Group>
+		</s:Scroller>
+		<s:Group width="220" height="100%">
+			<s:Button x="10" y="10" width="70" height="24" label="Import" click="{flaData.importData()}"
+					  />
+			<s:ComboBox x="90" y="10" width="120" height="24" textAlign="right"
+						dataProvider="{flaData.dataImportAC}"
+						selectedIndex="@{flaData.dataImportID}"
+						/>
+			<s:Button x="10" y="40" width="70" height="24" label="Export" click="{flaData.exportData()}"/>
+			<s:ComboBox x="90" y="40" width="120" height="24" textAlign="right"
+						dataProvider="{flaData.dataExportAC}"
+						selectedIndex="@{flaData.dataExportID}"
+						/>
+			<s:Label x="10" y="100" width="90" height="24" text="Texture sort" verticalAlign="middle"/>
+			<s:ComboBox x="110" y="100" width="100" height="24" textAlign="right" 
+						dataProvider="{flaData.textureSortAC}"
+						selectedIndex="@{flaData.textureSortID}"
+						enabled="{!flaData.isSWFSource}"
+						/>
+			<s:Label x="10" y="130" width="90" height="24" text="Texture width" verticalAlign="middle"/>
+			<s:ComboBox x="110" y="130" width="100" height="24" textAlign="right"
+						change="{flaData.updateTexture()}"
+						dataProvider="{flaData.textureMaxWidthAC}"
+						enabled="{flaData.textureSortID == 0 &amp;&amp; !flaData.isSWFSource}"
+						selectedIndex="@{flaData.textureMaxWidthID}"
+						/>
+			<s:Label x="10" y="160" width="90" height="24" text="Texture padding" verticalAlign="middle"/>
+			<s:NumericStepper x="110" y="160" width="100" height="24" textAlign="right"  maximum="100" minimum="0"
+							  change="{flaData.updateTexture()}"
+							  enabled="{flaData.textureSortID == 0 &amp;&amp; !flaData.isSWFSource}"
+							  value="@{flaData.textureInterval}"
+							  />
+		</s:Group>
+	</s:HGroup>
+</s:VGroup>

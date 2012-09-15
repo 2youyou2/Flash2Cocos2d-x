@@ -1,0 +1,91 @@
+#pragma once
+
+#include "CArmature.h"
+#include "CBone.h"
+#include "tinyxml.h"
+
+static const std::string BONE = "bone";
+
+static const std::string ANIMATION = "animation";
+
+static const std::string NAME = "name";
+
+static const std::string PARENT = "parent";
+
+static const std::string ROTATION = "rotation";
+
+static const std::string OFF_R = "offR";
+
+static const std::string X = "x";
+
+static const std::string Y = "y";
+
+static const std::string Z = "z";
+
+static const std::string REGISTRATION_POINT_X = "registrationPointX";
+
+static const std::string REGISTRATION_POINT_Y = "registrationPointY";
+
+static const std::string WIDTH = "width";
+
+static const std::string HEIGHT = "height";
+
+static const std::string SCALE_X = "scaleX";
+
+static const std::string SCALE_Y = "scaleY";
+
+static const std::string ALPHA = "alpha";
+
+static const std::string DELAY = "delay";
+
+static const std::string SCALE = "scale";
+
+static const std::string FRAME = "frame";
+
+static const std::string EVENT_FRAME = "eventFrame";
+
+
+//格式化、管理骨骼配置与骨骼动画
+class CCConnectionData : public CCObject
+{
+public:
+	static CCConnectionData *sharedConnectionData();
+private:
+	CCConnectionData(void);
+	~CCConnectionData(void);
+
+public:
+	virtual bool init();
+	/**
+	* @param _id
+	* @return 返回骨架数据
+	*/
+	CCArray * getArmatureData(std::string _id); 
+	/**
+	* @param _id
+	* @return 返回骨架动画数据
+	*/
+	CCArmatureAniData* getAnimationData(std::string _id);
+	/**
+	* 将XML数据转换成内置数据 ArmatureAniData 等
+	* @param _xml XML数据
+	*/
+	void addData(const char* _xml); 
+
+	void removeAll(bool _deletMe = false);
+	
+private:
+	CCFrameNodeList	*getFrameNodeList(TiXmlElement* _frameXMLList, std::string _boneName);
+	
+	CCFrameNode		*getFrameNode(TiXmlElement* _nodeXML); 
+
+private:
+	//存储骨架数据 <std::string, std::vector<PCCArmatureData> > ;
+	CCDictionary *armarureDatas;
+
+	//存储骨架动画数据 std::map<std::string, CCArmatureAniData*> animationDatas;
+	CCDictionary *animationDatas;
+private:
+	static CCConnectionData *mSharedConnectionData;
+};
+

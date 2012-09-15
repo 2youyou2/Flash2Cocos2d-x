@@ -1,0 +1,358 @@
+<skeleton name="Example03">
+  <armatures>
+    <armature name="Knight_f/Knight">
+      <b name="horseLegL2" bT="1" bi="Knight_f-马腿" parent="horseBody" x="-8" y="16" kX="0" kY="0" z="0"/>
+      <b name="horseLegL1" bT="1" bi="Knight_f-马腿" parent="horseBody" x="13" y="16" kX="0" kY="0" z="1"/>
+      <b name="horseLegR2" bT="1" bi="Knight_f-马腿" parent="horseBody" x="-14" y="16" kX="0" kY="0" z="2"/>
+      <b name="horseLegR1" bT="1" bi="Knight_f-马腿" parent="horseBody" x="7" y="16" kX="0" kY="0" z="3"/>
+      <b name="horseBody" bT="1" bi="Knight_f-马身" x="0" y="2" kX="0" kY="0" z="4"/>
+      <b name="horseTail" bT="1" bi="Knight_f-马尾" parent="horseBody" x="-20" y="2" kX="0" kY="0" z="5"/>
+      <b name="horseHead" bT="1" bi="Knight_f-马头" parent="horseBody" x="20" y="0" kX="0" kY="0" z="6"/>
+      <b name="armL" bT="1" bi="Knight_f-英雄_臂" parent="body" x="4.1" y="-12" kX="15" kY="15" z="7"/>
+      <b name="body" bT="1" bi="Knight_f-英雄_身体" parent="horseBody" x="0" y="-2" kX="0" kY="0" z="8"/>
+      <b name="leg" bT="1" bi="Knight_f-英雄_腿" parent="body" x="-2" y="0" kX="-45" kY="-45" z="9"/>
+      <b name="head" bT="1" bi="Knight_f-英雄_头" parent="body" x="0" y="-14" kX="0" kY="0" z="10"/>
+      <b name="weapon" bT="1" bi="Knight_f-英雄_剑" parent="armR" x="16.02" y="-2.26" kX="-100" kY="-100" z="11"/>
+      <b name="armR" bT="1" bi="Knight_f-英雄_臂" parent="body" x="-4" y="-12" kX="120" kY="120" z="12"/>
+    </armature>
+  </armatures>
+  <animations>
+    <animation name="Knight_f/Knight">
+      <mov name="stand" to="6" dr="2" drTW="65" lp="1" twE="2">
+        <b name="horseLegL2" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" img="Knight_f-马腿" dr="1"/>
+          <f x="0" y="-1" kX="0" kY="0" cX="1" cY="1" z="0" dr="1"/>
+        </b>
+        <b name="horseLegL1" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" img="Knight_f-马腿" dr="1"/>
+          <f x="0" y="-1" kX="0" kY="0" cX="1" cY="1" z="1" dr="1"/>
+        </b>
+        <b name="horseLegR2" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" img="Knight_f-马腿" dr="1"/>
+          <f x="0" y="-1" kX="0" kY="0" cX="1" cY="1" z="2" dr="1"/>
+        </b>
+        <b name="horseLegR1" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="3" img="Knight_f-马腿" dr="1"/>
+          <f x="0" y="-1" kX="0" kY="0" cX="1" cY="1" z="3" dr="1"/>
+        </b>
+        <b name="horseBody" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" img="Knight_f-马身" dr="1"/>
+          <f x="0" y="1" kX="0" kY="0" cX="1" cY="1" z="4" dr="1"/>
+        </b>
+        <b name="horseTail" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="5" img="Knight_f-马尾" dr="1"/>
+          <f x="0" y="-0.05" kX="15" kY="15" cX="1" cY="1" z="5" dr="1"/>
+        </b>
+        <b name="horseHead" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" img="Knight_f-马头" dr="1"/>
+          <f x="0.1" y="0" kX="5" kY="5" cX="1" cY="1" z="6" dr="1"/>
+        </b>
+        <b name="armL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" img="Knight_f-英雄_臂" dr="1"/>
+          <f x="-0.1" y="0.05" kX="9" kY="9" cX="1" cY="1" z="7" dr="1"/>
+        </b>
+        <b name="body" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="8" img="Knight_f-英雄_身体" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="8" dr="1"/>
+        </b>
+        <b name="leg" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="9" img="Knight_f-英雄_腿" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="9" dr="1"/>
+        </b>
+        <b name="head" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="10" img="Knight_f-英雄_头" dr="1"/>
+          <f x="0" y="2" kX="6" kY="6" cX="1" cY="1" z="10" dr="1"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="11" img="Knight_f-英雄_剑" dr="1"/>
+          <f x="-0.32" y="0.92" kX="-19" kY="-19" cX="1" cY="1" z="11" dr="1"/>
+        </b>
+        <b name="armR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="12" img="Knight_f-英雄_臂" dr="1"/>
+          <f x="0.05" y="0" kX="15" kY="15" cX="1" cY="1" z="12" dr="1"/>
+        </b>
+      </mov>
+      <mov name="run" to="6" dr="2" drTW="50" lp="1" twE="2">
+        <b name="horseLegL2" sc="1" dl="0.1">
+          <f x="0.04" y="0" kX="75" kY="75" cX="1" cY="1" z="0" img="Knight_f-马腿" dr="1"/>
+          <f x="2.01" y="0.86" kX="-52" kY="-51.99" cX="1" cY="1" z="0" dr="1"/>
+        </b>
+        <b name="horseLegL1" sc="1" dl="0.1">
+          <f x="0.01" y="-0.01" kX="-60" kY="-60" cX="1" cY="1" z="1" img="Knight_f-马腿" dr="1"/>
+          <f x="0" y="0.04" kX="45" kY="45" cX="1" cY="1" z="1" dr="1"/>
+        </b>
+        <b name="horseLegR2" sc="1" dl="0">
+          <f x="0.08" y="0.04" kX="75" kY="75" cX="1" cY="1" z="2" img="Knight_f-马腿" dr="1"/>
+          <f x="0" y="0.02" kX="-45" kY="-45" cX="1" cY="1" z="2" dr="1"/>
+        </b>
+        <b name="horseLegR1" sc="1" dl="0">
+          <f x="0.05" y="0.04" kX="-60" kY="-60" cX="1" cY="1" z="3" img="Knight_f-马腿" dr="1"/>
+          <f x="0" y="0.02" kX="45" kY="45" cX="1" cY="1" z="3" dr="1"/>
+        </b>
+        <b name="horseBody" sc="1" dl="0">
+          <f x="0" y="-6" kX="-10.7" kY="-10.7" cX="1" cY="1" z="4" img="Knight_f-马身" dr="1"/>
+          <f x="0" y="0" kX="6.99" kY="6.99" cX="1" cY="1" z="4" dr="1"/>
+        </b>
+        <b name="horseTail" sc="1" dl="0">
+          <f x="0.03" y="0.03" kX="75" kY="75" cX="1" cY="1" z="5" img="Knight_f-马尾" dr="1"/>
+          <f x="-0.01" y="0" kX="-6.99" kY="-6.99" cX="1" cY="1" z="5" dr="1"/>
+        </b>
+        <b name="horseHead" sc="1" dl="0.15">
+          <f x="0" y="-0.04" kX="-9.3" kY="-9.3" cX="1" cY="1" z="6" img="Knight_f-马头" dr="1"/>
+          <f x="0" y="0.01" kX="20" kY="20" cX="1" cY="1" z="6" dr="1"/>
+        </b>
+        <b name="armL" sc="1" dl="0">
+          <f x="0" y="0" kX="-15" kY="-15" cX="1" cY="1" z="7" img="Knight_f-英雄_臂" dr="1"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="7" dr="1"/>
+        </b>
+        <b name="body" sc="1" dl="0">
+          <f x="0.37" y="0.03" kX="10.7" kY="10.7" cX="1" cY="1" z="8" img="Knight_f-英雄_身体" dr="1"/>
+          <f x="-0.24" y="0.01" kX="-6.99" kY="-6.99" cX="1" cY="1" z="8" dr="1"/>
+        </b>
+        <b name="leg" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="9" img="Knight_f-英雄_腿" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="9" dr="1"/>
+        </b>
+        <b name="head" sc="1" dl="0">
+          <f x="0" y="0" kX="-10" kY="-10" cX="1" cY="1" z="10" img="Knight_f-英雄_头" dr="1"/>
+          <f x="0" y="2" kX="10" kY="10" cX="1" cY="1" z="10" dr="1"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="-0.08" y="0.52" kX="10" kY="10" cX="1" cY="1" z="11" img="Knight_f-英雄_剑" dr="1"/>
+          <f x="-0.42" y="1.21" kX="0.14" kY="0.15" cX="1" cY="1" z="11" dr="1"/>
+        </b>
+        <b name="armR" sc="1" dl="0">
+          <f x="0" y="0" kX="-20" kY="-20" cX="1" cY="1" z="12" img="Knight_f-英雄_臂" dr="1"/>
+          <f x="0" y="0" kX="-0.14" kY="-0.15" cX="1" cY="1" z="12" dr="1"/>
+        </b>
+      </mov>
+      <mov name="attack" to="6" dr="7" drTW="7">
+        <b name="horseLegL2" sc="1" dl="0">
+          <f x="-0.01" y="-0.03" kX="-30" kY="-30" cX="1" cY="1" z="0" img="Knight_f-马腿" dr="5"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="0" dr="2"/>
+        </b>
+        <b name="horseLegL1" sc="1" dl="0">
+          <f x="0" y="0.01" kX="-45" kY="-45" cX="1" cY="1" z="1" img="Knight_f-马腿" dr="5"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="1" dr="2"/>
+        </b>
+        <b name="horseLegR2" sc="1" dl="0">
+          <f x="0.04" y="-0.02" kX="-30" kY="-30" cX="1" cY="1" z="2" img="Knight_f-马腿" dr="5"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="2" dr="2"/>
+        </b>
+        <b name="horseLegR1" sc="1" dl="0">
+          <f x="0" y="0.01" kX="-30" kY="-30" cX="1" cY="1" z="3" img="Knight_f-马腿" dr="5"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="3" dr="2"/>
+        </b>
+        <b name="horseBody" sc="1" dl="0">
+          <f x="-10" y="0" kX="-15" kY="-15" cX="1" cY="1" z="4" img="Knight_f-马身" dr="5"/>
+          <f x="3" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dr="2"/>
+        </b>
+        <b name="horseTail" sc="1" dl="0">
+          <f x="0.05" y="0.01" kX="30" kY="30" cX="1" cY="1" z="5" img="Knight_f-马尾" dr="5"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="5" dr="2"/>
+        </b>
+        <b name="horseHead" sc="1" dl="0">
+          <f x="-0.01" y="-0.03" kX="15" kY="15" cX="1" cY="1" z="6" img="Knight_f-马头" dr="5"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="6" dr="2"/>
+        </b>
+        <b name="armL" sc="1" dl="0">
+          <f x="-0.01" y="0" kX="0" kY="0" cX="1" cY="1" z="7" img="Knight_f-英雄_臂" dr="5"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="7" dr="2"/>
+        </b>
+        <b name="body" sc="1" dl="0">
+          <f x="0.02" y="-0.01" kX="0" kY="0" cX="1" cY="1" z="8" img="Knight_f-英雄_身体" dr="5"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="8" dr="2"/>
+        </b>
+        <b name="leg" sc="1" dl="0">
+          <f x="-0.01" y="-0.02" kX="0" kY="0" cX="1" cY="1" z="9" img="Knight_f-英雄_腿" dr="5"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="9" dr="2"/>
+        </b>
+        <b name="head" sc="1" dl="0">
+          <f x="0.02" y="0.03" kX="15" kY="15" cX="1" cY="1" z="10" img="Knight_f-英雄_头" dr="5"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="10" dr="2"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="-0.25" y="-0.14" kX="21.27" kY="21.27" cX="1" cY="1" z="11" img="Knight_f-英雄_剑" dr="5"/>
+          <f x="0.24" y="0.1" kX="30" kY="30" cX="1" cY="1" z="11" dr="2"/>
+        </b>
+        <b name="armR" sc="1" dl="0">
+          <f x="0.02" y="0.01" kX="-171.27" kY="-171.27" cX="1" cY="1" z="12" img="Knight_f-英雄_臂" dr="5"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="12" dr="2"/>
+        </b>
+      </mov>
+      <mov name="attack_frame1" to="6" dr="7" drTW="7">
+        <b name="horseLegL2" sc="1" dl="0">
+          <f x="0" y="0" kX="-15" kY="-15" cX="1" cY="1" z="0" img="Knight_f-马腿" dr="5"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="0" dr="2"/>
+        </b>
+        <b name="horseLegL1" sc="1" dl="0">
+          <f x="0" y="0" kX="-15" kY="-15" cX="1" cY="1" z="1" img="Knight_f-马腿" dr="5"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="1" dr="2"/>
+        </b>
+        <b name="horseLegR2" sc="1" dl="0">
+          <f x="0" y="0" kX="-15" kY="-15" cX="1" cY="1" z="2" img="Knight_f-马腿" dr="5"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="2" dr="2"/>
+        </b>
+        <b name="horseLegR1" sc="1" dl="0">
+          <f x="0" y="0" kX="-15" kY="-15" cX="1" cY="1" z="3" img="Knight_f-马腿" dr="5"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="3" dr="2"/>
+        </b>
+        <b name="horseBody" sc="1" dl="0">
+          <f x="-1" y="0" kX="0" kY="0" cX="1" cY="1" z="4" img="Knight_f-马身" dr="5"/>
+          <f x="3" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dr="2"/>
+        </b>
+        <b name="horseTail" sc="1" dl="0">
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="5" img="Knight_f-马尾" dr="5"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="5" dr="2"/>
+        </b>
+        <b name="horseHead" sc="1" dl="0">
+          <f x="0" y="0" kX="10.7" kY="10.7" cX="1" cY="1" z="6" img="Knight_f-马头" dr="5"/>
+          <f x="0" y="0" kX="4.31" kY="4.31" cX="1" cY="1" z="6" dr="2"/>
+        </b>
+        <b name="armL" sc="1" dl="0">
+          <f x="0" y="0.02" kX="0" kY="0" cX="1" cY="1" z="7" img="Knight_f-英雄_臂" dr="5"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" dr="2"/>
+        </b>
+        <b name="body" sc="1" dl="0">
+          <f x="0" y="0" kX="11.72" kY="11.72" cX="1" cY="1" z="8" img="Knight_f-英雄_身体" dr="5"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="8" dr="2"/>
+        </b>
+        <b name="leg" sc="1" dl="0">
+          <f x="0.04" y="0.41" kX="-11.72" kY="-11.72" cX="1" cY="1" z="9" img="Knight_f-英雄_腿" dr="5"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="9" dr="2"/>
+        </b>
+        <b name="head" sc="1" dl="0">
+          <f x="0.01" y="0.01" kX="-7.73" kY="-7.73" cX="1" cY="1" z="10" img="Knight_f-英雄_头" dr="5"/>
+          <f x="0" y="0" kX="-15" kY="-15" cX="1" cY="1" z="10" dr="2"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="-0.36" y="0.75" kX="118.28" kY="118.28" cX="1" cY="1" z="11" img="Knight_f-英雄_剑" dr="5"/>
+          <f x="-0.55" y="0.44" kX="52" kY="52" cX="1" cY="1" z="11" dr="2"/>
+        </b>
+        <b name="armR" sc="1" dl="0">
+          <f x="0.03" y="0.01" kX="-45" kY="-45" cX="1" cY="1" z="12" img="Knight_f-英雄_臂" dr="5"/>
+          <f x="0" y="0" kX="-132" kY="-132" cX="1" cY="1" z="12" dr="2"/>
+        </b>
+      </mov>
+      <mov name="attack_frame2" to="6" dr="9" drTW="9">
+        <b name="horseLegL2" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" img="Knight_f-马腿" dr="6"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="0" dr="3"/>
+        </b>
+        <b name="horseLegL1" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" img="Knight_f-马腿" dr="6"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="1" dr="3"/>
+        </b>
+        <b name="horseLegR2" sc="1" dl="0">
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="2" img="Knight_f-马腿" dr="6"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="2" dr="3"/>
+        </b>
+        <b name="horseLegR1" sc="1" dl="0">
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="3" img="Knight_f-马腿" dr="6"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="3" dr="3"/>
+        </b>
+        <b name="horseBody" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" img="Knight_f-马身" dr="6"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dr="3"/>
+        </b>
+        <b name="horseTail" sc="1" dl="0">
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="5" img="Knight_f-马尾" dr="6"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="5" dr="3"/>
+        </b>
+        <b name="horseHead" sc="1" dl="0">
+          <f x="0" y="0" kX="13.79" kY="13.79" cX="1" cY="1" z="6" img="Knight_f-马头" dr="6"/>
+          <f x="0" y="0" kX="-4.69" kY="-4.69" cX="1" cY="1" z="6" dr="3"/>
+        </b>
+        <b name="armL" sc="1" dl="0">
+          <f x="0" y="0" kX="-75" kY="-75" cX="1" cY="1" z="7" img="Knight_f-英雄_臂" dr="6"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="7" dr="3"/>
+        </b>
+        <b name="body" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="8" img="Knight_f-英雄_身体" dr="6"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="8" dr="3"/>
+        </b>
+        <b name="leg" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="9" img="Knight_f-英雄_腿" dr="6"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="9" dr="3"/>
+        </b>
+        <b name="head" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="10" img="Knight_f-英雄_头" dr="6"/>
+          <f x="0" y="0" kX="9.25" kY="9.25" cX="1" cY="1" z="10" dr="3"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="-0.57" y="0.03" kX="35.97" kY="35.97" cX="1" cY="1" z="11" img="Knight_f-英雄_剑" dr="6"/>
+          <f x="-0.97" y="0.82" kX="90" kY="90" cX="1" cY="1" z="11" dr="3"/>
+        </b>
+        <b name="armR" sc="1" dl="0">
+          <f x="0" y="0" kX="-147" kY="-147" cX="1" cY="1" z="12" img="Knight_f-英雄_臂" dr="6"/>
+          <f x="0" y="0" kX="40" kY="40" cX="1" cY="1" z="12" dr="3"/>
+        </b>
+      </mov>
+      <mov name="attack_frame3" to="6" dr="7" drTW="90" lp="0">
+        <b name="horseLegL2" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" img="Knight_f-马腿" dr="6"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" dr="1"/>
+        </b>
+        <b name="horseLegL1" sc="1" dl="0">
+          <f x="0" y="0" kX="-15" kY="-15" cX="1" cY="1" z="1" img="Knight_f-马腿" dr="6"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="1" dr="1"/>
+        </b>
+        <b name="horseLegR2" sc="1" dl="0">
+          <f x="0" y="0" kX="-15" kY="-15" cX="1" cY="1" z="2" img="Knight_f-马腿" dr="6"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" dr="1"/>
+        </b>
+        <b name="horseLegR1" sc="1" dl="0">
+          <f x="0" y="0" kX="-30" kY="-30" cX="1" cY="1" z="3" img="Knight_f-马腿" dr="6"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="3" dr="1"/>
+        </b>
+        <b name="horseBody" sc="1" dl="0">
+          <f x="-2" y="0" kX="0" kY="0" cX="1" cY="1" z="4" img="Knight_f-马身" dr="6"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" dr="1"/>
+        </b>
+        <b name="horseTail" sc="1" dl="0">
+          <f x="0" y="0" kX="-30" kY="-30" cX="1" cY="1" z="5" img="Knight_f-马尾" dr="6"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="5" dr="1"/>
+        </b>
+        <b name="horseHead" sc="1" dl="0">
+          <f x="0" y="0" kX="10.31" kY="10.31" cX="1" cY="1" z="6" img="Knight_f-马头" dr="6"/>
+          <f x="0" y="0" kX="2.75" kY="2.75" cX="1" cY="1" z="6" dr="1"/>
+        </b>
+        <b name="armL" sc="1" dl="0">
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="7" img="Knight_f-英雄_臂" dr="6"/>
+          <f x="0" y="0" kX="15" kY="15" cX="1" cY="1" z="7" dr="1"/>
+        </b>
+        <b name="body" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="8" img="Knight_f-英雄_身体" dr="6"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="8" dr="1"/>
+        </b>
+        <b name="leg" sc="1" dl="0">
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="9" img="Knight_f-英雄_腿" dr="6"/>
+          <f x="0" y="0" kX="30" kY="30" cX="1" cY="1" z="9" dr="1"/>
+        </b>
+        <b name="head" sc="1" dl="0">
+          <f x="0" y="0" kX="-5.75" kY="-5.75" cX="1" cY="1" z="10" img="Knight_f-英雄_头" dr="6"/>
+          <f x="0" y="0" kX="9.25" kY="9.25" cX="1" cY="1" z="10" dr="1"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="-0.97" y="0.82" kX="99.23" kY="99.23" cX="1" cY="1" z="11" img="Knight_f-英雄_剑" dr="6"/>
+          <f x="-0.52" y="0.41" kX="85" kY="85" cX="1" cY="1" z="11" dr="1"/>
+        </b>
+        <b name="armR" sc="1" dl="0">
+          <f x="-1" y="0" kX="40" kY="40" cX="1" cY="1" z="12" img="Knight_f-英雄_臂" dr="6"/>
+          <f x="0" y="0" kX="-60" kY="-60" cX="1" cY="1" z="12" dr="1"/>
+        </b>
+      </mov>
+    </animation>
+  </animations>
+  <TextureAtlas name="Example03" width="512" height="64">
+    <SubTexture name="Knight_f-马腿" x="270" y="0" width="9" height="15" pX="4" pY="0"/>
+    <SubTexture name="Knight_f-马身" x="180" y="0" width="41" height="21" pX="20" pY="2"/>
+    <SubTexture name="Knight_f-马尾" x="280" y="0" width="9" height="13" pX="6" pY="2"/>
+    <SubTexture name="Knight_f-马头" x="92" y="0" width="41" height="49" pX="2" pY="46"/>
+    <SubTexture name="Knight_f-英雄_臂" x="222" y="0" width="21" height="11" pX="2" pY="4"/>
+    <SubTexture name="Knight_f-英雄_身体" x="244" y="0" width="15" height="17" pX="7" pY="14"/>
+    <SubTexture name="Knight_f-英雄_腿" x="260" y="0" width="9" height="17" pX="4" pY="0"/>
+    <SubTexture name="Knight_f-英雄_头" x="134" y="0" width="45" height="41" pX="22" pY="37.95"/>
+    <SubTexture name="Knight_f-英雄_剑" x="0" y="0" width="91" height="31" pX="10" pY="15"/>
+  </TextureAtlas>
+</skeleton>

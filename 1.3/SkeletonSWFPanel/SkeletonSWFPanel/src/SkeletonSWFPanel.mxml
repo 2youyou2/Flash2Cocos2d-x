@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   xmlns:local="*"
+			   addedToStage="onCreationCompleteHandler()"
+			   creationComplete="onCreationCompleteHandler()">
+	<s:layout>
+		<s:HorizontalLayout/>
+	</s:layout>
+	<fx:Declarations>
+		<fx:XML id="aboutXML" source="about.xml"/>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.grapefrukt.exporter.simple.SimpleExport;
+			
+			import mx.controls.Alert;
+			
+			
+			[Bindable]
+			private var flaData:FLAData;
+			private var urlLoader:URLLoader;
+			
+			private function onCreationCompleteHandler():void{
+				
+				flaData = FLAData.instance;
+				Security.allowDomain(flaData.container);
+				
+				
+				if(loaderInfo){
+					loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onUncaughtErrorHandler);
+					var _data:String = loaderInfo.parameters["data"];
+					if(_data && !urlLoader){
+						urlLoader = new URLLoader();
+						urlLoader.dataFormat = URLLoaderDataFormat.BINARY;
+						urlLoader.addEventListener(Event.COMPLETE, onDataCompleteHandler);
+						urlLoader.load(new URLRequest(_data));
+					}
+				}
+			}
+			
+			private function onDataCompleteHandler(_e:Event):void{
+				flaData.setData(_e.target.data);
+			}
+			
+			private function navIndexChangeHandler(event:Event):void{
+				switch(event.target.selectedChild){
+					case navTexture:
+						if(flaData.textureDisplay){
+							textureContainer.addChild(flaData.textureDisplay);
+							textureContainerGroup.width = flaData.textureDisplay.width;
+							textureContainerGroup.height = flaData.textureDisplay.height;
+						}
+						break;
+				}
+			}
+			
+			private function onUncaughtErrorHandler(_e:UncaughtErrorEvent):void{
+				Alert.show(String(_e.error));
+			}
+		]]>
+	</fx:Script>
+	<mx:TabNavigator width="100%" height="100%" paddingTop="0" change="navIndexChangeHandler(event)">
+		<s:NavigatorContent width="100%" height="100%" label="Skeleton Panel">
+			<local:SkeletonPanel/>
+		</s:NavigatorContent>
+		<s:NavigatorContent width="100%" height="100%" label="XML">
+			<s:TextArea left="0" right="0" top="0" bottom="0" text="{flaData.xml}"/>
+		</s:NavigatorContent>
+		<s:NavigatorContent id="navTexture" width="100%" height="100%" label="Texture">
+			<s:Scroller width="100%" height="100%">
+				<s:Group>
+					<s:Group id="textureContainerGroup">
+						<mx:UIComponent id="textureContainer"/>
+					</s:Group>
+				</s:Group>
+			</s:Scroller>
+		</s:NavigatorContent>
+		<s:NavigatorContent width="100%" height="100%" label="JSFL">
+			<s:TextArea left="0" right="0" top="0" bottom="0" text="@{JSFL.skeletonJSFL}"/>
+		</s:NavigatorContent>
+		<s:NavigatorContent width="100%" height="100%" label="Tools">
+		</s:NavigatorContent>
+		<s:NavigatorContent width="100%" height="100%" label="About">
+			<mx:TextArea left="0" right="0" top="0" bottom="0" editable="false" selectable="false" condenseWhite="true"
+						 htmlText="{aboutXML}"/>
+		</s:NavigatorContent>
+	</mx:TabNavigator>
+</s:Application>

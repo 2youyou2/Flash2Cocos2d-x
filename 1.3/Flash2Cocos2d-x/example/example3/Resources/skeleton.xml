@@ -1,0 +1,368 @@
+<skeleton name="bone">
+  <armatures>
+    <armature name="RobotBiped">
+      <b name="handL" bT="0" bi="RobotBiped_f-handL" parent="forearmL" x="-0.13" y="13.65" kX="-1.43" kY="-1.43" z="0"/>
+      <b name="forearmL" bT="0" bi="RobotBiped_f-forearmL" parent="upperarmL" x="-0.31" y="12.07" kX="-74.05" kY="-74.05" z="1"/>
+      <b name="upperarmL" bT="0" bi="RobotBiped_f-upperarmL" parent="chest" x="2.92" y="-1.06" kX="-32.49" kY="-32.49" z="2"/>
+      <b name="legL" bT="0" bi="RobotBiped_f-legL" parent="body" x="2.95" y="-0.52" kX="-45.24" kY="-45.24" z="3"/>
+      <b name="crusL" bT="0" bi="RobotBiped_f-crus" parent="legL" x="-0.99" y="21.34" kX="35.51" kY="35.51" z="4"/>
+      <b name="body" bT="0" bi="RobotBiped_f-body" x="0" y="0" kX="10" kY="10" z="5"/>
+      <b name="crotch" bT="0" bi="RobotBiped_f-crotch" parent="body" x="0" y="0" kX="-10" kY="-10" z="6"/>
+      <b name="chest" bT="0" bi="RobotBiped_f-chest" parent="crotch" x="2.6" y="-13" kX="5" kY="5" z="7"/>
+      <b name="head" bT="0" bi="RobotBiped_f-head" parent="chest" x="0.87" y="-6.1" kX="-5" kY="-5" z="8"/>
+      <b name="legR" bT="0" bi="RobotBiped_f-legR" parent="body" x="-2.95" y="0.52" kX="-17" kY="-17" z="9"/>
+      <b name="crusR" bT="0" bi="RobotBiped_f-crus" parent="legR" x="-0.63" y="21.94" kX="40" kY="40" z="10"/>
+      <b name="weapon" bT="0" bi="RobotBiped_f-weapon" parent="handR" x="0.75" y="4.88" kX="99" kY="99" z="11"/>
+      <b name="upperarmR" bT="0" bi="RobotBiped_f-upperarmR" parent="chest" x="-5.14" y="-1.36" kX="15.32" kY="15.32" z="12"/>
+      <b name="handR" bT="0" bi="RobotBiped_f-handR" parent="forearmR" x="0.57" y="13.37" kX="-5" kY="-5" z="13"/>
+      <b name="forearmR" bT="0" bi="RobotBiped_f-forearmR" parent="upperarmR" x="-0.22" y="12.66" kX="-114.32" kY="-114.32" z="14"/>
+    </armature>
+  </armatures>
+  <animations>
+    <animation name="RobotBiped">
+      <mov name="stand" dr="2" to="6" drTW="58" lp="1" twE="2">
+        <b name="handL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" img="RobotBiped_f-handL" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" dr="1"/>
+        </b>
+        <b name="forearmL" sc="1" dl="0.1">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" img="RobotBiped_f-forearmL" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" dr="1"/>
+        </b>
+        <b name="upperarmL" sc="1" dl="0.05">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" img="RobotBiped_f-upperarmL" dr="1"/>
+          <f x="0.08" y="0.95" kX="-1" kY="-1" cX="1" cY="1" z="2" dr="1"/>
+        </b>
+        <b name="legL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="3" img="RobotBiped_f-legL" dr="1"/>
+          <f x="-0.07" y="-0.31" kX="-16.01" kY="-16.01" cX="1" cY="1" z="3" dr="1"/>
+        </b>
+        <b name="crusL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" img="RobotBiped_f-crus" dr="1"/>
+          <f x="0.12" y="-0.06" kX="14.03" kY="14.03" cX="1" cY="1" z="4" dr="1"/>
+        </b>
+        <b name="body" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="5" img="RobotBiped_f-body" dr="1"/>
+          <f x="0" y="2" kX="6" kY="6" cX="1" cY="1" z="5" dr="1"/>
+        </b>
+        <b name="crotch" sc="1" dl="0.05">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" img="RobotBiped_f-crotch" dr="1"/>
+          <f x="0" y="0" kX="-6" kY="-6" cX="1" cY="1" z="6" dr="1"/>
+        </b>
+        <b name="chest" sc="1" dl="0.1">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" img="RobotBiped_f-chest" dr="1"/>
+          <f x="1" y="0" kX="1" kY="1" cX="1" cY="1" z="7" dr="1"/>
+        </b>
+        <b name="head" sc="1" dl="0.15">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="8" img="RobotBiped_f-head" dr="1"/>
+          <f x="-0.1" y="-0.01" kX="-1" kY="-1" cX="1" cY="1" z="8" dr="1"/>
+        </b>
+        <b name="legR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="9" img="RobotBiped_f-legR" dr="1"/>
+          <f x="0.07" y="0.31" kX="-11" kY="-11" cX="1" cY="1" z="9" dr="1"/>
+        </b>
+        <b name="crusR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="10" img="RobotBiped_f-crus" dr="1"/>
+          <f x="0.26" y="-0.7" kX="8" kY="8" cX="1" cY="1" z="10" dr="1"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="11" img="RobotBiped_f-weapon" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="11" dr="1"/>
+        </b>
+        <b name="upperarmR" sc="1" dl="0.05">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="12" img="RobotBiped_f-upperarmR" dr="1"/>
+          <f x="0.08" y="1.09" kX="-0.99" kY="-0.99" cX="1" cY="1" z="12" dr="1"/>
+        </b>
+        <b name="handR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="13" img="RobotBiped_f-handR" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="13" dr="1"/>
+        </b>
+        <b name="forearmR" sc="1" dl="0.1">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="14" img="RobotBiped_f-forearmR" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="14" dr="1"/>
+        </b>
+      </mov>
+      <mov name="run" dr="2" to="6" drTW="50" lp="1" twE="2">
+        <b name="handL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" img="RobotBiped_f-handL" dr="1"/>
+          <f x="0.17" y="0.13" kX="-13.43" kY="-13.43" cX="1" cY="1" z="0" dr="1"/>
+        </b>
+        <b name="forearmL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" img="RobotBiped_f-forearmL" dr="1"/>
+          <f x="0.19" y="1.69" kX="47.85" kY="47.85" cX="1" cY="1" z="1" dr="1"/>
+        </b>
+        <b name="upperarmL" sc="1" dl="0">
+          <f x="-0.16" y="-1.24" kX="0" kY="0" cX="1" cY="1" z="2" img="RobotBiped_f-upperarmL" dr="1"/>
+          <f x="-3.41" y="-1.2" kX="-29.2" kY="-29.2" cX="1" cY="1" z="2" dr="1"/>
+        </b>
+        <b name="legL" sc="1" dl="0">
+          <f x="-4.75" y="1.85" kX="70.24" kY="70.24" cX="1" cY="1" z="3" img="RobotBiped_f-legL" dr="1"/>
+          <f x="-1.2" y="-0.87" kX="-36.76" kY="-36.76" cX="1" cY="1" z="3" dr="1"/>
+        </b>
+        <b name="crusL" sc="1" dl="-0.2">
+          <f x="1.02" y="3.72" kX="-20.51" kY="-20.51" cX="1" cY="1" z="4" img="RobotBiped_f-crus" dr="1"/>
+          <f x="1.01" y="3.71" kX="59.49" kY="59.49" cX="1" cY="1" z="4" dr="1"/>
+        </b>
+        <b name="body" sc="0.5" dl="0">
+          <f x="0" y="-5" kX="0" kY="0" cX="1" cY="1" z="5" img="RobotBiped_f-body" dr="1"/>
+          <f x="0" y="5" kX="2" kY="2" cX="1" cY="1" z="5" dr="1"/>
+        </b>
+        <b name="crotch" sc="0.5" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" img="RobotBiped_f-crotch" dr="1"/>
+          <f x="0" y="0" kX="-2" kY="-2" cX="1" cY="1" z="6" dr="1"/>
+        </b>
+        <b name="chest" sc="0.5" dl="0">
+          <f x="0.05" y="-1.75" kX="0" kY="0" cX="1" cY="1" z="7" img="RobotBiped_f-chest" dr="1"/>
+          <f x="1.25" y="-1.5" kX="1" kY="1" cX="1" cY="1" z="7" dr="1"/>
+        </b>
+        <b name="head" sc="0.5" dl="0">
+          <f x="0.02" y="0.75" kX="0" kY="0" cX="1" cY="1" z="8" img="RobotBiped_f-head" dr="1"/>
+          <f x="-0.3" y="0.51" kX="-1" kY="-1" cX="1" cY="1" z="8" dr="1"/>
+        </b>
+        <b name="legR" sc="1" dl="0">
+          <f x="4.75" y="-1.85" kX="-63" kY="-63" cX="1" cY="1" z="9" img="RobotBiped_f-legR" dr="1"/>
+          <f x="1.2" y="0.87" kX="40" kY="40" cX="1" cY="1" z="9" dr="1"/>
+        </b>
+        <b name="crusR" sc="1" dl="-0.2">
+          <f x="0.65" y="3.11" kX="55" kY="55" cX="1" cY="1" z="10" img="RobotBiped_f-crus" dr="1"/>
+          <f x="0.66" y="3.12" kX="-25" kY="-25" cX="1" cY="1" z="10" dr="1"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="11" img="RobotBiped_f-weapon" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="11" dr="1"/>
+        </b>
+        <b name="upperarmR" sc="1" dl="0">
+          <f x="-0.16" y="-1.24" kX="0" kY="0" cX="1" cY="1" z="12" img="RobotBiped_f-upperarmR" dr="1"/>
+          <f x="6.54" y="-2.1" kX="-1" kY="-1" cX="1" cY="1" z="12" dr="1"/>
+        </b>
+        <b name="handR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="13" img="RobotBiped_f-handR" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="13" dr="1"/>
+        </b>
+        <b name="forearmR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="14" img="RobotBiped_f-forearmR" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="14" dr="1"/>
+        </b>
+      </mov>
+      <mov name="runBack" dr="2" to="8" drTW="65" lp="1" twE="2">
+        <b name="handL" sc="1" dl="0">
+          <f x="0.17" y="0.13" kX="-13.43" kY="-13.43" cX="1" cY="1" z="0" img="RobotBiped_f-handL" dr="1"/>
+          <f x="0.17" y="0.13" kX="-13.43" kY="-13.43" cX="1" cY="1" z="0" dr="1"/>
+        </b>
+        <b name="forearmL" sc="1" dl="0">
+          <f x="0.19" y="1.69" kX="47.85" kY="47.85" cX="1" cY="1" z="1" img="RobotBiped_f-forearmL" dr="1"/>
+          <f x="0.19" y="1.69" kX="47.85" kY="47.85" cX="1" cY="1" z="1" dr="1"/>
+        </b>
+        <b name="upperarmL" sc="1" dl="0">
+          <f x="-3" y="-2.25" kX="-20.2" kY="-20.2" cX="1" cY="1" z="2" img="RobotBiped_f-upperarmL" dr="1"/>
+          <f x="-3" y="-2.25" kX="-20.2" kY="-20.2" cX="1" cY="1" z="2" dr="1"/>
+        </b>
+        <b name="legL" sc="1" dl="0">
+          <f x="0.14" y="-0.16" kX="6.24" kY="6.24" cX="1" cY="1" z="3" img="RobotBiped_f-legL" dr="1"/>
+          <f x="-5.99" y="1.21" kX="66.24" kY="66.24" cX="1" cY="1" z="3" dr="1"/>
+        </b>
+        <b name="crusL" sc="1" dl="-0.85">
+          <f x="0.71" y="0.01" kX="54.49" kY="54.49" cX="1" cY="1" z="4" img="RobotBiped_f-crus" dr="1"/>
+          <f x="1.4" y="0.86" kX="-41.51" kY="-41.51" cX="1" cY="1" z="4" dr="1"/>
+        </b>
+        <b name="body" sc="0.5" dl="0">
+          <f x="0" y="-2" kX="-16" kY="-16" cX="1" cY="1" z="5" img="RobotBiped_f-body" dr="1"/>
+          <f x="0" y="2" kX="-16" kY="-16" cX="1" cY="1" z="5" dr="1"/>
+        </b>
+        <b name="crotch" sc="0.5" dl="0">
+          <f x="0" y="0" kX="16" kY="16" cX="1" cY="1" z="6" img="RobotBiped_f-crotch" dr="1"/>
+          <f x="0" y="0" kX="16" kY="16" cX="1" cY="1" z="6" dr="1"/>
+        </b>
+        <b name="chest" sc="0.5" dl="0">
+          <f x="-4.75" y="-0.5" kX="-8" kY="-8" cX="1" cY="1" z="7" img="RobotBiped_f-chest" dr="1"/>
+          <f x="-4.75" y="-0.5" kX="-8" kY="-8" cX="1" cY="1" z="7" dr="1"/>
+        </b>
+        <b name="head" sc="0.5" dl="0">
+          <f x="-1.38" y="-0.44" kX="8" kY="8" cX="1" cY="1" z="8" img="RobotBiped_f-head" dr="1"/>
+          <f x="-1.38" y="-0.44" kX="8" kY="8" cX="1" cY="1" z="8" dr="1"/>
+        </b>
+        <b name="legR" sc="1" dl="0">
+          <f x="-0.14" y="0.16" kX="38" kY="38" cX="1" cY="1" z="9" img="RobotBiped_f-legR" dr="1"/>
+          <f x="6.03" y="-1.15" kX="-22" kY="-22" cX="1" cY="1" z="9" dr="1"/>
+        </b>
+        <b name="crusR" sc="1" dl="-0.85">
+          <f x="1.04" y="0.26" kX="-46" kY="-46" cX="1" cY="1" z="10" img="RobotBiped_f-crus" dr="1"/>
+          <f x="0.38" y="-0.62" kX="50" kY="50" cX="1" cY="1" z="10" dr="1"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="11" img="RobotBiped_f-weapon" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="11" dr="1"/>
+        </b>
+        <b name="upperarmR" sc="1" dl="0">
+          <f x="4.01" y="-1" kX="8" kY="8" cX="1" cY="1" z="12" img="RobotBiped_f-upperarmR" dr="1"/>
+          <f x="3.07" y="-2.05" kX="8" kY="8" cX="1" cY="1" z="12" dr="1"/>
+        </b>
+        <b name="handR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="13" img="RobotBiped_f-handR" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="13" dr="1"/>
+        </b>
+        <b name="forearmR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="14" img="RobotBiped_f-forearmR" dr="1"/>
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="14" dr="1"/>
+        </b>
+      </mov>
+      <mov name="squat" dr="1" to="6" drTW="0">
+        <b name="handL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" img="RobotBiped_f-handL" dr="1"/>
+        </b>
+        <b name="forearmL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" img="RobotBiped_f-forearmL" dr="1"/>
+        </b>
+        <b name="upperarmL" sc="1" dl="0">
+          <f x="0.87" y="-1.15" kX="-1" kY="-1" cX="1" cY="1" z="2" img="RobotBiped_f-upperarmL" dr="1"/>
+        </b>
+        <b name="legL" sc="1" dl="0">
+          <f x="-1.13" y="-0.78" kX="-83.76" kY="-83.76" cX="1" cY="1" z="3" img="RobotBiped_f-legL" dr="1"/>
+        </b>
+        <b name="crusL" sc="1" dl="0">
+          <f x="-0.07" y="0.1" kX="70.99" kY="70.99" cX="1" cY="1" z="4" img="RobotBiped_f-crus" dr="1"/>
+        </b>
+        <b name="body" sc="1" dl="0">
+          <f x="0" y="32" kX="-1" kY="-1" cX="1" cY="1" z="5" img="RobotBiped_f-body" dr="1"/>
+        </b>
+        <b name="crotch" sc="1" dl="0">
+          <f x="0" y="0" kX="1" kY="1" cX="1" cY="1" z="6" img="RobotBiped_f-crotch" dr="1"/>
+        </b>
+        <b name="chest" sc="1" dl="0">
+          <f x="-1" y="-1" kX="1" kY="1" cX="1" cY="1" z="7" img="RobotBiped_f-chest" dr="1"/>
+        </b>
+        <b name="head" sc="1" dl="0">
+          <f x="0.99" y="0.88" kX="-1" kY="-1" cX="1" cY="1" z="8" img="RobotBiped_f-head" dr="1"/>
+        </b>
+        <b name="legR" sc="1" dl="0">
+          <f x="0.82" y="-1.19" kX="-22" kY="-22" cX="1" cY="1" z="9" img="RobotBiped_f-legR" dr="1"/>
+        </b>
+        <b name="crusR" sc="1" dl="0">
+          <f x="-0.06" y="-1.04" kX="79.99" kY="79.99" cX="1" cY="1" z="10" img="RobotBiped_f-crus" dr="1"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="11" img="RobotBiped_f-weapon" dr="1"/>
+        </b>
+        <b name="upperarmR" sc="1" dl="0">
+          <f x="0.87" y="-1.01" kX="-0.99" kY="-0.99" cX="1" cY="1" z="12" img="RobotBiped_f-upperarmR" dr="1"/>
+        </b>
+        <b name="handR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="13" img="RobotBiped_f-handR" dr="1"/>
+        </b>
+        <b name="forearmR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="14" img="RobotBiped_f-forearmR" dr="1"/>
+        </b>
+      </mov>
+      <mov name="jump" dr="1" to="6" drTW="0">
+        <b name="handL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" img="RobotBiped_f-handL" dr="1"/>
+        </b>
+        <b name="forearmL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" img="RobotBiped_f-forearmL" dr="1"/>
+        </b>
+        <b name="upperarmL" sc="1" dl="0">
+          <f x="0.71" y="-1.41" kX="-5" kY="-5" cX="1" cY="1" z="2" img="RobotBiped_f-upperarmL" dr="1"/>
+        </b>
+        <b name="legL" sc="1" dl="0">
+          <f x="-4.62" y="2" kX="60.24" kY="60.24" cX="1" cY="1" z="3" img="RobotBiped_f-legL" dr="1"/>
+        </b>
+        <b name="crusL" sc="1" dl="0">
+          <f x="1.15" y="0.74" kX="-35.51" kY="-35.51" cX="1" cY="1" z="4" img="RobotBiped_f-crus" dr="1"/>
+        </b>
+        <b name="body" sc="1" dl="0">
+          <f x="0" y="0" kX="5" kY="5" cX="1" cY="1" z="5" img="RobotBiped_f-body" dr="1"/>
+        </b>
+        <b name="crotch" sc="1" dl="0">
+          <f x="0" y="0" kX="-5" kY="-5" cX="1" cY="1" z="6" img="RobotBiped_f-crotch" dr="1"/>
+        </b>
+        <b name="chest" sc="1" dl="0">
+          <f x="1" y="-1" kX="5" kY="5" cX="1" cY="1" z="7" img="RobotBiped_f-chest" dr="1"/>
+        </b>
+        <b name="head" sc="1" dl="0">
+          <f x="-0.53" y="-0.05" kX="-5" kY="-5" cX="1" cY="1" z="8" img="RobotBiped_f-head" dr="1"/>
+        </b>
+        <b name="legR" sc="1" dl="0">
+          <f x="4.62" y="-2" kX="-58" kY="-58" cX="1" cY="1" z="9" img="RobotBiped_f-legR" dr="1"/>
+        </b>
+        <b name="crusR" sc="1" dl="0">
+          <f x="0.14" y="0.11" kX="80" kY="80" cX="1" cY="1" z="10" img="RobotBiped_f-crus" dr="1"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="11" img="RobotBiped_f-weapon" dr="1"/>
+        </b>
+        <b name="upperarmR" sc="1" dl="0">
+          <f x="0.71" y="-0.7" kX="-5" kY="-5" cX="1" cY="1" z="12" img="RobotBiped_f-upperarmR" dr="1"/>
+        </b>
+        <b name="handR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="13" img="RobotBiped_f-handR" dr="1"/>
+        </b>
+        <b name="forearmR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="14" img="RobotBiped_f-forearmR" dr="1"/>
+        </b>
+      </mov>
+      <mov name="fall" to="6" dr="1">
+        <b name="handL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" img="RobotBiped_f-handL" dr="1"/>
+        </b>
+        <b name="forearmL" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" img="RobotBiped_f-forearmL" dr="1"/>
+        </b>
+        <b name="upperarmL" sc="1" dl="0">
+          <f x="-0.85" y="0.47" kX="11" kY="11" cX="1" cY="1" z="2" img="RobotBiped_f-upperarmL" dr="1"/>
+        </b>
+        <b name="legL" sc="1" dl="0">
+          <f x="-0.97" y="0.83" kX="-0.76" kY="-0.76" cX="1" cY="1" z="3" img="RobotBiped_f-legL" dr="1"/>
+        </b>
+        <b name="crusL" sc="1" dl="0">
+          <f x="0.56" y="1.06" kX="55.49" kY="55.49" cX="1" cY="1" z="4" img="RobotBiped_f-crus" dr="1"/>
+        </b>
+        <b name="body" sc="1" dl="0">
+          <f x="0" y="0" kX="-19" kY="-19" cX="1" cY="1" z="5" img="RobotBiped_f-body" dr="1"/>
+        </b>
+        <b name="crotch" sc="1" dl="0">
+          <f x="0" y="0" kX="19" kY="19" cX="1" cY="1" z="6" img="RobotBiped_f-crotch" dr="1"/>
+        </b>
+        <b name="chest" sc="1" dl="0">
+          <f x="-6" y="-1" kX="-11" kY="-11" cX="1" cY="1" z="7" img="RobotBiped_f-chest" dr="1"/>
+        </b>
+        <b name="head" sc="1" dl="0">
+          <f x="-1.83" y="-0.03" kX="11" kY="11" cX="1" cY="1" z="8" img="RobotBiped_f-head" dr="1"/>
+        </b>
+        <b name="legR" sc="1" dl="0">
+          <f x="0.97" y="-0.83" kX="11" kY="11" cX="1" cY="1" z="9" img="RobotBiped_f-legR" dr="1"/>
+        </b>
+        <b name="crusR" sc="1" dl="0">
+          <f x="0.73" y="0.29" kX="-40" kY="-40" cX="1" cY="1" z="10" img="RobotBiped_f-crus" dr="1"/>
+        </b>
+        <b name="weapon" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="11" img="RobotBiped_f-weapon" dr="1"/>
+        </b>
+        <b name="upperarmR" sc="1" dl="0">
+          <f x="-0.64" y="-1.06" kX="11" kY="11" cX="1" cY="1" z="12" img="RobotBiped_f-upperarmR" dr="1"/>
+        </b>
+        <b name="handR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="13" img="RobotBiped_f-handR" dr="1"/>
+        </b>
+        <b name="forearmR" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="14" img="RobotBiped_f-forearmR" dr="1"/>
+        </b>
+      </mov>
+    </animation>
+  </animations>
+  <TextureAtlas name="bone" width="512" height="64">
+    <SubTexture name="RobotBiped_f-handL" x="261" y="0" width="8" height="10" pX="3" pY="0"/>
+    <SubTexture name="RobotBiped_f-forearmL" x="196" y="0" width="11" height="20" pX="5" pY="4"/>
+    <SubTexture name="RobotBiped_f-upperarmL" x="164" y="0" width="15" height="20" pX="7" pY="5"/>
+    <SubTexture name="RobotBiped_f-legL" x="148" y="0" width="15" height="29" pX="7" pY="5"/>
+    <SubTexture name="RobotBiped_f-crus" x="82" y="0" width="15" height="43" pX="7" pY="6"/>
+    <SubTexture name="RobotBiped_f-body" x="240" y="0" width="11" height="17" pX="3" pY="14"/>
+    <SubTexture name="RobotBiped_f-crotch" x="270" y="0" width="5" height="5" pX="2" pY="2"/>
+    <SubTexture name="RobotBiped_f-chest" x="220" y="0" width="19" height="10" pX="6" pY="7"/>
+    <SubTexture name="RobotBiped_f-head" x="98" y="0" width="33" height="19" pX="20" pY="18"/>
+    <SubTexture name="RobotBiped_f-legR" x="132" y="0" width="15" height="29" pX="7" pY="5"/>
+    <SubTexture name="RobotBiped_f-weapon" x="0" y="0" width="81" height="17" pX="17" pY="11"/>
+    <SubTexture name="RobotBiped_f-upperarmR" x="180" y="0" width="15" height="20" pX="7" pY="5"/>
+    <SubTexture name="RobotBiped_f-handR" x="252" y="0" width="8" height="10" pX="3" pY="0"/>
+    <SubTexture name="RobotBiped_f-forearmR" x="208" y="0" width="11" height="20" pX="5" pY="4"/>
+  </TextureAtlas>
+</skeleton>

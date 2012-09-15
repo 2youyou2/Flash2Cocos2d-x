@@ -1,0 +1,63 @@
+#include "CBoneAniData.h"
+
+CCBoneAniData *CCBoneAniData::create() {
+    CCBoneAniData *pBoneAniData = new CCBoneAniData();
+    if (pBoneAniData && pBoneAniData->init()) {
+        pBoneAniData->autorelease();
+        return pBoneAniData;
+    }
+    CC_SAFE_DELETE(pBoneAniData);
+    return NULL;
+}
+
+CCBoneAniData::CCBoneAniData(void) {
+
+}
+
+
+CCBoneAniData::~CCBoneAniData(void) {
+	CC_SAFE_DELETE( eventList );
+	CC_SAFE_DELETE( frameNodeListDic );
+}
+
+bool CCBoneAniData::init() {
+    bool bRet = false;
+    do {
+        eventList = new CCArray();
+        CCAssert(eventList->init(), "create CCBoneAniData::eventList fail!");
+
+        frameNodeListDic = new CCDictionary();
+        CCAssert(frameNodeListDic, "create CCBoneAniData::frameNodeListDic fail!");
+
+        bRet = true;
+    } while (0);
+
+    return bRet;
+}
+
+void CCBoneAniData::remove() {
+    CC_SAFE_DELETE( eventList );
+    CC_SAFE_DELETE( frameNodeListDic );
+}
+
+void CCBoneAniData::addAnimation(CCFrameNodeList* _frameNodeList, std::string _boneName) {
+    frameNodeListDic->setObject((CCObject*)_frameNodeList, _boneName );
+}
+
+CCFrameNodeList* CCBoneAniData::getAnimation(std::string _boneName) {
+    return (CCFrameNodeList*)(frameNodeListDic->objectForKey(_boneName));
+}
+
+std::string CCBoneAniData::toString() {
+    std::string _str;
+	CCDictElement *_element = NULL;
+	CCDICT_FOREACH(frameNodeListDic, _element){
+		CCFrameNodeList *_nodeList = (CCFrameNodeList*)_element->getObject();
+		_str.append( "boneName: " );
+		_str.append( _element->getStrKey() );
+		_str.append( "\n" );
+		_str.append( _nodeList->toString() );
+	}
+
+    return _str;
+}

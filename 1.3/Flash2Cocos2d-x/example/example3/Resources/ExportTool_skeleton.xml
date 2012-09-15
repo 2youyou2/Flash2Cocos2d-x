@@ -1,0 +1,1107 @@
+<root>
+  <skeleton name="knight">
+    <bone name="horseBody" x="0" y="2" z="4" width="40" height="20" registrationPointX="-20" registrationPointY="-2"/>
+    <bone name="body" parent="horseBody" x="0" y="-2" z="8" width="14" height="16" registrationPointX="-7" registrationPointY="-14"/>
+    <bone name="head" parent="body" x="0" y="-14" z="10" width="44" height="39.5" registrationPointX="-22" registrationPointY="-37.95"/>
+    <bone name="armL" parent="body" x="4" y="-12" z="7" width="20" height="10" registrationPointX="-2" registrationPointY="-4"/>
+    <bone name="leg" parent="body" x="-2" y="0" z="9" width="8" height="16" registrationPointX="-4" registrationPointY="0"/>
+    <bone name="armR" parent="body" x="-4" y="-12" z="12" width="20" height="10" registrationPointX="-2" registrationPointY="-4"/>
+    <bone name="weapon" parent="armR" x="16" y="-1" z="11" width="90" height="30" registrationPointX="-10" registrationPointY="-15"/>
+    <bone name="horseLegR1" parent="horseBody" x="7" y="16" z="3" width="7.9" height="14" registrationPointX="-4" registrationPointY="0"/>
+    <bone name="horseLegR2" parent="horseBody" x="-14" y="16" z="2" width="7.9" height="14" registrationPointX="-4" registrationPointY="0"/>
+    <bone name="horseLegL1" parent="horseBody" x="13" y="16" z="1" width="7.9" height="14" registrationPointX="-4" registrationPointY="0"/>
+    <bone name="horseLegL2" parent="horseBody" x="-8" y="16" z="0" width="7.9" height="14" registrationPointX="-4" registrationPointY="0"/>
+    <bone name="horseTail" parent="horseBody" x="-20" y="2" z="5" width="8" height="12" registrationPointX="-6" registrationPointY="-2"/>
+    <bone name="horseHead" parent="horseBody" x="20" y="0" z="6" width="40" height="48" registrationPointX="-2" registrationPointY="-46"/>
+    <animation name="stand" frame="2">
+      <horseLegL2 x="0" y="0" rotation="0"/>
+      <horseLegL2 x="0" y="-1" rotation="0"/>
+      <horseLegL1 x="0" y="0" rotation="0"/>
+      <horseLegL1 x="0" y="-1" rotation="0"/>
+      <horseLegR2 x="0" y="0" rotation="0"/>
+      <horseLegR2 x="0" y="-1" rotation="0"/>
+      <horseLegR1 x="0" y="0" rotation="0"/>
+      <horseLegR1 x="0" y="-1" rotation="0"/>
+      <horseBody x="0" y="2" rotation="0"/>
+      <horseBody x="0" y="3" rotation="0"/>
+      <horseTail x="0" y="0" rotation="0"/>
+      <horseTail x="0" y="0" rotation="15"/>
+      <horseHead x="0" y="0" rotation="0" delay="0.1"/>
+      <horseHead x="0" y="0" rotation="5"/>
+      <armL x="0" y="0" rotation="15"/>
+      <armL x="0" y="0" rotation="24"/>
+      <body x="0" y="0" rotation="0" frame="2"/>
+      <leg x="0" y="0" rotation="-45" frame="2"/>
+      <head x="0" y="0" rotation="0" delay="0.2"/>
+      <head x="0" y="2" rotation="6"/>
+      <weapon x="0" y="-1.26" rotation="-100"/>
+      <weapon x="0" y="0" rotation="-119"/>
+      <armR x="0" y="0" rotation="120"/>
+      <armR x="0" y="0" rotation="135"/>
+    </animation>
+    <animation name="run" frame="2">
+      <horseLegL2 x="0" y="0" rotation="75"/>
+      <horseLegL2 x="2.01" y="0" rotation="-52"/>
+      <horseLegL1 x="0" y="0" rotation="-60"/>
+      <horseLegL1 x="0" y="0" rotation="45"/>
+      <horseLegR2 x="0" y="0" rotation="75" delay="0.1"/>
+      <horseLegR2 x="0" y="0" rotation="-45"/>
+      <horseLegR1 x="0" y="0" rotation="-60" delay="0.1"/>
+      <horseLegR1 x="0" y="0" rotation="45"/>
+      <horseBody x="0" y="-4" rotation="-10.7" delay="-0.1"/>
+      <horseBody x="0" y="2" rotation="7"/>
+      <horseTail x="0" y="0" rotation="75" delay="0.1"/>
+      <horseTail x="0" y="0" rotation="-6.99"/>
+      <horseHead x="0" y="0" rotation="-9.3" delay="0.2"/>
+      <horseHead x="0" y="0" rotation="20"/>
+      <armL x="0" y="0" rotation="0"/>
+      <armL x="0" y="0" rotation="30"/>
+      <body x="0" y="0" rotation="10.7"/>
+      <body x="0" y="0" rotation="-7"/>
+      <leg x="0" y="0" rotation="-45" frame="2"/>
+      <head x="0" y="0" rotation="-10" delay="0.3"/>
+      <head x="0" y="2" rotation="10"/>
+      <weapon x="0" y="0" rotation="-90" scale="2"/>
+      <weapon x="0" y="0" rotation="-99.85"/>
+      <armR x="0" y="0" rotation="100"/>
+      <armR x="0" y="0" rotation="119.86"/>
+    </animation>
+    <animation name="attack" frame="30">
+      <eventFrame name="frame1" frame="7"/>
+      <eventFrame name="frame2" frame="9"/>
+      <eventFrame name="frame3" frame="7"/>
+      <horseLegL2 x="0" y="0" rotation="-30" frame="5"/>
+      <horseLegL2 x="0" y="0" rotation="30" frame="2"/>
+      <horseLegL2 x="0" y="0" rotation="-15" frame="5"/>
+      <horseLegL2 x="0" y="0" rotation="30" frame="2"/>
+      <horseLegL2 x="0" y="0" rotation="0" frame="6"/>
+      <horseLegL2 x="0" y="0" rotation="30" frame="3"/>
+      <horseLegL2 x="0" y="0" rotation="0" frame="7"/>
+      <horseLegL1 x="0" y="0" rotation="-45" frame="5"/>
+      <horseLegL1 x="0" y="0" rotation="30" frame="2"/>
+      <horseLegL1 x="0" y="0" rotation="-15" frame="5"/>
+      <horseLegL1 x="0" y="0" rotation="30" frame="2"/>
+      <horseLegL1 x="0" y="0" rotation="0" frame="6"/>
+      <horseLegL1 x="0" y="0" rotation="30" frame="3"/>
+      <horseLegL1 x="0" y="0" rotation="-15" frame="6"/>
+      <horseLegL1 x="0" y="0" rotation="15"/>
+      <horseLegR2 x="0" y="0" rotation="-30" frame="5"/>
+      <horseLegR2 x="0" y="0" rotation="30" frame="2"/>
+      <horseLegR2 x="0" y="0" rotation="-15" frame="5"/>
+      <horseLegR2 x="0" y="0" rotation="30" frame="2"/>
+      <horseLegR2 x="0" y="0" rotation="15" frame="9"/>
+      <horseLegR2 x="0" y="0" rotation="-15" frame="6"/>
+      <horseLegR2 x="0" y="0" rotation="0"/>
+      <horseLegR1 x="0" y="0" rotation="-30" frame="5"/>
+      <horseLegR1 x="0" y="0" rotation="15" frame="2"/>
+      <horseLegR1 x="0" y="0" rotation="-15" frame="5"/>
+      <horseLegR1 x="0" y="0" rotation="15" frame="11"/>
+      <horseLegR1 x="0" y="0" rotation="-30" frame="6"/>
+      <horseLegR1 x="0" y="0" rotation="15"/>
+      <horseBody x="-10" y="2" rotation="-15" frame="5"/>
+      <horseBody x="3" y="2" rotation="0" frame="2"/>
+      <horseBody x="-1" y="2" rotation="0" frame="5"/>
+      <horseBody x="3" y="2" rotation="0" frame="2"/>
+      <horseBody x="0" y="2" rotation="0" frame="9"/>
+      <horseBody x="-2" y="2" rotation="0" frame="6"/>
+      <horseBody x="0" y="2" rotation="0"/>
+      <horseTail x="0" y="0" rotation="30" frame="5"/>
+      <horseTail x="0" y="0" rotation="0" frame="2"/>
+      <horseTail x="0" y="0" rotation="30" frame="5"/>
+      <horseTail x="0" y="0" rotation="0" frame="2"/>
+      <horseTail x="0" y="0" rotation="15" frame="6"/>
+      <horseTail x="0" y="0" rotation="0" frame="3"/>
+      <horseTail x="0" y="0" rotation="-30" frame="6"/>
+      <horseTail x="0" y="0" rotation="30"/>
+      <horseHead x="0" y="0" rotation="15" frame="7"/>
+      <horseHead x="0" y="0" rotation="10.7" frame="5"/>
+      <horseHead x="0" y="0" rotation="4.31" frame="2"/>
+      <horseHead x="0" y="0" rotation="13.79" frame="6"/>
+      <horseHead x="0" y="0" rotation="-4.69" frame="3"/>
+      <horseHead x="0" y="0" rotation="10.31" frame="6"/>
+      <horseHead x="0" y="0" rotation="2.76"/>
+      <armL x="0" y="0" rotation="15" frame="5"/>
+      <armL x="0" y="0" rotation="30" frame="2"/>
+      <armL x="0" y="0" rotation="15" frame="7"/>
+      <armL x="0" y="0" rotation="-60" frame="6"/>
+      <armL x="0" y="0" rotation="30" frame="10"/>
+      <body x="0" y="0" rotation="0" frame="7"/>
+      <body x="0" y="0" rotation="11.72" frame="5"/>
+      <body x="0" y="0" rotation="0" frame="18"/>
+      <leg x="0" y="0" rotation="-45" frame="7"/>
+      <leg x="0" y="0" rotation="-56.72" frame="5"/>
+      <leg x="0" y="0" rotation="-45" frame="8"/>
+      <leg x="0" y="0" rotation="-15" frame="10"/>
+      <head x="0" y="0" rotation="15" frame="7"/>
+      <head x="0" y="0" rotation="-7.73" frame="5"/>
+      <head x="0" y="0" rotation="-15" frame="2"/>
+      <head x="0" y="0" rotation="0" frame="6"/>
+      <head x="0" y="0" rotation="9.25" frame="3"/>
+      <head x="0" y="0" rotation="-5.75" frame="6"/>
+      <head x="0" y="0" rotation="9.25"/>
+      <weapon x="0" y="-1.4" rotation="-78.73" frame="5"/>
+      <weapon x="0" y="-1.16" rotation="-70" frame="2"/>
+      <weapon x="0" y="0" rotation="18.28" frame="5"/>
+      <weapon x="0" y="0" rotation="-48" frame="2"/>
+      <weapon x="0" y="-1.23" rotation="-64.03" frame="6"/>
+      <weapon x="0" y="0" rotation="-10" frame="3"/>
+      <weapon x="0" y="0" rotation="0" frame="6"/>
+      <weapon x="0" y="0" rotation="-15"/>
+      <armR x="0" y="0" rotation="-51.27" frame="5"/>
+      <armR x="0" y="0" rotation="150" frame="2"/>
+      <armR x="0" y="0" rotation="75" frame="5"/>
+      <armR x="0" y="0" rotation="-12" frame="2"/>
+      <armR x="0" y="0" rotation="-27" frame="6"/>
+      <armR x="0" y="0" rotation="160" frame="3"/>
+      <armR x="-1" y="0" rotation="160" frame="6"/>
+      <armR x="0" y="0" rotation="60" offR="1"/>
+    </animation>
+  </skeleton>
+  <skeleton name="robotBiped">
+    <bone name="crotch" x="0" y="0" z="6" width="4" height="4" registrationPointX="-2" registrationPointY="-2"/>
+    <bone name="legL" parent="crotch" x="0" y="0" z="3" width="14" height="28" registrationPointX="-7" registrationPointY="-5"/>
+    <bone name="crusL" parent="legL" x="0" y="21" z="4" width="14" height="42" registrationPointX="-7" registrationPointY="-6"/>
+    <bone name="body" parent="crotch" x="0" y="0" z="5" width="10" height="16" registrationPointX="-3" registrationPointY="-14"/>
+    <bone name="chest" parent="body" x="0" y="-14" z="7" width="18" height="9" registrationPointX="-6" registrationPointY="-7"/>
+    <bone name="upperarmL" parent="chest" x="-2" y="-1" z="2" width="14" height="19" registrationPointX="-7" registrationPointY="-5"/>
+    <bone name="forearmL" parent="upperarmL" x="0" y="12" z="1" width="10" height="19" registrationPointX="-5" registrationPointY="-4"/>
+    <bone name="handL" parent="forearmL" x="0" y="14" z="0" width="7" height="9" registrationPointX="-3" registrationPointY="0"/>
+    <bone name="head" parent="chest" x="0" y="-6" z="8" width="32" height="18" registrationPointX="-20" registrationPointY="-18"/>
+    <bone name="upperarmR" parent="chest" x="-2" y="-1" z="12" width="14" height="19" registrationPointX="-7" registrationPointY="-5"/>
+    <bone name="forearmR" parent="upperarmR" x="0" y="12" z="14" width="10" height="19" registrationPointX="-5" registrationPointY="-4"/>
+    <bone name="handR" parent="forearmR" x="0" y="14" z="13" width="7" height="9" registrationPointX="-3" registrationPointY="0"/>
+    <bone name="weapon" parent="handR" x="0" y="5.25" z="11" width="80" height="16" registrationPointX="-17" registrationPointY="-11"/>
+    <bone name="legR" parent="crotch" x="0" y="0" z="9" width="14" height="28" registrationPointX="-7" registrationPointY="-5"/>
+    <bone name="crusR" parent="legR" x="0" y="21" z="10" width="14" height="42" registrationPointX="-7" registrationPointY="-6"/>
+    <animation name="stand" frame="2">
+      <handL x="0" y="0" rotation="-1.43" frame="2"/>
+      <forearmL x="0" y="0" rotation="-74.05" frame="2"/>
+      <upperarmL x="4.92" y="0" rotation="-32.49"/>
+      <upperarmL x="5" y="0" rotation="-33.49"/>
+      <legL x="3" y="0" rotation="-35.24"/>
+      <legL x="3" y="0" rotation="-45.25"/>
+      <crusL x="0" y="0" rotation="35.51"/>
+      <crusL x="0" y="0" rotation="49.54"/>
+      <body x="0" y="0" rotation="10"/>
+      <body x="0" y="0" rotation="16"/>
+      <crotch x="0" y="0" rotation="0"/>
+      <crotch x="0" y="2" rotation="0"/>
+      <chest x="0" y="0" rotation="-5"/>
+      <chest x="0" y="0" rotation="-10"/>
+      <head x="0" y="0" rotation="-5"/>
+      <head x="0" y="0" rotation="-6"/>
+      <legR x="-3" y="0" rotation="-7"/>
+      <legR x="-3" y="0" rotation="-12"/>
+      <crusR x="0" y="0" rotation="40"/>
+      <crusR x="0" y="0" rotation="48"/>
+      <weapon x="0" y="0" rotation="99" frame="2"/>
+      <upperarmR x="-3.14" y="0" rotation="15.32"/>
+      <upperarmR x="-3.06" y="0" rotation="14.33"/>
+      <handR x="0" y="0" rotation="-5" frame="2"/>
+      <forearmR x="0" y="0" rotation="-114.32" frame="2"/>
+    </animation>
+    <animation name="run" frame="2">
+      <handL x="0" y="0" rotation="-1.43"/>
+      <handL x="0" y="0" rotation="-14.87"/>
+      <forearmL x="0" y="0" rotation="-74.05"/>
+      <forearmL x="0" y="1.76" rotation="-26.2"/>
+      <upperarmL x="4.76" y="-1.3" rotation="-32.49"/>
+      <upperarmL x="1.51" y="-1.26" rotation="-61.69"/>
+      <legL x="-2" y="1" rotation="35"/>
+      <legL x="2" y="-1" rotation="-70"/>
+      <crusL x="0" y="4.06" rotation="15" delay="-0.2"/>
+      <crusL x="0" y="4.05" rotation="95"/>
+      <body x="0" y="0" rotation="10" scale="0.5" delay="0.5"/>
+      <body x="0" y="0" rotation="12"/>
+      <crotch x="0" y="-5" rotation="0" scale="0.5"/>
+      <crotch x="0" y="5" rotation="0"/>
+      <chest x="0" y="0" rotation="-5" scale="0.5"/>
+      <chest x="0" y="0" rotation="-6"/>
+      <head x="0" y="0" rotation="-5" scale="0.5"/>
+      <head x="0" y="0" rotation="-6"/>
+      <legR x="2" y="-1" rotation="-70"/>
+      <legR x="-2" y="1" rotation="35"/>
+      <crusR x="0" y="4.05" rotation="95" delay="-0.2"/>
+      <crusR x="0" y="4.06" rotation="15"/>
+      <weapon x="0" y="0" rotation="99" frame="2"/>
+      <upperarmR x="-3.3" y="-1.6" rotation="15.32"/>
+      <upperarmR x="3.4" y="-2.46" rotation="14.32"/>
+      <handR x="0" y="0" rotation="-5" frame="2"/>
+      <forearmR x="0" y="0" rotation="-114.32" frame="2"/>
+    </animation>
+    <animation name="runBack" frame="2">
+      <handL x="0" y="0" rotation="-14.87" frame="2"/>
+      <forearmL x="0" y="1.76" rotation="-26.2" frame="2"/>
+      <upperarmL x="1.92" y="-2.31" rotation="-52.69" frame="2"/>
+      <legL x="3" y="-1" rotation="-45"/>
+      <legL x="-2.95" y="1" rotation="15"/>
+      <crusL x="0" y="0" rotation="90" delay="0.15"/>
+      <crusL x="0" y="1.2" rotation="-6"/>
+      <body x="0" y="0" rotation="-6" scale="0.5" delay="0.5" frame="2"/>
+      <crotch x="0" y="-2" rotation="0" scale="0.5"/>
+      <crotch x="0" y="2" rotation="0"/>
+      <chest x="0" y="0" rotation="3" scale="0.5" frame="2"/>
+      <head x="0" y="0" rotation="3" scale="0.5" frame="2"/>
+      <legR x="-3" y="1" rotation="15"/>
+      <legR x="3" y="0" rotation="-45"/>
+      <crusR x="0" y="1.2" rotation="-6" delay="0.15"/>
+      <crusR x="0" y="0" rotation="90"/>
+      <weapon x="0" y="0" rotation="99" frame="2"/>
+      <upperarmR x="0" y="-1.36" rotation="23.33"/>
+      <upperarmR x="0" y="-2.41" rotation="23.33"/>
+      <handR x="0" y="0" rotation="-5" frame="2"/>
+      <forearmR x="0" y="0" rotation="-114.32" frame="2"/>
+    </animation>
+    <animation name="squat" frame="1">
+      <handL x="0" y="0" rotation="-1.43"/>
+      <forearmL x="0" y="0" rotation="-74.05"/>
+      <upperarmL x="5.79" y="-1.21" rotation="-33.49"/>
+      <legL x="2" y="-1" rotation="-120"/>
+      <crusL x="-1.06" y="0" rotation="106.5"/>
+      <body x="0" y="0" rotation="9"/>
+      <crotch x="0" y="32" rotation="0"/>
+      <chest x="0" y="0" rotation="-3"/>
+      <head x="1.86" y="0" rotation="-6"/>
+      <legR x="-2" y="-1" rotation="-30"/>
+      <crusR x="0" y="0" rotation="119.99"/>
+      <weapon x="0" y="0" rotation="99"/>
+      <upperarmR x="-2.27" y="-1.37" rotation="14.33"/>
+      <handR x="0" y="0" rotation="-5"/>
+      <forearmR x="0" y="0" rotation="-114.32"/>
+    </animation>
+    <animation name="jump" frame="1">
+      <handL x="0" y="0" rotation="-1.43"/>
+      <forearmL x="0" y="0" rotation="-74.05"/>
+      <upperarmL x="5.63" y="-1.47" rotation="-37.49"/>
+      <legL x="-2" y="1" rotation="30"/>
+      <crusL x="0" y="1.08" rotation="0"/>
+      <body x="0" y="0" rotation="15"/>
+      <crotch x="0" y="0" rotation="0"/>
+      <chest x="0" y="0" rotation="-5"/>
+      <head x="0" y="0" rotation="-10"/>
+      <legR x="2" y="-1" rotation="-60"/>
+      <crusR x="0" y="1.05" rotation="120"/>
+      <weapon x="0" y="0" rotation="99"/>
+      <upperarmR x="-2.43" y="-1.06" rotation="10.33"/>
+      <handR x="0" y="0" rotation="-5"/>
+      <forearmR x="0" y="0" rotation="-114.32"/>
+    </animation>
+    <animation name="fall" frame="1">
+      <handL x="0" y="0" rotation="-1.43"/>
+      <forearmL x="0" y="0" rotation="-74.05"/>
+      <upperarmL x="4.07" y="0" rotation="-21.49"/>
+      <legL x="2" y="0" rotation="-55"/>
+      <crusL x="0" y="1.4" rotation="91"/>
+      <body x="0" y="0" rotation="-9"/>
+      <crotch x="0" y="0" rotation="0"/>
+      <chest x="-1.17" y="0" rotation="3"/>
+      <head x="0" y="0" rotation="6"/>
+      <legR x="-2" y="0" rotation="-15"/>
+      <crusR x="0" y="1.23" rotation="0"/>
+      <weapon x="0" y="0" rotation="99"/>
+      <upperarmR x="-3.78" y="-1.42" rotation="26.32"/>
+      <handR x="0" y="0" rotation="-5"/>
+      <forearmR x="0" y="0" rotation="-114.32"/>
+    </animation>
+  </skeleton>
+  <skeleton name="zombie">
+    <bone name="v1" x="2" y="8.1" z="27" width="46" height="41" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v2" x="12.3" y="-53.6" z="26" width="52" height="62" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v3" x="11.2" y="-75.45" z="25" width="56" height="51" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v4" x="-84.1" y="14.6" z="24" width="173" height="84" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v5" x="-64.5" y="-52.8" z="23" width="36" height="23" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v6" x="-72.75" y="-107.1" z="22" width="53" height="68" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v7" x="1.3" y="-83.05" z="21" width="73" height="66" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v8" x="33.05" y="-99" z="20" width="17" height="11" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v9" x="47.1" y="-101.05" z="19" width="15" height="10" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v10" x="22.3" y="-106.35" z="18" width="17" height="11" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v11" x="-16.6" y="-100.05" z="17" width="50" height="13" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v12" x="-55.8" y="-103.9" z="16" width="127" height="103" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v13" x="35.2" y="-98.15" z="15" width="41" height="50" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v14" x="33.05" y="-108.8" z="14" width="27" height="18" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v15" x="26.55" y="-130.5" z="13" width="36" height="39" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v16" x="37.25" y="-115.3" z="12" width="44" height="37" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v17" x="29.9" y="-102.15" z="11" width="15" height="10" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v18" x="36.2" y="-103.95" z="10" width="35" height="20" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v19" x="7.55" y="-8.3" z="9" width="49" height="37" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v20" x="8.15" y="16.25" z="8" width="56" height="38" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v21" x="-5.85" y="44.15" z="7" width="64" height="31" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v22" x="-19.7" y="-21.4" z="6" width="83" height="33" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v23" x="-24" y="-15.5" z="5" width="51" height="41" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v24" x="-24.6" y="9.4" z="4" width="56" height="40" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v25" x="-37.9" y="37.1" z="3" width="57.45" height="27.2" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v26" x="-63" y="-13.5" z="2" width="45" height="41" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v27" x="-55.8" y="-43.6" z="1" width="45" height="44" registrationPointX="0" registrationPointY="0"/>
+    <bone name="v28" x="-60.15" y="-81.3" z="0" width="50" height="56" registrationPointX="0" registrationPointY="0"/>
+    <animation name="stand" frame="21">
+      <v28 x="-60.15" y="-81.3" rotation="0" frame="3"/>
+      <v28 x="-59.45" y="-81.45" rotation="1.03" frame="7"/>
+      <v28 x="-66.25" y="-71.3" rotation="-3.78" frame="3"/>
+      <v28 x="-64.4" y="-74.3" rotation="-2.54" frame="8"/>
+      <v27 x="-55.8" y="-43.6" rotation="0" frame="3"/>
+      <v27 x="-55.75" y="-45.15" rotation="4.78" frame="7"/>
+      <v27 x="-59.4" y="-34" rotation="-3.78" frame="3"/>
+      <v27 x="-57.1" y="-36.35" rotation="-2.54" scaleY="1.1" frame="8"/>
+      <v26 x="-63" y="-13.5" rotation="0" frame="3"/>
+      <v26 x="-64.9" y="-16.45" rotation="5.76" frame="7"/>
+      <v26 x="-65.15" y="0" rotation="-9.57" frame="3"/>
+      <v26 x="-63.6" y="2.4" rotation="-11.6" frame="8"/>
+      <v25 x="-37.9" y="37.1" rotation="0" frame="10"/>
+      <v25 x="-39.15" y="38.05" rotation="-5.82" frame="11"/>
+      <v24 x="-24.6" y="9.4" rotation="0" frame="10"/>
+      <v24 x="-30" y="8.45" rotation="-7.56" frame="11"/>
+      <v23 x="-24" y="-15.5" rotation="0" frame="10"/>
+      <v23 x="-18.45" y="-16.7" rotation="15.4" frame="11"/>
+      <v22 x="-19.7" y="-21.4" rotation="0" frame="3"/>
+      <v22 x="-20" y="-22.55" rotation="0" frame="7"/>
+      <v22 x="-23.3" y="-15.9" rotation="-4.77" frame="3"/>
+      <v22 x="-22.25" y="-15.75" rotation="-3.31" frame="8"/>
+      <v21 x="-5.85" y="44.15" rotation="0" frame="10"/>
+      <v21 x="-6.85" y="45.25" rotation="-4.08" frame="11"/>
+      <v20 x="8.15" y="16.25" rotation="0" frame="10"/>
+      <v20 x="0" y="18.8" rotation="-10.58" frame="11"/>
+      <v19 x="7.55" y="-8.3" rotation="0" frame="10"/>
+      <v19 x="5.6" y="-9.05" rotation="2.36" frame="11"/>
+      <v18 x="36.2" y="-103.95" rotation="0" frame="10"/>
+      <v18 x="23.05" y="-105" rotation="-6.05" frame="11"/>
+      <v17 x="29.9" y="-102.15" rotation="0" frame="10"/>
+      <v17 x="17" y="-102.5" rotation="-6.05" frame="11"/>
+      <v16 x="37.25" y="-115.3" rotation="14.81" scaleX="0.95" frame="10"/>
+      <v16 x="22.45" y="-118.8" rotation="12.87" frame="11"/>
+      <v15 x="26.55" y="-130.5" rotation="0" frame="3"/>
+      <v15 x="23.75" y="-133" rotation="4.74" frame="7"/>
+      <v15 x="12" y="-132.55" rotation="-3.24" frame="3"/>
+      <v15 x="13.45" y="-128.45" rotation="-8.3" frame="8"/>
+      <v14 x="33.05" y="-108.8" rotation="0" frame="3"/>
+      <v14 x="28.35" y="-111.55" rotation="3.76" frame="7"/>
+      <v14 x="19.4" y="-109.45" rotation="-6.05" frame="3"/>
+      <v14 x="22.55" y="-104.6" rotation="-12.37" frame="8"/>
+      <v13 x="35.2" y="-98.15" rotation="0" frame="3"/>
+      <v13 x="31" y="-99.6" rotation="-2" frame="7"/>
+      <v13 x="22.65" y="-99.1" rotation="-6.05" frame="3"/>
+      <v13 x="26.5" y="-97.5" rotation="-4.06" frame="8"/>
+      <v12 x="-55.8" y="-103.9" rotation="0" frame="3"/>
+      <v12 x="-53.85" y="-108.55" rotation="2.08" frame="7"/>
+      <v12 x="-64.55" y="-96.55" rotation="-3.78" frame="3"/>
+      <v12 x="-63.85" y="-93.65" rotation="-5.3" frame="8"/>
+      <v11 x="-16.6" y="-100.05" rotation="-2.76" frame="3"/>
+      <v11 x="-15.1" y="-103.55" rotation="0" scaleX="0.85" frame="7"/>
+      <v11 x="-25.3" y="-95.85" rotation="-8.82" frame="3"/>
+      <v11 x="-26" y="-94.85" rotation="-5.31" scaleX="1.05" frame="8"/>
+      <v10 x="22.3" y="-106.35" rotation="30" frame="3"/>
+      <v10 x="19.2" y="-109.2" rotation="34.89" frame="7"/>
+      <v10 x="8.95" y="-105.9" rotation="23.95" frame="3"/>
+      <v10 x="10.45" y="-102.95" rotation="13.76" frame="8"/>
+      <v9 x="47.1" y="-101.05" rotation="31.92" frame="3"/>
+      <v9 x="41.05" y="-99.55" rotation="12.3" frame="7"/>
+      <v9 x="31.25" y="-99.05" rotation="0" frame="3"/>
+      <v9 x="37.85" y="-100.65" rotation="15.83" frame="8"/>
+      <v8 x="33.05" y="-99" rotation="15" frame="3"/>
+      <v8 x="30.95" y="-100.75" rotation="27.41" frame="7"/>
+      <v8 x="22.85" y="-100.9" rotation="28.77" frame="3"/>
+      <v8 x="24.05" y="-96.05" rotation="5.26" frame="8"/>
+      <v7 x="1.3" y="-83.05" rotation="0" frame="3"/>
+      <v7 x="0" y="-84.6" rotation="-1.81" frame="7"/>
+      <v7 x="-9.2" y="-78.85" rotation="-7.1" frame="3"/>
+      <v7 x="-8.65" y="-77.75" rotation="-6.95" scaleX="1.05" frame="8"/>
+      <v6 x="-72.75" y="-107.1" rotation="0" frame="3"/>
+      <v6 x="-66.4" y="-116.3" rotation="8.16" frame="7"/>
+      <v6 x="-81.3" y="-96.25" rotation="-3.78" frame="3"/>
+      <v6 x="-82" y="-93.85" rotation="-6.4" frame="8"/>
+      <v5 x="-64.5" y="-52.8" rotation="0" frame="3"/>
+      <v5 x="-66.45" y="-60.85" rotation="6.63" frame="7"/>
+      <v5 x="-70.25" y="-36.65" rotation="-8.61" frame="3"/>
+      <v5 x="-68.2" y="-34.2" rotation="-12.9" frame="8"/>
+      <v4 x="-84.1" y="14.6" rotation="-24.47" frame="3"/>
+      <v4 x="-85.2" y="7.8" rotation="-20.85" frame="7"/>
+      <v4 x="-85.75" y="32.2" rotation="-30.63" frame="3"/>
+      <v4 x="-83.8" y="40.75" rotation="-33.07" frame="8"/>
+      <v3 x="11.2" y="-75.45" rotation="-7.55" scaleX="0.95" frame="3"/>
+      <v3 x="12.15" y="-77.95" rotation="-4.7" scaleX="0.95" frame="7"/>
+      <v3 x="4.9" y="-73.9" rotation="-9.24" scaleX="0.95" frame="3"/>
+      <v3 x="5.75" y="-73" rotation="-7.96" scaleX="0.95" frame="8"/>
+      <v2 x="12.3" y="-53.6" rotation="0" frame="3"/>
+      <v2 x="11.7" y="-54.95" rotation="1.05" frame="7"/>
+      <v2 x="5.75" y="-51.05" rotation="-3.78" scaleY="1.05" frame="3"/>
+      <v2 x="6.2" y="-50.7" rotation="-4.34" scaleY="1.1" frame="8"/>
+      <v1 x="2" y="8.1" rotation="-24.51" frame="3"/>
+      <v1 x="0" y="5.15" rotation="-19.89" frame="7"/>
+      <v1 x="0" y="15.5" rotation="-31.57" frame="3"/>
+      <v1 x="1.65" y="13.65" rotation="-25.13" scaleY="1.05" frame="8"/>
+    </animation>
+    <animation name="run" frame="48">
+      <v28 x="-57.5" y="-85.6" rotation="1.8" frame="5"/>
+      <v28 x="-50.1" y="-93.4" rotation="9.69" frame="5"/>
+      <v28 x="-46.4" y="-98.1" rotation="12.19" frame="4"/>
+      <v28 x="-69.7" y="-64.3" rotation="-5.5" frame="5"/>
+      <v28 x="-65.5" y="-67.15" rotation="-7.24" frame="5"/>
+      <v28 x="-54.5" y="-70.05" rotation="-9.02" frame="5"/>
+      <v28 x="-47.5" y="-72.45" rotation="-12.96" frame="5"/>
+      <v28 x="-48.4" y="-71.95" rotation="-20.24" frame="4"/>
+      <v28 x="-74.55" y="-50.95" rotation="-28.72" frame="5"/>
+      <v28 x="-61.25" y="-78.05" rotation="-6.99" frame="5"/>
+      <v27 x="-54.15" y="-47.15" rotation="4.07" frame="5"/>
+      <v27 x="-50.5" y="-56.6" rotation="17.74" frame="5"/>
+      <v27 x="-47.15" y="-62.7" rotation="26.81" frame="4"/>
+      <v27 x="-59.65" y="-30.3" rotation="9.11" frame="5"/>
+      <v27 x="-53.15" y="-32.45" rotation="3.86" frame="5"/>
+      <v27 x="-33.8" y="-38.05" rotation="10.87" frame="5"/>
+      <v27 x="-24.7" y="-42" rotation="6.94" frame="5"/>
+      <v27 x="-19.45" y="-46.75" rotation="11.25" frame="4"/>
+      <v27 x="-42.2" y="-30.3" rotation="2.77" frame="5"/>
+      <v27 x="-47.15" y="-45" rotation="6.82" frame="5"/>
+      <v26 x="-64.6" y="-15.65" rotation="-2.21" frame="5"/>
+      <v26 x="-68.55" y="-24.1" rotation="1.64" frame="5"/>
+      <v26 x="-67" y="-32.9" rotation="11.16" frame="4"/>
+      <v26 x="-67.55" y="-1.8" rotation="8.59" frame="5"/>
+      <v26 x="-57.95" y="-7.2" rotation="8.4" frame="5"/>
+      <v26 x="-41.75" y="-13.55" rotation="15.42" frame="5"/>
+      <v26 x="-36.25" y="-7.2" rotation="-13.1" frame="5"/>
+      <v26 x="-34.9" y="-4.75" rotation="-25.82" frame="4"/>
+      <v26 x="-52.3" y="8.25" rotation="-21.03" frame="5"/>
+      <v26 x="-59.8" y="-11.6" rotation="-6.26" frame="5"/>
+      <v25 x="-29.85" y="37.1" rotation="0" frame="5"/>
+      <v25 x="-5.85" y="33.4" rotation="7.06" frame="5"/>
+      <v25 x="3.5" y="42.2" rotation="-15.02" frame="4"/>
+      <v25 x="18.4" y="46.75" rotation="-30.06" frame="5"/>
+      <v25 x="16.7" y="47.25" rotation="-36.41" frame="5"/>
+      <v25 x="-5.7" y="51.45" rotation="-36.39" frame="5"/>
+      <v25 x="-28.3" y="45.95" rotation="-29.64" frame="5"/>
+      <v25 x="-33.35" y="31.6" rotation="8.53" frame="4"/>
+      <v25 x="-31.4" y="38.9" rotation="-2.27" frame="5"/>
+      <v25 x="-33.55" y="37.7" rotation="0" frame="5"/>
+      <v24 x="-16.55" y="9.4" rotation="0" frame="5"/>
+      <v24 x="-6.2" y="11.05" rotation="-6.29" frame="5"/>
+      <v24 x="2.55" y="17.25" rotation="-19.84" frame="4"/>
+      <v24 x="9.7" y="19.95" rotation="-37.41" frame="5"/>
+      <v24 x="6.7" y="23.55" rotation="-43.76" frame="5"/>
+      <v24 x="-17.85" y="19.45" rotation="-36.67" scaleY="1.1" frame="5"/>
+      <v24 x="-23.75" y="8.75" rotation="-21.79" scaleY="1.1" frame="5"/>
+      <v24 x="-24.15" y="4.2" rotation="0" scaleY="1.1" frame="4"/>
+      <v24 x="-30.05" y="12.2" rotation="-13.75" scaleY="1.1" frame="5"/>
+      <v24 x="-24.7" y="10.9" rotation="-6.51" scaleY="1.05" frame="5"/>
+      <v23 x="-25.7" y="-12.2" rotation="-12.11" frame="5"/>
+      <v23 x="-21.8" y="-8.25" rotation="-25.44" frame="5"/>
+      <v23 x="-17.45" y="-6.8" rotation="-31.51" frame="4"/>
+      <v23 x="-18.65" y="-5.55" rotation="-34.72" frame="5"/>
+      <v23 x="-25.85" y="-5.55" rotation="-34.72" frame="5"/>
+      <v23 x="-29.4" y="-9.1" rotation="-19.55" frame="5"/>
+      <v23 x="-26.85" y="-24" rotation="0" scaleY="1.1" frame="5"/>
+      <v23 x="-16.85" y="-26.75" rotation="17.44" scaleY="1.1" frame="4"/>
+      <v23 x="-28.7" y="-16.75" rotation="-4.45" scaleY="1.1" frame="5"/>
+      <v23 x="-26" y="-14.7" rotation="-2" scaleY="1.05" frame="5"/>
+      <v22 x="-19.7" y="-22.45" rotation="0" frame="5"/>
+      <v22 x="-18.6" y="-27.9" rotation="4.58" frame="5"/>
+      <v22 x="-17.75" y="-31.3" rotation="7.08" frame="4"/>
+      <v22 x="-26.35" y="-9.85" rotation="-7.31" frame="5"/>
+      <v22 x="-25.85" y="-12.65" rotation="-4.76" frame="5"/>
+      <v22 x="-21.85" y="-15.85" rotation="-1.99" frame="5"/>
+      <v22 x="-19.4" y="-20.5" rotation="2.1" scaleX="0.95" frame="5"/>
+      <v22 x="-17.75" y="-26.35" rotation="8.14" frame="4"/>
+      <v22 x="-21.85" y="-9.65" rotation="-12.35" frame="5"/>
+      <v22 x="-19.9" y="-20.55" rotation="-1.49" frame="5"/>
+      <v21 x="-14.55" y="47.25" rotation="-7.52" frame="5"/>
+      <v21 x="-25.9" y="36.35" rotation="2.6" frame="5"/>
+      <v21 x="-32.4" y="24.35" rotation="19.51" frame="4"/>
+      <v21 x="-29.8" y="42" rotation="3.87" frame="5"/>
+      <v21 x="-27.7" y="42" rotation="3.87" frame="5"/>
+      <v21 x="-19.3" y="42.4" rotation="3.87" frame="5"/>
+      <v21 x="-8.7" y="43.1" rotation="1.82" frame="5"/>
+      <v21 x="14.45" y="48.6" rotation="-10.99" frame="4"/>
+      <v21 x="25.7" y="59.05" rotation="-40.76" frame="5"/>
+      <v21 x="0" y="51.8" rotation="-20.79" frame="5"/>
+      <v20 x="4.65" y="13.45" rotation="1.75" frame="5"/>
+      <v20 x="-6.3" y="9.45" rotation="4.4" frame="5"/>
+      <v20 x="-8.55" y="1.65" rotation="22.85" frame="4"/>
+      <v20 x="-23.75" y="17.75" rotation="-5.86" frame="5"/>
+      <v20 x="-15" y="17.6" rotation="-5.54" frame="5"/>
+      <v20 x="-8.85" y="20.7" rotation="-7.62" frame="5"/>
+      <v20 x="-4.7" y="19.1" rotation="-10.75" scaleY="1.1" frame="5"/>
+      <v20 x="12.65" y="28.1" rotation="-23.5" frame="4"/>
+      <v20 x="14.65" y="32.55" rotation="-40.95" frame="5"/>
+      <v20 x="6.3" y="20.35" rotation="-15.28" frame="5"/>
+      <v19 x="8.95" y="-14.85" rotation="7.04" frame="5"/>
+      <v19 x="7.5" y="-20.45" rotation="20.94" frame="5"/>
+      <v19 x="5.9" y="-18.85" rotation="26.54" frame="4"/>
+      <v19 x="-5.85" y="-14.05" rotation="17.23" scaleY="1.2" frame="5"/>
+      <v19 x="0" y="-13.75" rotation="17.46" scaleY="1.2" frame="5"/>
+      <v19 x="-3.05" y="-14.5" rotation="8.71" scaleY="1.2" frame="5"/>
+      <v19 x="5.25" y="-15.35" rotation="9.93" scaleY="1.2" frame="5"/>
+      <v19 x="7.8" y="-6.15" rotation="-12.66" scaleY="1.2" frame="4"/>
+      <v19 x="7.1" y="-2.65" rotation="-17.5" scaleY="1.2" frame="5"/>
+      <v19 x="8" y="-10.3" rotation="-2.76" scaleY="1.1" frame="5"/>
+      <v18 x="39.55" y="-105.2" rotation="1.8" frame="5"/>
+      <v18 x="55.95" y="-106.2" rotation="15.54" frame="5"/>
+      <v18 x="63" y="-106.65" rotation="20.83" frame="2"/>
+      <v18 x="48.35" y="-106.85" rotation="16.09" frame="2"/>
+      <v18 x="20.4" y="-102.55" rotation="-13.67" frame="2"/>
+      <v18 x="17.25" y="-103.15" rotation="-15.57" frame="3"/>
+      <v18 x="27.9" y="-104.25" rotation="-6.83" frame="5"/>
+      <v18 x="39" y="-105.65" rotation="0" frame="5"/>
+      <v18 x="50.45" y="-105.45" rotation="7.92" frame="5"/>
+      <v18 x="66.05" y="-103" rotation="19.26" frame="2"/>
+      <v18 x="47.8" y="-103.35" rotation="10.28" frame="2"/>
+      <v18 x="20.4" y="-102.55" rotation="-13.67" frame="2"/>
+      <v18 x="17.25" y="-103.15" rotation="-15.57" frame="3"/>
+      <v18 x="30.3" y="-104.1" rotation="-6.46" frame="5"/>
+      <v17 x="33.15" y="-103.6" rotation="1.8" frame="5"/>
+      <v17 x="49.4" y="-106.15" rotation="15.54" frame="5"/>
+      <v17 x="56.45" y="-107.25" rotation="20.83" frame="2"/>
+      <v17 x="47.8" y="-106.45" rotation="43.15" frame="2"/>
+      <v17 x="15.8" y="-101.8" rotation="-7.66" frame="2"/>
+      <v17 x="12.3" y="-102.95" rotation="-8.29" frame="3"/>
+      <v17 x="22.55" y="-106.25" rotation="2.46" frame="5"/>
+      <v17 x="34.1" y="-108.45" rotation="11.1" frame="5"/>
+      <v17 x="48.9" y="-109.6" rotation="39.07" frame="5"/>
+      <v17 x="64.15" y="-107.35" rotation="50.41" frame="2"/>
+      <v17 x="44.7" y="-105.8" rotation="28.83" frame="2"/>
+      <v17 x="15.8" y="-101.8" rotation="-7.66" frame="2"/>
+      <v17 x="12.3" y="-102.95" rotation="-8.29" frame="3"/>
+      <v17 x="25" y="-103.75" rotation="-1.49" frame="5"/>
+      <v16 x="41.55" y="-117.25" rotation="18.39" frame="5"/>
+      <v16 x="65.8" y="-118.45" rotation="41.85" frame="5"/>
+      <v16 x="73.7" y="-116.7" rotation="44.32" scaleX="0.95" frame="2"/>
+      <v16 x="58.7" y="-118.1" rotation="41.78" scaleX="0.95" frame="2"/>
+      <v16 x="18.8" y="-114.5" rotation="3.25" frame="2"/>
+      <v16 x="14.75" y="-116.85" rotation="4.38" frame="3"/>
+      <v16 x="29.1" y="-117.95" rotation="13.32" frame="5"/>
+      <v16 x="42.55" y="-119.7" rotation="21.23" frame="5"/>
+      <v16 x="61" y="-119.25" rotation="38.57" frame="5"/>
+      <v16 x="84.2" y="-117.45" rotation="64.27" frame="2"/>
+      <v16 x="60.05" y="-116.9" rotation="43.91" frame="2"/>
+      <v16 x="19.75" y="-117.3" rotation="10.13" frame="2"/>
+      <v16 x="15.85" y="-122.2" rotation="15.72" frame="3"/>
+      <v16 x="30.7" y="-122.6" rotation="22.26" scaleX="1.05" frame="5"/>
+      <v15 x="32.95" y="-132.4" rotation="3.8" frame="5"/>
+      <v15 x="61.75" y="-135.3" rotation="25.15" frame="5"/>
+      <v15 x="74.7" y="-135.55" rotation="34.97" frame="2"/>
+      <v15 x="59.05" y="-135.35" rotation="33.15" frame="2"/>
+      <v15 x="7.45" y="-128.6" rotation="-8.57" frame="2"/>
+      <v15 x="0" y="-124.45" rotation="-17.56" frame="3"/>
+      <v15 x="20.75" y="-133.45" rotation="2.84" frame="5"/>
+      <v15 x="36.8" y="-135.4" rotation="10.25" frame="5"/>
+      <v15 x="63.3" y="-137.8" rotation="36.35" frame="5"/>
+      <v15 x="89.8" y="-131.8" rotation="53.02" frame="2"/>
+      <v15 x="64.75" y="-135.05" rotation="40.36" frame="2"/>
+      <v15 x="7.45" y="-128.6" rotation="-8.57" frame="2"/>
+      <v15 x="0" y="-124.45" rotation="-17.56" frame="3"/>
+      <v15 x="18.1" y="-128.45" rotation="-7" frame="5"/>
+      <v14 x="37.95" y="-108.8" rotation="0" frame="5"/>
+      <v14 x="55.05" y="-107.9" rotation="13.66" frame="5"/>
+      <v14 x="62.9" y="-107.8" rotation="19.43" frame="2"/>
+      <v14 x="48.2" y="-111.55" rotation="22.58" frame="2"/>
+      <v14 x="16.75" y="-103.7" rotation="-19.84" frame="2"/>
+      <v14 x="13.4" y="-101.15" rotation="-26.87" frame="3"/>
+      <v14 x="25.1" y="-109.5" rotation="-3.92" frame="5"/>
+      <v14 x="38.05" y="-111.15" rotation="3.49" frame="5"/>
+      <v14 x="51.3" y="-111.75" rotation="20.33" frame="5"/>
+      <v14 x="69.2" y="-108.35" rotation="30.46" frame="2"/>
+      <v14 x="51.05" y="-110.6" rotation="23.55" frame="2"/>
+      <v14 x="16.75" y="-103.7" rotation="-19.84" frame="2"/>
+      <v14 x="13.4" y="-101.15" rotation="-26.87" frame="3"/>
+      <v14 x="26.95" y="-104.35" rotation="-14.26" frame="5"/>
+      <v13 x="38.35" y="-99.45" rotation="1.8" frame="5"/>
+      <v13 x="53.4" y="-100.95" rotation="15.54" frame="5"/>
+      <v13 x="59.95" y="-101.65" rotation="20.83" frame="2"/>
+      <v13 x="45.9" y="-102.4" rotation="16.09" frame="2"/>
+      <v13 x="20.75" y="-96.85" rotation="-13.67" frame="2"/>
+      <v13 x="17.75" y="-97.4" rotation="-15.57" frame="3"/>
+      <v13 x="27.6" y="-98.55" rotation="-6.83" frame="5"/>
+      <v13 x="39.1" y="-99.95" rotation="0" frame="5"/>
+      <v13 x="49.25" y="-101.7" rotation="13.78" frame="5"/>
+      <v13 x="64.15" y="-99.5" rotation="25.11" frame="2"/>
+      <v13 x="46.2" y="-99.8" rotation="13.08" frame="2"/>
+      <v13 x="20.75" y="-96.85" rotation="-13.67" frame="2"/>
+      <v13 x="17.75" y="-97.4" rotation="-15.57" frame="3"/>
+      <v13 x="29.75" y="-98.6" rotation="-6.46" frame="5"/>
+      <v12 x="-52.4" y="-108.05" rotation="1.8" frame="5"/>
+      <v12 x="-44.3" y="-114.3" rotation="5.87" frame="5"/>
+      <v12 x="-39.7" y="-118.75" rotation="8.37" frame="4"/>
+      <v12 x="-70.9" y="-93" rotation="-6.01" frame="2"/>
+      <v12 x="-69.95" y="-93.05" rotation="-5.86" frame="3"/>
+      <v12 x="-66.65" y="-97.65" rotation="-3.46" frame="5"/>
+      <v12 x="-58.45" y="-102.75" rotation="0" frame="5"/>
+      <v12 x="-51.2" y="-109.8" rotation="3.39" frame="5"/>
+      <v12 x="-38.5" y="-118.25" rotation="9.44" frame="4"/>
+      <v12 x="-70.9" y="-93" rotation="-6.01" frame="2"/>
+      <v12 x="-69.95" y="-93.05" rotation="-5.86" frame="3"/>
+      <v12 x="-58.7" y="-103.65" rotation="0" frame="5"/>
+      <v11 x="-13.35" y="-102.95" rotation="0" frame="5"/>
+      <v11 x="-5.55" y="-106.45" rotation="3.11" scaleX="1.1" frame="5"/>
+      <v11 x="-1.65" y="-109.4" rotation="5.61" scaleX="1.15" frame="4"/>
+      <v11 x="-31.75" y="-93.5" rotation="-8.41" scaleX="0.95" frame="2"/>
+      <v11 x="-31.75" y="-92.85" rotation="-8.28" scaleX="0.9" frame="3"/>
+      <v11 x="-27.55" y="-96.35" rotation="-5.86" frame="5"/>
+      <v11 x="-19.5" y="-99.55" rotation="-3.09" frame="5"/>
+      <v11 x="-12.3" y="-104" rotation="1" scaleX="1.15" frame="5"/>
+      <v11 x="0" y="-108.4" rotation="7.04" scaleX="1.2" frame="2"/>
+      <v11 x="-16.4" y="-100.7" rotation="0" scaleX="1.1" frame="2"/>
+      <v11 x="-31.75" y="-93.5" rotation="-8.41" scaleX="0.95" frame="2"/>
+      <v11 x="-31.75" y="-92.85" rotation="-8.28" scaleX="0.9" frame="3"/>
+      <v11 x="-20.2" y="-99.35" rotation="-2.47" scaleX="0.95" frame="5"/>
+      <v10 x="27.1" y="-108.65" rotation="33.8" frame="5"/>
+      <v10 x="38.1" y="-108.65" rotation="20.91" scaleX="1.15" frame="5"/>
+      <v10 x="42.7" y="-110.05" rotation="16.91" scaleX="1.35" frame="2"/>
+      <v10 x="29.1" y="-108.6" rotation="23.6" scaleX="1.25" frame="2"/>
+      <v10 x="4.85" y="-103.4" rotation="19.49" scaleX="1.15" frame="2"/>
+      <v10 x="1.25" y="-102.05" rotation="17.03" scaleX="1.15" frame="3"/>
+      <v10 x="8.85" y="-104.2" rotation="6.55" scaleX="1.15" frame="5"/>
+      <v10 x="20.85" y="-106.65" rotation="9.95" scaleX="1.15" frame="5"/>
+      <v10 x="31.2" y="-108.45" rotation="12.3" scaleX="1.15" frame="5"/>
+      <v10 x="46.55" y="-109.6" rotation="23.63" scaleX="1.15" frame="2"/>
+      <v10 x="29.35" y="-106.5" rotation="19.55" scaleX="1.15" frame="2"/>
+      <v10 x="4.85" y="-103.4" rotation="19.49" scaleX="1.15" frame="2"/>
+      <v10 x="1.25" y="-102.05" rotation="17.03" scaleX="1.15" frame="3"/>
+      <v10 x="15.55" y="-105.5" rotation="25.87" scaleX="1.1" frame="5"/>
+      <v9 x="50.8" y="-101.2" rotation="30.91" frame="5"/>
+      <v9 x="65.95" y="-99.85" rotation="36.53" scaleX="1.15" frame="5"/>
+      <v9 x="70.5" y="-99.45" rotation="37.62" scaleX="1.15" scaleY="0.95" frame="2"/>
+      <v9 x="56.1" y="-99.9" rotation="32.58" scaleX="1.2" frame="2"/>
+      <v9 x="28.2" y="-98.85" rotation="-7.41" scaleX="1.15" frame="2"/>
+      <v9 x="26.15" y="-96.2" rotation="-20.61" scaleX="1.15" scaleY="0.95" frame="3"/>
+      <v9 x="35.2" y="-99.6" rotation="0" scaleX="1.15" frame="5"/>
+      <v9 x="48.05" y="-101.5" rotation="19.94" scaleX="1.15" frame="5"/>
+      <v9 x="60.6" y="-101.15" rotation="30.02" scaleX="1.15" frame="5"/>
+      <v9 x="73.35" y="-97.15" rotation="42.41" scaleX="1.15" frame="2"/>
+      <v9 x="54.3" y="-98.2" rotation="27.18" scaleX="1.15" frame="2"/>
+      <v9 x="28.75" y="-99.9" rotation="0" scaleX="1.15" frame="2"/>
+      <v9 x="25.1" y="-96.15" rotation="-22.61" scaleX="1.15" scaleY="0.95" frame="3"/>
+      <v9 x="39.65" y="-99.4" rotation="3.16" scaleX="1.1" scaleY="0.95" frame="5"/>
+      <v8 x="38.65" y="-100.8" rotation="22.86" frame="5"/>
+      <v8 x="49.35" y="-102.15" rotation="26.61" scaleX="1.2" frame="5"/>
+      <v8 x="52.2" y="-102.4" rotation="22.98" scaleX="1.3" frame="2"/>
+      <v8 x="37.4" y="-101.15" rotation="21.14" scaleX="1.3" frame="2"/>
+      <v8 x="13.75" y="-97.4" rotation="6.29" scaleX="1.3" frame="2"/>
+      <v8 x="13.4" y="-97.85" rotation="14.76" scaleX="1.3" frame="3"/>
+      <v8 x="20.05" y="-98.3" rotation="8.35" scaleX="1.3" frame="5"/>
+      <v8 x="31.1" y="-99.75" rotation="12.23" scaleX="1.3" frame="5"/>
+      <v8 x="40.15" y="-100.9" rotation="14.39" scaleX="1.4" frame="5"/>
+      <v8 x="53.6" y="-100.35" rotation="25.73" scaleX="1.3" frame="2"/>
+      <v8 x="36.9" y="-99.3" rotation="19.77" scaleX="1.3" frame="2"/>
+      <v8 x="13.75" y="-97.4" rotation="6.29" scaleX="1.3" frame="2"/>
+      <v8 x="13.45" y="-98.45" rotation="14.76" scaleX="1.3" frame="3"/>
+      <v8 x="26.25" y="-99.4" rotation="16.11" scaleX="1.2" frame="5"/>
+      <v7 x="4" y="-85.4" rotation="1.8" frame="5"/>
+      <v7 x="7.75" y="-88.05" rotation="7.51" scaleX="1.1" frame="5"/>
+      <v7 x="10.35" y="-89.45" rotation="10.09" scaleX="1.15" frame="2"/>
+      <v7 x="-2.65" y="-88.45" rotation="10.09" scaleX="1.15" frame="2"/>
+      <v7 x="-19.1" y="-76.15" rotation="-10.21" scaleX="1.15" frame="2"/>
+      <v7 x="-20.75" y="-74.5" rotation="-12.95" scaleX="1.15" frame="3"/>
+      <v7 x="-14.15" y="-79.3" rotation="-5.31" scaleX="1.15" frame="5"/>
+      <v7 x="-5.5" y="-82.45" rotation="0" scaleX="1.15" frame="5"/>
+      <v7 x="0" y="-85.25" rotation="5.66" scaleX="1.15" frame="5"/>
+      <v7 x="10.5" y="-87.8" rotation="12.25" scaleX="1.15" frame="2"/>
+      <v7 x="2.5" y="-83.1" rotation="2.93" scaleX="1.1" frame="2"/>
+      <v7 x="-19.1" y="-76.15" rotation="-10.21" scaleX="1.15" frame="2"/>
+      <v7 x="-20.75" y="-74.5" rotation="-12.95" scaleX="1.15" frame="3"/>
+      <v7 x="-8.4" y="-81.3" rotation="-4.7" scaleX="1.1" frame="5"/>
+      <v6 x="-69.25" y="-111.8" rotation="1.8" frame="5"/>
+      <v6 x="-51.95" y="-125.95" rotation="15.1" frame="5"/>
+      <v6 x="-42.8" y="-132.85" rotation="21.89" frame="2"/>
+      <v6 x="-55" y="-124.7" rotation="21.6" frame="2"/>
+      <v6 x="-83" y="-99.4" rotation="0" frame="2"/>
+      <v6 x="-84.6" y="-97.15" rotation="-3" frame="3"/>
+      <v6 x="-75.5" y="-108.15" rotation="7.03" frame="5"/>
+      <v6 x="-66.8" y="-113.65" rotation="9.8" frame="5"/>
+      <v6 x="-55.8" y="-123.95" rotation="17.67" frame="5"/>
+      <v6 x="-37.35" y="-135.4" rotation="28.01" frame="2"/>
+      <v6 x="-52.45" y="-125.55" rotation="24.16" frame="2"/>
+      <v6 x="-81.9" y="-100.85" rotation="2.7" frame="2"/>
+      <v6 x="-84.6" y="-97.15" rotation="-3" frame="3"/>
+      <v6 x="-73.65" y="-108.35" rotation="2.02" frame="5"/>
+      <v5 x="-63.15" y="-53.8" rotation="0" frame="5"/>
+      <v5 x="-60.3" y="-62.35" rotation="1.63" frame="5"/>
+      <v5 x="-59.3" y="-66.95" rotation="0" frame="2"/>
+      <v5 x="-69.1" y="-63.1" rotation="5.86" frame="2"/>
+      <v5 x="-74.1" y="-34.1" rotation="-16.82" frame="2"/>
+      <v5 x="-71.6" y="-31.7" rotation="-20.33" frame="3"/>
+      <v5 x="-73.8" y="-43.5" rotation="-10.49" frame="5"/>
+      <v5 x="-68.2" y="-53.95" rotation="0" frame="5"/>
+      <v5 x="-66.2" y="-59.05" rotation="0" frame="5"/>
+      <v5 x="-59.25" y="-72.65" rotation="10.48" frame="2"/>
+      <v5 x="-69.7" y="-65.3" rotation="9.62" frame="2"/>
+      <v5 x="-74.85" y="-34.1" rotation="-14.82" frame="2"/>
+      <v5 x="-71.6" y="-31.7" rotation="-20.33" frame="3"/>
+      <v5 x="-66.8" y="-44.8" rotation="-10.48" frame="5"/>
+      <v4 x="-84.1" y="12.6" rotation="-24.47" frame="5"/>
+      <v4 x="-71.8" y="10.75" rotation="-23.82" frame="5"/>
+      <v4 x="-65.35" y="24" rotation="-29.92" frame="4"/>
+      <v4 x="-61.2" y="35.25" rotation="-36.53" frame="2"/>
+      <v4 x="-68.55" y="32.75" rotation="-36.36" frame="3"/>
+      <v4 x="-77" y="14.1" rotation="-27.16" frame="5"/>
+      <v4 x="-85.45" y="-8.15" rotation="-17.24" frame="5"/>
+      <v4 x="-94.65" y="-33.7" rotation="-5.89" frame="5"/>
+      <v4 x="-95.05" y="-53.45" rotation="3.42" frame="4"/>
+      <v4 x="-104.5" y="0" rotation="-18.54" frame="2"/>
+      <v4 x="-101.45" y="14.65" rotation="-25.64" frame="3"/>
+      <v4 x="-92.7" y="13.65" rotation="-24.49" frame="5"/>
+      <v3 x="13" y="-77.45" rotation="-7.45" scaleX="0.95" frame="5"/>
+      <v3 x="13.7" y="-80.2" rotation="-6.02" scaleX="0.95" scaleY="1.05" frame="5"/>
+      <v3 x="17.1" y="-81.95" rotation="0" scaleY="1.05" frame="4"/>
+      <v3 x="-6.3" y="-72.85" rotation="-11.63" scaleX="1.05" frame="5"/>
+      <v3 x="-5.2" y="-75.3" rotation="-10.51" scaleX="1.05" scaleY="1.05" frame="5"/>
+      <v3 x="4.8" y="-77.65" rotation="-5.01" scaleY="1.05" frame="5"/>
+      <v3 x="14.3" y="-83.85" rotation="3.45" scaleX="0.95" scaleY="1.05" frame="5"/>
+      <v3 x="24.45" y="-85.9" rotation="13.07" scaleX="0.95" scaleY="1.05" frame="4"/>
+      <v3 x="0" y="-79.3" rotation="0" scaleX="0.95" scaleY="1.05" frame="2"/>
+      <v3 x="0" y="-77" rotation="-3.94" scaleX="0.9" scaleY="1.05" frame="3"/>
+      <v3 x="9.45" y="-78.55" rotation="-1.71" scaleX="0.95" frame="5"/>
+      <v2 x="15.75" y="-55.7" rotation="0" frame="5"/>
+      <v2 x="28.25" y="-57.7" rotation="0" frame="5"/>
+      <v2 x="31.25" y="-56.75" rotation="0" frame="4"/>
+      <v2 x="19" y="-54.7" rotation="-9.57" frame="5"/>
+      <v2 x="22" y="-59.95" rotation="0" frame="5"/>
+      <v2 x="28.05" y="-62.45" rotation="12.98" frame="5"/>
+      <v2 x="29.8" y="-64.1" rotation="25.63" frame="5"/>
+      <v2 x="32.25" y="-62.85" rotation="33.72" frame="4"/>
+      <v2 x="8.25" y="-58.05" rotation="13.28" frame="2"/>
+      <v2 x="6.65" y="-56.35" rotation="6.24" frame="3"/>
+      <v2 x="13.45" y="-55.6" rotation="4.85" frame="5"/>
+      <v1 x="5.4" y="5.9" rotation="-24.47" frame="5"/>
+      <v1 x="17.15" y="4.15" rotation="-23.29" frame="5"/>
+      <v1 x="22.5" y="6.7" rotation="-28.15" frame="4"/>
+      <v1 x="23.1" y="9.75" rotation="-43.13" frame="5"/>
+      <v1 x="14.5" y="2.05" rotation="-28.96" frame="5"/>
+      <v1 x="7.2" y="-4.45" rotation="-16.27" frame="5"/>
+      <v1 x="-2.85" y="-10.95" rotation="-4.93" frame="5"/>
+      <v1 x="-9.65" y="-16.9" rotation="5.89" frame="4"/>
+      <v1 x="-15.4" y="2.45" rotation="-23.41" frame="2"/>
+      <v1 x="-10.75" y="4.6" rotation="-24.35" frame="3"/>
+      <v1 x="-2.35" y="5.35" rotation="-23.52" frame="5"/>
+    </animation>
+  </skeleton>
+  <skeleton name="enemy0">
+    <bone name="body" x="0" y="0" z="4" width="19.8" height="20.6" registrationPointX="-10" registrationPointY="-8"/>
+    <bone name="armR" parent="body" x="-5.3" y="-5.25" z="6" width="25" height="30" registrationPointX="-1" registrationPointY="-16"/>
+    <bone name="head" parent="body" x="0" y="-5" z="5" width="50.099999999999994" height="39.25" registrationPointX="-29.95" registrationPointY="-37.95"/>
+    <bone name="legR" parent="body" x="-5" y="8" z="0" width="8" height="14.1" registrationPointX="-4.45" registrationPointY="-0.7"/>
+    <bone name="legL" parent="body" x="5" y="8" z="1" width="8" height="14.1" registrationPointX="-4.45" registrationPointY="-0.7"/>
+    <bone name="armL" parent="body" x="5" y="-4" z="2" width="16.599999999999998" height="9.3" registrationPointX="-1.4" registrationPointY="-3.85"/>
+    <bone name="weapon" parent="armL" x="13.1" y="-1.9" z="3" width="85.95" height="18" registrationPointX="-12.55" registrationPointY="-13"/>
+    <animation name="stand" frame="2">
+      <legR x="0" y="0" rotation="0"/>
+      <legR x="0" y="1" rotation="0"/>
+      <legL x="0" y="0" rotation="0"/>
+      <legL x="0" y="1" rotation="0"/>
+      <armL x="0" y="0" rotation="60"/>
+      <armL x="0" y="1" rotation="30"/>
+      <weapon x="0" y="0" rotation="-105"/>
+      <weapon x="0" y="0" rotation="-81.27"/>
+      <body x="0" y="0" rotation="0"/>
+      <body x="0" y="-1" rotation="0"/>
+      <head x="0" y="0" rotation="4.2"/>
+      <head x="0" y="-1" rotation="-3.69"/>
+      <armR x="0" y="0" rotation="114.54"/>
+      <armR x="0" y="-1" rotation="138.75"/>
+    </animation>
+    <animation name="run" frame="2">
+      <legR x="0" y="0" rotation="60"/>
+      <legR x="9" y="0" rotation="-81.73"/>
+      <legL x="0" y="0" rotation="-72.19"/>
+      <legL x="-11" y="0" rotation="62.47"/>
+      <armL x="-3" y="-1" rotation="105"/>
+      <armL x="1" y="-1" rotation="40.02"/>
+      <weapon x="0" y="0" rotation="-124.56"/>
+      <weapon x="0" y="0" rotation="-96.51"/>
+      <body x="0" y="-2" rotation="0" scale="0.5"/>
+      <body x="0" y="0" rotation="0"/>
+      <head x="0" y="-1" rotation="-10.2" scale="0.5" delay="0.9"/>
+      <head x="0" y="0" rotation="8.24"/>
+      <armR x="4" y="0" rotation="12.98"/>
+      <armR x="0" y="0" rotation="149.27"/>
+    </animation>
+  </skeleton>
+  <skeleton name="enemy1">
+    <bone name="body" x="0" y="0" z="2" width="64" height="30" registrationPointX="-40" registrationPointY="-21"/>
+    <bone name="legRF" parent="body" x="12" y="8" z="6" width="10" height="20" registrationPointX="-5" registrationPointY="0"/>
+    <bone name="legRB" parent="body" x="-22" y="8" z="5" width="10" height="20" registrationPointX="-5" registrationPointY="0"/>
+    <bone name="head" parent="body" x="15.55" y="-19.7" z="3" width="41.5" height="27.299999999999997" registrationPointX="-6.3" registrationPointY="-22.2"/>
+    <bone name="chin" parent="head" x="12.65" y="-1.5" z="4" width="22.4" height="12.3" registrationPointX="-2.4" registrationPointY="-2.25"/>
+    <bone name="legLF" parent="body" x="18" y="8" z="0" width="10" height="20" registrationPointX="-5" registrationPointY="0"/>
+    <bone name="legLB" parent="body" x="-16" y="8" z="1" width="10" height="20" registrationPointX="-5" registrationPointY="0"/>
+    <animation name="stand" frame="2">
+      <legLF x="0" y="0" rotation="2.22"/>
+      <legLF x="0" y="0" rotation="0"/>
+      <legLB x="0" y="0" rotation="2.22"/>
+      <legLB x="0" y="0" rotation="0"/>
+      <body x="0" y="0" rotation="-2.22"/>
+      <body x="0" y="0" rotation="0"/>
+      <head x="0" y="0" rotation="7.96"/>
+      <head x="0" y="0" rotation="0"/>
+      <chin x="0" y="0" rotation="-1.29"/>
+      <chin x="0" y="0" rotation="-15"/>
+      <legRB x="0" y="0" rotation="-3.99"/>
+      <legRB x="0" y="0" rotation="0"/>
+      <legRF x="0" y="0" rotation="9.92"/>
+      <legRF x="0" y="0" rotation="0"/>
+    </animation>
+    <animation name="run" frame="2">
+      <legLF x="0" y="0" rotation="-83.53"/>
+      <legLF x="-2.27" y="0" rotation="44.55"/>
+      <legLB x="0" y="0" rotation="66.47"/>
+      <legLB x="3.31" y="-1.38" rotation="-60.45"/>
+      <body x="0" y="-3" rotation="-6.47" delay="-0.1"/>
+      <body x="0" y="0" rotation="15.45"/>
+      <head x="0" y="0" rotation="0" delay="0.3"/>
+      <head x="0" y="0" rotation="-9.89"/>
+      <chin x="0" y="0" rotation="20.98" delay="0.1"/>
+      <chin x="0" y="0" rotation="-5.56"/>
+      <legRB x="0" y="-1.53" rotation="66.47" delay="0.1"/>
+      <legRB x="2.56" y="0" rotation="-60.45"/>
+      <legRF x="0" y="0" rotation="-83.53" delay="0.1"/>
+      <legRF x="0" y="1.17" rotation="44.55"/>
+    </animation>
+  </skeleton>
+  <skeleton name="enemy4">
+    <bone name="body" x="0" y="0" z="1" width="27.85" height="11.55" registrationPointX="-11.15" registrationPointY="-5.6"/>
+    <bone name="tail_0" parent="body" x="-9" y="-2" z="5" width="7.4" height="4.5" registrationPointX="-6.2" registrationPointY="-2.25"/>
+    <bone name="tail_1" parent="tail_0" x="-6.25" y="0" z="6" width="7.4" height="4.5" registrationPointX="-6.2" registrationPointY="-2.25"/>
+    <bone name="tail_2" parent="tail_1" x="-6.6" y="0" z="7" width="7.4" height="4.5" registrationPointX="-6.2" registrationPointY="-2.25"/>
+    <bone name="tail_3" parent="tail_2" x="-6.55" y="0" z="8" width="7.4" height="4.5" registrationPointX="-6.2" registrationPointY="-2.25"/>
+    <bone name="tail_4" parent="tail_3" x="-6.2" y="0" z="9" width="7.4" height="4.5" registrationPointX="-6.2" registrationPointY="-2.25"/>
+    <bone name="tail_5" parent="tail_4" x="-6.2" y="0" z="10" width="7.4" height="4.5" registrationPointX="-6.2" registrationPointY="-2.25"/>
+    <bone name="tail_6" parent="tail_5" x="-6.2" y="0" z="11" width="13.75" height="4.75" registrationPointX="-13.75" registrationPointY="-2.6"/>
+    <bone name="wing" parent="body" x="6" y="-6" z="4" width="50" height="60" registrationPointX="-36" registrationPointY="-59"/>
+    <bone name="head" parent="body" x="14" y="-5" z="3" width="42.25" height="37.75" registrationPointX="-26.55" registrationPointY="-36.35"/>
+    <bone name="armR" parent="body" x="-1" y="2" z="2" width="18.5" height="32.5" registrationPointX="-6.45" registrationPointY="-1.05"/>
+    <bone name="armL" parent="body" x="9.2" y="0.8" z="0" width="18.5" height="32.5" registrationPointX="-6.45" registrationPointY="-1.05"/>
+    <animation name="stand" frame="2">
+      <armL x="0" y="1.54" rotation="-20.31"/>
+      <armL x="-1.63" y="2.2" rotation="-13.25"/>
+      <body x="0" y="0" rotation="-9.69" delay="0.2"/>
+      <body x="0" y="-2" rotation="6.23"/>
+      <armR x="2.3" y="2.28" rotation="-11.26" delay="0.1"/>
+      <armR x="2.43" y="1.87" rotation="1.72"/>
+      <head x="0" y="0" rotation="39.69" delay="0.3"/>
+      <head x="0" y="0" rotation="7.82"/>
+      <wing x="0" y="1.1" rotation="24.47" scaleY="-0.5"/>
+      <wing x="-2.57" y="0" rotation="-17.25" scaleY="0.5"/>
+      <tail_0 x="-1.51" y="-1.82" rotation="39.69" delay="0.1"/>
+      <tail_0 x="-1.27" y="0" rotation="-25.43"/>
+      <tail_1 x="0" y="0" rotation="0" scaleY="0.9"/>
+      <tail_1 x="0" y="0" rotation="-10.8" scaleY="0.9"/>
+      <tail_2 x="0" y="0" rotation="-15" scaleY="0.8"/>
+      <tail_2 x="0" y="0" rotation="2.08" scaleY="0.8"/>
+      <tail_3 x="0" y="0" rotation="-15" scaleY="0.7"/>
+      <tail_3 x="0" y="0" rotation="8.72" scaleY="0.7"/>
+      <tail_4 x="0" y="0" rotation="-15" scaleY="0.6"/>
+      <tail_4 x="0" y="0" rotation="19.2" scaleY="0.6"/>
+      <tail_5 x="0" y="0" rotation="-15" scaleY="0.5"/>
+      <tail_5 x="0" y="0" rotation="19.23" scaleY="0.5"/>
+      <tail_6 x="0" y="0" rotation="0"/>
+      <tail_6 x="0" y="0" rotation="22.47"/>
+    </animation>
+    <animation name="run" frame="2">
+      <armL x="0" y="1.54" rotation="-35.31"/>
+      <armL x="-1.63" y="2.2" rotation="1.75"/>
+      <body x="0" y="0" rotation="-9.69" delay="0.2"/>
+      <body x="0" y="-2" rotation="6.23"/>
+      <armR x="2.3" y="2.28" rotation="-26.26" delay="0.1"/>
+      <armR x="2.43" y="1.87" rotation="1.72"/>
+      <head x="0" y="0" rotation="39.69" delay="0.3"/>
+      <head x="0" y="0" rotation="7.82"/>
+      <wing x="0" y="6.02" rotation="24.51" scaleY="-1"/>
+      <wing x="0" y="0" rotation="-17.3"/>
+      <tail_0 x="-1.51" y="-1.82" rotation="39.69" delay="0.1"/>
+      <tail_0 x="-1.27" y="0" rotation="-25.43"/>
+      <tail_1 x="0" y="0" rotation="0" scaleY="0.9"/>
+      <tail_1 x="0" y="0" rotation="-10.8" scaleY="0.9"/>
+      <tail_2 x="0" y="0" rotation="-15" scaleY="0.8"/>
+      <tail_2 x="0" y="0" rotation="2.08" scaleY="0.8"/>
+      <tail_3 x="0" y="0" rotation="-15" scaleY="0.7"/>
+      <tail_3 x="0" y="0" rotation="8.72" scaleY="0.7"/>
+      <tail_4 x="0" y="0" rotation="-15" scaleY="0.6"/>
+      <tail_4 x="0" y="0" rotation="19.2" scaleY="0.6"/>
+      <tail_5 x="0" y="0" rotation="-15" scaleY="0.5"/>
+      <tail_5 x="0" y="0" rotation="19.23" scaleY="0.5"/>
+      <tail_6 x="0" y="0" rotation="0"/>
+      <tail_6 x="0" y="0" rotation="22.47"/>
+    </animation>
+  </skeleton>
+  <skeleton name="enemy5">
+    <bone name="body" x="0" y="0" z="3" width="80" height="36" registrationPointX="-60" registrationPointY="-22"/>
+    <bone name="wing" parent="body" x="0" y="-6" z="2" width="50" height="80" registrationPointX="-36" registrationPointY="-78"/>
+    <bone name="head" parent="body" x="23" y="-6" z="1" width="61.9" height="27.85" registrationPointX="-2" registrationPointY="-25"/>
+    <bone name="chin" parent="head" x="23.05" y="-1.2" z="0" width="37.949999999999996" height="12.9" registrationPointX="-2.05" registrationPointY="-1.25"/>
+    <animation name="stand" frame="2">
+      <chin x="0" y="0" rotation="24.99" delay="0.1"/>
+      <chin x="0" y="0" rotation="-2.24"/>
+      <head x="0" y="0" rotation="30" delay="0.3"/>
+      <head x="-2.01" y="0" rotation="-18.21"/>
+      <wing x="1.55" y="0" rotation="29.82" scaleY="-0.5"/>
+      <wing x="0" y="-2.25" rotation="-19.31" scaleY="0.5"/>
+      <body x="0" y="0" rotation="-15" delay="0.2"/>
+      <body x="0" y="0" rotation="15"/>
+    </animation>
+    <animation name="run" frame="2">
+      <chin x="0" y="0" rotation="24.99" delay="0.1"/>
+      <chin x="0" y="0" rotation="-2.24"/>
+      <head x="0" y="0" rotation="30" delay="0.3"/>
+      <head x="-2.01" y="0" rotation="-18.21"/>
+      <wing x="1.55" y="0" rotation="29.78" scaleY="-1"/>
+      <wing x="0" y="-2.25" rotation="-19.49"/>
+      <body x="0" y="0" rotation="-15" delay="0.2"/>
+      <body x="0" y="0" rotation="15"/>
+    </animation>
+  </skeleton>
+  <skeleton name="enemy6">
+    <bone name="body" x="0" y="0" z="3" width="64" height="30" registrationPointX="-32" registrationPointY="-15"/>
+    <bone name="tail_0" parent="body" x="-30" y="3" z="4" width="8.4" height="6.1" registrationPointX="-7.4" registrationPointY="-5.1"/>
+    <bone name="tail_1" parent="tail_0" x="-6.6" y="0" z="5" width="8.4" height="6.1" registrationPointX="-7.4" registrationPointY="-5.1"/>
+    <bone name="tail_2" parent="tail_1" x="-6.8" y="0" z="6" width="8.4" height="6.1" registrationPointX="-7.4" registrationPointY="-5.1"/>
+    <bone name="tail_3" parent="tail_2" x="-6.55" y="0" z="7" width="8.4" height="6.1" registrationPointX="-7.4" registrationPointY="-5.1"/>
+    <bone name="tail_4" parent="tail_3" x="-6.7" y="0" z="8" width="8.4" height="6.1" registrationPointX="-7.4" registrationPointY="-5.1"/>
+    <bone name="tail_5" parent="tail_4" x="-6.45" y="0" z="9" width="24.45" height="11.649999999999999" registrationPointX="-23.8" registrationPointY="-7.55"/>
+    <bone name="wing" parent="body" x="10" y="-15" z="2" width="70" height="80" registrationPointX="-50" registrationPointY="-79"/>
+    <bone name="head" parent="body" x="36" y="-10" z="1" width="43.05" height="29.7" registrationPointX="-2" registrationPointY="-19.7"/>
+    <bone name="chin" parent="head" x="5.85" y="1.5" z="0" width="34.9" height="14.05" registrationPointX="-2" registrationPointY="-2.05"/>
+    <animation name="stand" frame="2">
+      <chin x="0" y="0" rotation="29.49"/>
+      <chin x="1.11" y="-2.34" rotation="5.47"/>
+      <head x="-2.93" y="-1.1" rotation="23.75" delay="0.3"/>
+      <head x="0" y="0" rotation="-11.2"/>
+      <wing x="2.17" y="1.7" rotation="17.81" scaleY="-0.5"/>
+      <wing x="0" y="7.04" rotation="-16.96" scaleY="0.5"/>
+      <body x="0" y="0" rotation="-8.75" delay="0.2"/>
+      <body x="0" y="0" rotation="5.73"/>
+      <tail_0 x="0" y="0" rotation="-7.99" delay="0.1"/>
+      <tail_0 x="0" y="0" rotation="-9.69"/>
+      <tail_1 x="0" y="0" rotation="1.74"/>
+      <tail_1 x="0" y="0" rotation="-8.53"/>
+      <tail_2 x="0" y="0" rotation="7.29"/>
+      <tail_2 x="0" y="0" rotation="-10.03"/>
+      <tail_3 x="0" y="0" rotation="7.71"/>
+      <tail_3 x="0" y="0" rotation="-16.94"/>
+      <tail_4 x="0" y="0" rotation="11.25"/>
+      <tail_4 x="-1.15" y="0" rotation="-7.06"/>
+      <tail_5 x="0" y="0" rotation="9.18"/>
+      <tail_5 x="0" y="0" rotation="0"/>
+    </animation>
+    <animation name="run" frame="2">
+      <chin x="0" y="0" rotation="29.49"/>
+      <chin x="1.11" y="-2.34" rotation="5.47"/>
+      <head x="-1.71" y="0" rotation="28.21" delay="0.3"/>
+      <head x="0" y="0" rotation="-11.2"/>
+      <wing x="0" y="14.36" rotation="22.23" scaleY="-1"/>
+      <wing x="0" y="7.04" rotation="-16.8"/>
+      <body x="0" y="0" rotation="-13.21" delay="0.2"/>
+      <body x="0" y="0" rotation="5.73"/>
+      <tail_0 x="0" y="0" rotation="-3.53" delay="0.1"/>
+      <tail_0 x="0" y="0" rotation="-9.69"/>
+      <tail_1 x="0" y="0" rotation="1.74"/>
+      <tail_1 x="0" y="0" rotation="-8.53"/>
+      <tail_2 x="0" y="0" rotation="7.29"/>
+      <tail_2 x="0" y="0" rotation="-10.03"/>
+      <tail_3 x="0" y="0" rotation="7.71"/>
+      <tail_3 x="0" y="0" rotation="-16.94"/>
+      <tail_4 x="0" y="0" rotation="11.25"/>
+      <tail_4 x="-1.15" y="0" rotation="-7.06"/>
+      <tail_5 x="0" y="0" rotation="9.18"/>
+      <tail_5 x="0" y="0" rotation="0"/>
+    </animation>
+  </skeleton>
+  <skeleton name="enemy3">
+    <bone name="body" x="0" y="0" z="3" width="86" height="50" registrationPointX="-66" registrationPointY="-30"/>
+    <bone name="armR" parent="body" x="14" y="-2" z="9" width="26" height="4.05" registrationPointX="0" registrationPointY="-2.05"/>
+    <bone name="armRM" parent="armR" x="26" y="-1" z="10" width="38" height="10" registrationPointX="-2" registrationPointY="-2"/>
+    <bone name="handR" parent="armRM" x="36.5" y="0.5" z="11" width="56" height="18" registrationPointX="0" registrationPointY="-8"/>
+    <bone name="legR1" parent="body" x="-1" y="22" z="7" width="6" height="30" registrationPointX="-4" registrationPointY="-28"/>
+    <bone name="footR1" parent="legR1" x="-6.25" y="-27" z="8" width="10" height="32" registrationPointX="-9" registrationPointY="-2"/>
+    <bone name="legR2" parent="body" x="-28" y="22" z="5" width="6" height="30" registrationPointX="-4" registrationPointY="-28"/>
+    <bone name="footR2" parent="legR2" x="-6.25" y="-26" z="6" width="10" height="32" registrationPointX="-9" registrationPointY="-2"/>
+    <bone name="head" parent="body" x="0" y="-33" z="4" width="81.65" height="49.7" registrationPointX="-39.05" registrationPointY="-41.5"/>
+    <bone name="armL" parent="body" x="13" y="-8" z="0" width="26" height="4.05" registrationPointX="0" registrationPointY="-2.05"/>
+    <bone name="armLM" parent="armL" x="27" y="-1" z="1" width="38" height="10" registrationPointX="-2" registrationPointY="-2"/>
+    <bone name="handL" parent="armLM" x="36.5" y="-0.5" z="2" width="56" height="18" registrationPointX="0" registrationPointY="-8"/>
+    <animation name="stand" frame="2">
+      <armL x="0" y="0" rotation="42.76"/>
+      <armL x="0" y="0" rotation="45"/>
+      <armLM x="-2.92" y="0" rotation="-109.28"/>
+      <armLM x="-2.71" y="0" rotation="-120"/>
+      <handL x="-1.83" y="1.25" rotation="122.96"/>
+      <handL x="0" y="1.13" rotation="135"/>
+      <body x="0" y="-2" rotation="0" delay="0.2"/>
+      <body x="0" y="0" rotation="0"/>
+      <head x="0" y="0" rotation="-4.75" delay="0.3"/>
+      <head x="0" y="0" rotation="5.03"/>
+      <legR2 x="0" y="0" rotation="-15" delay="0.1"/>
+      <legR2 x="0" y="0" rotation="0"/>
+      <footR2 x="1.85" y="-1.06" rotation="5.53"/>
+      <footR2 x="0" y="0" rotation="4.45"/>
+      <legR1 x="0" y="0" rotation="-15"/>
+      <legR1 x="0" y="0" rotation="0"/>
+      <footR1 x="3.34" y="-1.73" rotation="6.25"/>
+      <footR1 x="0" y="0" rotation="4.25"/>
+      <armR x="0" y="0" rotation="60" delay="0.1" frame="2"/>
+      <armRM x="-3.08" y="0" rotation="-142.49"/>
+      <armRM x="-1.65" y="1.32" rotation="-144.19"/>
+      <handR x="-1.26" y="0" rotation="127.49"/>
+      <handR x="-1.56" y="0" rotation="119.18"/>
+    </animation>
+    <animation name="run" frame="2">
+      <armL x="0" y="0" rotation="54.22"/>
+      <armL x="0" y="0" rotation="30"/>
+      <armLM x="-3.51" y="0" rotation="-92.27"/>
+      <armLM x="-2.88" y="0" rotation="-129.45"/>
+      <handL x="-1.68" y="0" rotation="54.85"/>
+      <handL x="-1.01" y="2.91" rotation="166.89"/>
+      <body x="0" y="-1" rotation="0" scale="0.5"/>
+      <body x="0" y="0" rotation="0"/>
+      <head x="0" y="0" rotation="6.21" scale="0.5"/>
+      <head x="0" y="0" rotation="0"/>
+      <legR2 x="0" y="0" rotation="-28"/>
+      <legR2 x="0" y="0" rotation="7.74"/>
+      <footR2 x="2.64" y="0" rotation="28"/>
+      <footR2 x="3.22" y="-1.85" rotation="-7.74"/>
+      <legR1 x="0" y="0" rotation="15"/>
+      <legR1 x="0" y="0" rotation="-30"/>
+      <footR1 x="3.38" y="0" rotation="-9.02"/>
+      <footR1 x="2.31" y="0" rotation="15"/>
+      <armR x="0" y="0" rotation="30" delay="0.1"/>
+      <armR x="0" y="0" rotation="38.23"/>
+      <armRM x="-2.87" y="0" rotation="-126.31"/>
+      <armRM x="-1.79" y="1.03" rotation="-72.92"/>
+      <handR x="-1.13" y="0" rotation="156.66"/>
+      <handR x="0" y="0" rotation="49.69"/>
+    </animation>
+  </skeleton>
+  <skeleton name="enemy2">
+    <bone name="body" x="0" y="0" z="6" width="56" height="30" registrationPointX="-28" registrationPointY="-16"/>
+    <bone name="neck" parent="body" x="3" y="-7" z="4" width="15.95" height="51.800000000000004" registrationPointX="-14.6" registrationPointY="-49.7"/>
+    <bone name="headBig" parent="neck" x="-1.3" y="-48.2" z="5" width="40" height="40" registrationPointX="-5" registrationPointY="-20"/>
+    <bone name="headSmall" parent="body" x="-1.3" y="-6.4" z="3" width="24" height="50" registrationPointX="-23" registrationPointY="-49"/>
+    <bone name="armR" parent="body" x="-7.55" y="-7" z="2" width="38.6" height="29.5" registrationPointX="-37.75" registrationPointY="-28.8"/>
+    <bone name="armL" parent="body" x="8.3" y="-7" z="1" width="35" height="25.3" registrationPointX="-2.45" registrationPointY="-15.15"/>
+    <bone name="leg" parent="body" x="0" y="11" z="0" width="36" height="10" registrationPointX="-18" registrationPointY="-3"/>
+    <animation name="stand" frame="2">
+      <leg x="0" y="0" rotation="0" scaleX="0.8" scaleY="0.8" frame="2"/>
+      <armL x="0" y="0" rotation="21.45" delay="0.1"/>
+      <armL x="0" y="0" rotation="0"/>
+      <armR x="0" y="0" rotation="-23.94"/>
+      <armR x="0" y="0" rotation="0"/>
+      <headSmall x="0" y="0" rotation="-4.25" delay="0.2"/>
+      <headSmall x="0" y="0" rotation="0"/>
+      <neck x="0" y="0" rotation="10.44"/>
+      <neck x="0" y="0" rotation="0"/>
+      <headBig x="0" y="0" rotation="4.56" delay="0.3"/>
+      <headBig x="0" y="0" rotation="0"/>
+      <body x="0" y="0" rotation="0" frame="2"/>
+    </animation>
+    <animation name="run" frame="2">
+      <leg x="0" y="0" rotation="7.74" scaleX="0.8" scaleY="0.8"/>
+      <leg x="0" y="0" rotation="-9.49" scaleX="0.8" scaleY="0.8"/>
+      <armL x="1.86" y="1.32" rotation="52.74"/>
+      <armL x="0" y="0" rotation="-47.72"/>
+      <armR x="0" y="1.03" rotation="10.51" delay="0.9"/>
+      <armR x="10.29" y="2.49" rotation="-69.42"/>
+      <headSmall x="0" y="0" rotation="-7.9" delay="0.2"/>
+      <headSmall x="-1.04" y="0" rotation="-19.46"/>
+      <neck x="0" y="0" rotation="42.21"/>
+      <neck x="-1.2" y="0" rotation="-17.43"/>
+      <headBig x="0" y="-1.44" rotation="-37.22" delay="0.1"/>
+      <headBig x="0" y="0" rotation="32.66"/>
+      <body x="0" y="0" rotation="-7.74"/>
+      <body x="0" y="0" rotation="9.49"/>
+    </animation>
+  </skeleton>
+</root>

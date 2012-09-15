@@ -1,0 +1,615 @@
+<skeleton name="Example08">
+  <armatures>
+    <armature name="Zombie_f/Zombie">
+      <b name="Zombie_gargantuar_innerarm_upper" bT="0" bi="Zombie_f-Zombie_gargantuar_innerarm_upper" x="-60.15" y="-81.3" kX="0" kY="0" z="0"/>
+      <b name="Zombie_gargantuar_innerarm_lower" bT="0" bi="Zombie_f-Zombie_gargantuar_innerarm_lower" x="-55.8" y="-43.6" kX="0" kY="0" z="1"/>
+      <b name="Zombie_gargantuar_innerarm_hand" bT="0" bi="Zombie_f-Zombie_gargantuar_innerarm_hand" x="-63" y="-13.5" kX="0" kY="0" z="2"/>
+      <b name="Zombie_gargantua_innerleg_foot" bT="0" bi="Zombie_f-Zombie_gargantuar_innlerleg_foot" x="-37.9" y="37.1" kX="0" kY="0" z="3"/>
+      <b name="Zombie_gargantua_innerleg_lower" bT="0" bi="Zombie_f-Zombie_gargantuar_innerleg_lower" x="-24.6" y="9.4" kX="0" kY="0" z="4"/>
+      <b name="Zombie_gargantua_innerleg_upper" bT="0" bi="Zombie_f-Zombie_gargantua_innerleg_upper" x="-24" y="-15.5" kX="0" kY="0" z="5"/>
+      <b name="Zombie_gargantua_body2" bT="0" bi="Zombie_f-Zombie_gargantua_body2" x="-19.7" y="-21.4" kX="0" kY="0" z="6"/>
+      <b name="Zombie_gargantuar_outerleg_foot" bT="0" bi="Zombie_f-Zombie_gargantuar_outerleg_foot" x="-5.85" y="44.15" kX="0" kY="0" z="7"/>
+      <b name="Zombie_gargantuar_outerleg_lower" bT="0" bi="Zombie_f-Zombie_gargantuar_outerleg_lower" x="8.15" y="16.25" kX="0" kY="0" z="8"/>
+      <b name="Zombie_gargantuar_outerleg_upper" bT="0" bi="Zombie_f-Zombie_gargantuar_outerleg_upper" x="7.55" y="-8.3" kX="0" kY="0" z="9"/>
+      <b name="Zombie_gargantuar_trashcan2" bT="0" bi="Zombie_f-Zombie_gargantuar_trashcan2" x="36.2" y="-103.95" kX="0" kY="0" z="10"/>
+      <b name="Zombie_imp_innerarm_upper" bT="0" bi="Zombie_f-Zombie_imp_innerarm_upper" x="29.9" y="-102.15" kX="0" kY="0" z="11"/>
+      <b name="Zombie_imp_body1" bT="0" bi="Zombie_f-Zombie_imp_body1" x="37.25" y="-115.3" kX="14.43" kY="14.8" z="12"/>
+      <b name="Zombie_imp_head" bT="0" bi="Zombie_f-Zombie_imp_head" x="26.55" y="-130.5" kX="0" kY="0" z="13"/>
+      <b name="Zombie_imp_jaw" bT="0" bi="Zombie_f-Zombie_imp_jaw" x="33.05" y="-108.8" kX="0" kY="0" z="14"/>
+      <b name="Zombie_gargantuar_trashcan" bT="0" bi="Zombie_f-Zombie_gargantuar_trashcan1" x="35.2" y="-98.15" kX="0" kY="0" z="15"/>
+      <b name="Zombie_gargantua_body1" bT="0" bi="Zombie_f-Zombie_gargantua_body1" x="-55.8" y="-103.9" kX="0" kY="0" z="16"/>
+      <b name="Zombie_gargantuar_whiterope" bT="0" bi="Zombie_f-Zombie_gargantuar_whiterope" x="-16.6" y="-100.05" kX="-2.76" kY="-2.76" z="17"/>
+      <b name="Zombie_imp_innerarm_lower" bT="0" bi="Zombie_f-Zombie__imp_outerarm_lower" x="22.3" y="-106.35" kX="30" kY="30" z="18"/>
+      <b name="Zombie_imp_outerarm_upper" bT="0" bi="Zombie_f-Zombie_imp_outerarm upper" x="47.1" y="-101.05" kX="31.91" kY="31.91" z="19"/>
+      <b name="Zombie_imp_outerarm_lower" bT="0" bi="Zombie_f-Zombie__imp_outerarm_lower" x="33.05" y="-99" kX="15" kY="15" z="20"/>
+      <b name="Zombie_gargantuar_rope" bT="0" bi="Zombie_f-Zombie_gargantuar_rope" x="1.3" y="-83.05" kX="0" kY="0" z="21"/>
+      <b name="anim_head1" bT="0" bi="Zombie_f-Zombie_gargantuar_head" x="-72.75" y="-107.1" kX="0" kY="0" z="22"/>
+      <b name="Zombie_gargantua_jaw" bT="0" bi="Zombie_f-Zombie_gargantuar_jaw" x="-64.5" y="-52.8" kX="0" kY="0" z="23"/>
+      <b name="Zombie_gargantuar_telephonepole" bT="0" bi="Zombie_f-Zombie_gargantuar_telephonepole" x="-84.1" y="14.6" kX="-24.47" kY="-24.47" z="24"/>
+      <b name="Zombie_gargantuar_outerarm_upper" bT="0" bi="Zombie_f-Zombie_gargantuar_outerarm_upper" x="11.2" y="-75.45" kX="-7.55" kY="-7.55" z="25"/>
+      <b name="Zombie_gargantuar_outerarm_lower" bT="0" bi="Zombie_f-Zombie_gargantuar_outerarm_lower" x="12.3" y="-53.6" kX="0" kY="0" z="26"/>
+      <b name="Zombie_gargantuar_outerarm_hand" bT="0" bi="Zombie_f-Zombie_gargantuar_outerarm_hand" x="2" y="8.1" kX="-24.51" kY="-24.51" z="27"/>
+    </armature>
+  </armatures>
+  <animations>
+    <animation name="Zombie_f/Zombie">
+      <mov name="stand" to="6" dr="21" drTW="65" lp="1">
+        <b name="Zombie_gargantuar_innerarm_upper" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" img="Zombie_f-Zombie_gargantuar_innerarm_upper" dr="3"/>
+          <f x="0.7" y="-0.15" kX="1.03" kY="1.03" cX="1" cY="1" z="0" dr="7"/>
+          <f x="-6.1" y="10" kX="-3.78" kY="-3.78" cX="1" cY="1" z="0" dr="3"/>
+          <f x="-4.25" y="7" kX="-2.54" kY="-2.54" cX="1" cY="1" z="0" dr="8"/>
+        </b>
+        <b name="Zombie_gargantuar_innerarm_lower" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" img="Zombie_f-Zombie_gargantuar_innerarm_lower" dr="3"/>
+          <f x="0.05" y="-1.55" kX="4.78" kY="4.78" cX="1" cY="1" z="1" dr="7"/>
+          <f x="-3.6" y="9.6" kX="-3.78" kY="-3.78" cX="1" cY="1" z="1" dr="3"/>
+          <f x="-1.3" y="7.25" kX="-2.54" kY="-2.54" cX="1" cY="1.12" z="1" dr="8"/>
+        </b>
+        <b name="Zombie_gargantuar_innerarm_hand" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" img="Zombie_f-Zombie_gargantuar_innerarm_hand" dr="3"/>
+          <f x="-1.9" y="-2.95" kX="5.76" kY="5.76" cX="1" cY="1" z="2" dr="7"/>
+          <f x="-2.15" y="13.25" kX="-9.57" kY="-9.57" cX="1" cY="1" z="2" dr="3"/>
+          <f x="-0.6" y="15.9" kX="-11.6" kY="-11.6" cX="1" cY="1" z="2" dr="8"/>
+        </b>
+        <b name="Zombie_gargantua_innerleg_foot" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="3" img="Zombie_f-Zombie_gargantuar_innlerleg_foot" dr="10"/>
+          <f x="-1.25" y="0.95" kX="-5.82" kY="-5.82" cX="1" cY="1" z="3" dr="11"/>
+        </b>
+        <b name="Zombie_gargantua_innerleg_lower" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" img="Zombie_f-Zombie_gargantuar_innerleg_lower" dr="10"/>
+          <f x="-5.4" y="-0.95" kX="-7.56" kY="-7.56" cX="1" cY="1" z="4" dr="11"/>
+        </b>
+        <b name="Zombie_gargantua_innerleg_upper" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="5" img="Zombie_f-Zombie_gargantua_innerleg_upper" dr="10"/>
+          <f x="5.55" y="-1.2" kX="15.4" kY="15.4" cX="1" cY="1" z="5" dr="11"/>
+        </b>
+        <b name="Zombie_gargantua_body2" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="6" img="Zombie_f-Zombie_gargantua_body2" dr="3"/>
+          <f x="-0.3" y="-1.15" kX="0.02" kY="0.02" cX="1" cY="1" z="6" dr="7"/>
+          <f x="-3.6" y="5.5" kX="-4.77" kY="-4.77" cX="1" cY="1" z="6" dr="3"/>
+          <f x="-2.55" y="5.65" kX="-3.3" kY="-3.3" cX="1" cY="1" z="6" dr="8"/>
+        </b>
+        <b name="Zombie_gargantuar_outerleg_foot" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="7" img="Zombie_f-Zombie_gargantuar_outerleg_foot" dr="10"/>
+          <f x="-1" y="1.1" kX="-4.08" kY="-4.08" cX="1" cY="1" z="7" dr="11"/>
+        </b>
+        <b name="Zombie_gargantuar_outerleg_lower" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="8" img="Zombie_f-Zombie_gargantuar_outerleg_lower" dr="10"/>
+          <f x="-7.35" y="2.55" kX="-10.58" kY="-10.58" cX="1" cY="1" z="8" dr="11"/>
+        </b>
+        <b name="Zombie_gargantuar_outerleg_upper" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="9" img="Zombie_f-Zombie_gargantuar_outerleg_upper" dr="10"/>
+          <f x="-1.95" y="-0.75" kX="6.33" kY="2.36" cX="1" cY="1" z="9" dr="11"/>
+        </b>
+        <b name="Zombie_gargantuar_trashcan2" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="10" img="Zombie_f-Zombie_gargantuar_trashcan2" dr="10"/>
+          <f x="-13.15" y="-1.05" kX="-6.05" kY="-6.05" cX="1" cY="1" z="10" dr="11"/>
+        </b>
+        <b name="Zombie_imp_innerarm_upper" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="11" img="Zombie_f-Zombie_imp_innerarm_upper" dr="10"/>
+          <f x="-12.9" y="-0.35" kX="-6.05" kY="-6.05" cX="1" cY="1" z="11" dr="11"/>
+        </b>
+        <b name="Zombie_imp_body1" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="0.97" cY="1" z="12" img="Zombie_f-Zombie_imp_body1" dr="10"/>
+          <f x="-14.8" y="-3.5" kX="-7.82" kY="-1.93" cX="1" cY="1" z="12" dr="11"/>
+        </b>
+        <b name="Zombie_imp_head" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="13" img="Zombie_f-Zombie_imp_head" dr="3"/>
+          <f x="-2.8" y="-2.5" kX="4.74" kY="4.74" cX="1" cY="1" z="13" dr="7"/>
+          <f x="-14.55" y="-2.05" kX="-3.24" kY="-3.24" cX="1" cY="1" z="13" dr="3"/>
+          <f x="-13.1" y="2.05" kX="-8.3" kY="-8.3" cX="1" cY="1" z="13" dr="8"/>
+        </b>
+        <b name="Zombie_imp_jaw" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="14" img="Zombie_f-Zombie_imp_jaw" dr="3"/>
+          <f x="-4.7" y="-2.75" kX="3.76" kY="3.76" cX="1" cY="1" z="14" dr="7"/>
+          <f x="-13.65" y="-0.65" kX="-6.05" kY="-6.05" cX="1" cY="1" z="14" dr="3"/>
+          <f x="-10.5" y="4.2" kX="-12.37" kY="-12.37" cX="1" cY="1" z="14" dr="8"/>
+        </b>
+        <b name="Zombie_gargantuar_trashcan" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="15" img="Zombie_f-Zombie_gargantuar_trashcan1" dr="3"/>
+          <f x="-4.2" y="-1.45" kX="-2" kY="-2" cX="1" cY="1" z="15" dr="7"/>
+          <f x="-12.55" y="-0.95" kX="-6.05" kY="-6.05" cX="1" cY="1" z="15" dr="3"/>
+          <f x="-8.7" y="0.65" kX="-4.06" kY="-4.06" cX="1" cY="1" z="15" dr="8"/>
+        </b>
+        <b name="Zombie_gargantua_body1" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="16" img="Zombie_f-Zombie_gargantua_body1" dr="3"/>
+          <f x="1.95" y="-4.65" kX="2.08" kY="2.08" cX="1" cY="1.01" z="16" dr="7"/>
+          <f x="-8.75" y="7.35" kX="-3.78" kY="-3.78" cX="1" cY="1" z="16" dr="3"/>
+          <f x="-8.05" y="10.25" kX="-3.81" kY="-5.3" cX="1" cY="1.01" z="16" dr="8"/>
+        </b>
+        <b name="Zombie_gargantuar_whiterope" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="17" img="Zombie_f-Zombie_gargantuar_whiterope" dr="3"/>
+          <f x="1.5" y="-3.5" kX="2.01" kY="2.01" cX="0.84" cY="1" z="17" dr="7"/>
+          <f x="-8.7" y="4.2" kX="-6.06" kY="-6.06" cX="1" cY="1" z="17" dr="3"/>
+          <f x="-9.4" y="5.2" kX="-11.36" kY="-2.55" cX="1.07" cY="1.01" z="17" dr="8"/>
+        </b>
+        <b name="Zombie_imp_innerarm_lower" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="18" img="Zombie_f-Zombie__imp_outerarm_lower" dr="3"/>
+          <f x="-3.1" y="-2.85" kX="4.89" kY="4.89" cX="1" cY="1" z="18" dr="7"/>
+          <f x="-13.35" y="0.45" kX="-6.05" kY="-6.05" cX="1" cY="1" z="18" dr="3"/>
+          <f x="-11.85" y="3.4" kX="-16.24" kY="-16.24" cX="1" cY="1" z="18" dr="8"/>
+        </b>
+        <b name="Zombie_imp_outerarm_upper" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="19" img="Zombie_f-Zombie_imp_outerarm upper" dr="3"/>
+          <f x="-6.05" y="1.5" kX="-19.61" kY="-19.61" cX="1" cY="1" z="19" dr="7"/>
+          <f x="-15.85" y="2" kX="-31.18" kY="-31.18" cX="1" cY="1" z="19" dr="3"/>
+          <f x="-9.25" y="0.4" kX="-16.08" kY="-16.08" cX="1" cY="1" z="19" dr="8"/>
+        </b>
+        <b name="Zombie_imp_outerarm_lower" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="20" img="Zombie_f-Zombie__imp_outerarm_lower" dr="3"/>
+          <f x="-2.1" y="-1.75" kX="12.41" kY="12.41" cX="1" cY="1" z="20" dr="7"/>
+          <f x="-10.2" y="-1.9" kX="13.77" kY="13.77" cX="1" cY="1" z="20" dr="3"/>
+          <f x="-9" y="2.95" kX="-9.74" kY="-9.74" cX="1" cY="1" z="20" dr="8"/>
+        </b>
+        <b name="Zombie_gargantuar_rope" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="21" img="Zombie_f-Zombie_gargantuar_rope" dr="3"/>
+          <f x="-2" y="-1.55" kX="-1.27" kY="-1.81" cX="0.99" cY="1" z="21" dr="7"/>
+          <f x="-10.5" y="4.2" kX="-7.1" kY="-7.1" cX="1" cY="1" z="21" dr="3"/>
+          <f x="-9.95" y="5.3" kX="-7.11" kY="-6.95" cX="1.03" cY="1" z="21" dr="8"/>
+        </b>
+        <b name="anim_head1" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="22" img="Zombie_f-Zombie_gargantuar_head" dr="3"/>
+          <f x="6.35" y="-9.2" kX="8.16" kY="8.16" cX="1" cY="1" z="22" dr="7"/>
+          <f x="-8.55" y="10.85" kX="-3.78" kY="-3.78" cX="1" cY="1" z="22" dr="3"/>
+          <f x="-9.25" y="13.25" kX="-6.39" kY="-6.39" cX="1" cY="1" z="22" dr="8"/>
+        </b>
+        <b name="Zombie_gargantua_jaw" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="23" img="Zombie_f-Zombie_gargantuar_jaw" dr="3"/>
+          <f x="-1.95" y="-8.05" kX="6.63" kY="6.63" cX="1" cY="1" z="23" dr="7"/>
+          <f x="-5.75" y="16.15" kX="-8.61" kY="-8.61" cX="1" cY="1" z="23" dr="3"/>
+          <f x="-3.7" y="18.6" kX="-12.9" kY="-12.9" cX="1" cY="1" z="23" dr="8"/>
+        </b>
+        <b name="Zombie_gargantuar_telephonepole" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="24" img="Zombie_f-Zombie_gargantuar_telephonepole" dr="3"/>
+          <f x="-1.1" y="-6.8" kX="3.63" kY="3.63" cX="1" cY="1" z="24" dr="7"/>
+          <f x="-1.65" y="17.6" kX="-6.16" kY="-6.16" cX="1" cY="1" z="24" dr="3"/>
+          <f x="0.3" y="26.15" kX="-8.6" kY="-8.6" cX="1" cY="1" z="24" dr="8"/>
+        </b>
+        <b name="Zombie_gargantuar_outerarm_upper" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="0.94" cY="1" z="25" img="Zombie_f-Zombie_gargantuar_outerarm_upper" dr="3"/>
+          <f x="0.95" y="-2.5" kX="2.85" kY="2.85" cX="0.94" cY="1" z="25" dr="7"/>
+          <f x="-6.3" y="1.55" kX="-1.69" kY="-1.69" cX="0.94" cY="1" z="25" dr="3"/>
+          <f x="-5.45" y="2.45" kX="-0.41" kY="-0.41" cX="0.94" cY="1" z="25" dr="8"/>
+        </b>
+        <b name="Zombie_gargantuar_outerarm_lower" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="26" img="Zombie_f-Zombie_gargantuar_outerarm_lower" dr="3"/>
+          <f x="-0.6" y="-1.35" kX="1.05" kY="1.05" cX="1" cY="1" z="26" dr="7"/>
+          <f x="-6.55" y="2.55" kX="-3.78" kY="-3.78" cX="1" cY="1.06" z="26" dr="3"/>
+          <f x="-6.1" y="2.9" kX="-4.34" kY="-4.34" cX="1" cY="1.1" z="26" dr="8"/>
+        </b>
+        <b name="Zombie_gargantuar_outerarm_hand" sc="1" dl="0">
+          <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="27" img="Zombie_f-Zombie_gargantuar_outerarm_hand" dr="3"/>
+          <f x="-1.25" y="-2.95" kX="4.62" kY="4.62" cX="1" cY="1" z="27" dr="7"/>
+          <f x="-1.85" y="7.4" kX="-7.06" kY="-7.06" cX="1" cY="1" z="27" dr="3"/>
+          <f x="-0.35" y="5.55" kX="-0.62" kY="-0.62" cX="1" cY="1.03" z="27" dr="8"/>
+        </b>
+      </mov>
+      <mov name="run" to="6" dr="48" drTW="115" lp="1">
+        <b name="Zombie_gargantuar_innerarm_upper" sc="1" dl="0">
+          <f x="2.65" y="-4.3" kX="1.8" kY="1.8" cX="1" cY="1" z="0" img="Zombie_f-Zombie_gargantuar_innerarm_upper" dr="5"/>
+          <f x="10.05" y="-12.1" kX="9.69" kY="9.69" cX="1" cY="1" z="0" dr="5"/>
+          <f x="13.75" y="-16.8" kX="12.19" kY="12.19" cX="1" cY="1" z="0" dr="4"/>
+          <f x="-9.55" y="17" kX="-5.5" kY="-5.5" cX="1" cY="1" z="0" dr="5"/>
+          <f x="-5.35" y="14.15" kX="-7.24" kY="-7.24" cX="1" cY="1" z="0" dr="5"/>
+          <f x="5.65" y="11.25" kX="-9.02" kY="-9.02" cX="1" cY="1" z="0" dr="5"/>
+          <f x="12.65" y="8.85" kX="-12.96" kY="-12.96" cX="1" cY="1" z="0" dr="5"/>
+          <f x="11.75" y="9.35" kX="-20.24" kY="-20.24" cX="1" cY="1" z="0" dr="4"/>
+          <f x="-14.4" y="30.35" kX="-28.72" kY="-28.72" cX="0.99" cY="0.99" z="0" dr="5"/>
+          <f x="-1.1" y="3.25" kX="-6.99" kY="-6.99" cX="1" cY="1" z="0" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_innerarm_lower" sc="1" dl="0">
+          <f x="1.65" y="-3.55" kX="4.07" kY="4.07" cX="1" cY="1" z="1" img="Zombie_f-Zombie_gargantuar_innerarm_lower" dr="5"/>
+          <f x="5.3" y="-13" kX="17.74" kY="17.74" cX="1" cY="1" z="1" dr="5"/>
+          <f x="8.65" y="-19.1" kX="26.81" kY="26.81" cX="1" cY="1" z="1" dr="4"/>
+          <f x="-3.85" y="13.3" kX="9.11" kY="9.11" cX="1" cY="1" z="1" dr="5"/>
+          <f x="2.65" y="11.15" kX="3.86" kY="3.86" cX="1" cY="1" z="1" dr="5"/>
+          <f x="22" y="5.55" kX="10.87" kY="10.87" cX="1" cY="1" z="1" dr="5"/>
+          <f x="31.1" y="1.6" kX="6.94" kY="6.94" cX="1" cY="1" z="1" dr="5"/>
+          <f x="36.35" y="-3.15" kX="11.25" kY="11.25" cX="0.99" cY="0.99" z="1" dr="4"/>
+          <f x="13.6" y="13.3" kX="2.77" kY="2.77" cX="0.99" cY="0.99" z="1" dr="5"/>
+          <f x="8.65" y="-1.4" kX="6.82" kY="6.82" cX="1" cY="1" z="1" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_innerarm_hand" sc="1" dl="0">
+          <f x="-1.6" y="-2.15" kX="-2.21" kY="-2.21" cX="1" cY="1" z="2" img="Zombie_f-Zombie_gargantuar_innerarm_hand" dr="5"/>
+          <f x="-5.55" y="-10.6" kX="1.63" kY="1.63" cX="1" cY="1" z="2" dr="5"/>
+          <f x="-4" y="-19.4" kX="11.16" kY="11.16" cX="1" cY="1" z="2" dr="4"/>
+          <f x="-4.55" y="11.7" kX="8.59" kY="8.59" cX="1" cY="1" z="2" dr="5"/>
+          <f x="5.05" y="6.3" kX="8.4" kY="8.4" cX="0.99" cY="0.99" z="2" dr="5"/>
+          <f x="21.25" y="-0.05" kX="15.42" kY="15.42" cX="0.99" cY="0.99" z="2" dr="5"/>
+          <f x="26.75" y="6.3" kX="-13.1" kY="-13.1" cX="0.99" cY="0.99" z="2" dr="5"/>
+          <f x="28.1" y="8.75" kX="-25.82" kY="-25.82" cX="0.99" cY="0.99" z="2" dr="4"/>
+          <f x="10.7" y="21.75" kX="-21.03" kY="-21.03" cX="0.99" cY="0.99" z="2" dr="5"/>
+          <f x="3.2" y="1.9" kX="-6.26" kY="-6.26" cX="0.99" cY="0.99" z="2" dr="5"/>
+        </b>
+        <b name="Zombie_gargantua_innerleg_foot" sc="1" dl="0">
+          <f x="8.05" y="0" kX="0" kY="0" cX="1" cY="1" z="3" img="Zombie_f-Zombie_gargantuar_innlerleg_foot" dr="5"/>
+          <f x="32.05" y="-3.7" kX="7.06" kY="7.06" cX="1" cY="1" z="3" dr="5"/>
+          <f x="41.4" y="5.1" kX="-15.02" kY="-15.02" cX="1" cY="1" z="3" dr="4"/>
+          <f x="56.3" y="9.65" kX="-30.06" kY="-30.06" cX="1" cY="1" z="3" dr="5"/>
+          <f x="54.6" y="10.15" kX="-36.41" kY="-36.41" cX="1" cY="1" z="3" dr="5"/>
+          <f x="32.2" y="14.35" kX="-36.39" kY="-36.39" cX="1" cY="1" z="3" dr="5"/>
+          <f x="9.6" y="8.85" kX="-29.64" kY="-29.64" cX="1" cY="1" z="3" dr="5"/>
+          <f x="4.55" y="-5.5" kX="8.53" kY="8.53" cX="0.99" cY="0.99" z="3" dr="4"/>
+          <f x="6.5" y="1.8" kX="-2.27" kY="-2.27" cX="0.99" cY="0.99" z="3" dr="5"/>
+          <f x="4.35" y="0.6" kX="-0.79" kY="-0.79" cX="1" cY="1" z="3" dr="5"/>
+        </b>
+        <b name="Zombie_gargantua_innerleg_lower" sc="1" dl="0">
+          <f x="8.05" y="0" kX="0" kY="0" cX="1" cY="1" z="4" img="Zombie_f-Zombie_gargantuar_innerleg_lower" dr="5"/>
+          <f x="18.4" y="1.65" kX="-6.29" kY="-6.29" cX="1" cY="1" z="4" dr="5"/>
+          <f x="27.15" y="7.85" kX="-19.84" kY="-19.84" cX="1" cY="1" z="4" dr="4"/>
+          <f x="34.3" y="10.55" kX="-37.41" kY="-37.41" cX="1" cY="1" z="4" dr="5"/>
+          <f x="31.3" y="14.15" kX="-43.76" kY="-43.76" cX="1" cY="1" z="4" dr="5"/>
+          <f x="6.75" y="10.05" kX="-36.67" kY="-36.67" cX="1" cY="1.08" z="4" dr="5"/>
+          <f x="0.85" y="-0.65" kX="-21.79" kY="-21.79" cX="0.99" cY="1.09" z="4" dr="5"/>
+          <f x="0.45" y="-5.2" kX="0.31" kY="0.31" cX="0.99" cY="1.09" z="4" dr="4"/>
+          <f x="-5.45" y="2.8" kX="-18.54" kY="-13.75" cX="1" cY="1.08" z="4" dr="5"/>
+          <f x="-0.1" y="1.5" kX="-6.51" kY="-6.51" cX="1" cY="1.03" z="4" dr="5"/>
+        </b>
+        <b name="Zombie_gargantua_innerleg_upper" sc="1" dl="0">
+          <f x="-1.7" y="3.3" kX="-17.44" kY="-12.11" cX="1" cY="1" z="5" img="Zombie_f-Zombie_gargantua_innerleg_upper" dr="5"/>
+          <f x="2.2" y="7.25" kX="-30.78" kY="-25.44" cX="1" cY="1" z="5" dr="5"/>
+          <f x="6.55" y="8.7" kX="-39.3" kY="-31.51" cX="1" cY="1" z="5" dr="4"/>
+          <f x="5.35" y="9.95" kX="-42.51" kY="-34.72" cX="1" cY="1" z="5" dr="5"/>
+          <f x="-1.85" y="9.95" kX="-42.51" kY="-34.72" cX="1" cY="1" z="5" dr="5"/>
+          <f x="-5.4" y="6.4" kX="-27.33" kY="-19.55" cX="1" cY="1" z="5" dr="5"/>
+          <f x="-2.85" y="-8.5" kX="-7.15" kY="0.63" cX="1" cY="1.11" z="5" dr="5"/>
+          <f x="7.15" y="-11.25" kX="9.66" kY="17.44" cX="1" cY="1.11" z="5" dr="4"/>
+          <f x="-4.7" y="-1.25" kX="-5.67" kY="-4.45" cX="0.99" cY="1.11" z="5" dr="5"/>
+          <f x="-2" y="0.8" kX="-5.55" kY="-2" cX="1" cY="1.05" z="5" dr="5"/>
+        </b>
+        <b name="Zombie_gargantua_body2" sc="1" dl="0">
+          <f x="0" y="-1.05" kX="0" kY="0" cX="1" cY="1" z="6" img="Zombie_f-Zombie_gargantua_body2" dr="5"/>
+          <f x="1.1" y="-6.5" kX="4.58" kY="4.58" cX="1" cY="1" z="6" dr="5"/>
+          <f x="1.95" y="-9.9" kX="7.08" kY="7.08" cX="1" cY="1" z="6" dr="4"/>
+          <f x="-6.65" y="11.55" kX="-7.31" kY="-7.31" cX="1" cY="1" z="6" dr="5"/>
+          <f x="-6.15" y="8.75" kX="-4.76" kY="-4.76" cX="1" cY="1" z="6" dr="5"/>
+          <f x="-2.15" y="5.55" kX="-1.99" kY="-1.99" cX="1" cY="1" z="6" dr="5"/>
+          <f x="0.3" y="0.9" kX="2.1" kY="2.1" cX="0.96" cY="1" z="6" dr="5"/>
+          <f x="1.95" y="-4.95" kX="8.14" kY="8.14" cX="1" cY="1" z="6" dr="4"/>
+          <f x="-2.15" y="11.75" kX="-12.35" kY="-12.35" cX="1" cY="1" z="6" dr="5"/>
+          <f x="-0.2" y="0.85" kX="-1.49" kY="-1.49" cX="1" cY="1" z="6" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_outerleg_foot" sc="1" dl="0">
+          <f x="-8.7" y="3.1" kX="-7.52" kY="-7.52" cX="1" cY="1" z="7" img="Zombie_f-Zombie_gargantuar_outerleg_foot" dr="5"/>
+          <f x="-20.05" y="-7.8" kX="2.6" kY="2.6" cX="1" cY="1" z="7" dr="5"/>
+          <f x="-26.55" y="-19.8" kX="19.51" kY="19.51" cX="0.99" cY="0.99" z="7" dr="4"/>
+          <f x="-23.95" y="-2.15" kX="3.87" kY="3.87" cX="0.99" cY="0.99" z="7" dr="5"/>
+          <f x="-21.85" y="-2.15" kX="3.87" kY="3.87" cX="0.99" cY="0.99" z="7" dr="5"/>
+          <f x="-13.45" y="-1.75" kX="3.87" kY="3.87" cX="0.99" cY="0.99" z="7" dr="5"/>
+          <f x="-2.85" y="-1.05" kX="1.82" kY="1.82" cX="0.99" cY="0.99" z="7" dr="5"/>
+          <f x="20.3" y="4.45" kX="-10.99" kY="-10.99" cX="0.99" cY="0.99" z="7" dr="4"/>
+          <f x="31.55" y="14.9" kX="-40.76" kY="-40.76" cX="0.99" cY="0.99" z="7" dr="5"/>
+          <f x="6.15" y="7.65" kX="-20.79" kY="-20.79" cX="0.99" cY="0.99" z="7" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_outerleg_lower" sc="1" dl="0">
+          <f x="-3.5" y="-2.8" kX="1.75" kY="1.75" cX="1" cY="1" z="8" img="Zombie_f-Zombie_gargantuar_outerleg_lower" dr="5"/>
+          <f x="-14.45" y="-6.8" kX="4.4" kY="4.4" cX="1" cY="1" z="8" dr="5"/>
+          <f x="-16.7" y="-14.6" kX="20.11" kY="22.85" cX="1" cY="1" z="8" dr="4"/>
+          <f x="-31.9" y="1.5" kX="-8.6" kY="-5.86" cX="1" cY="0.99" z="8" dr="5"/>
+          <f x="-23.15" y="1.35" kX="-8.28" kY="-5.54" cX="1" cY="0.99" z="8" dr="5"/>
+          <f x="-17" y="4.45" kX="-14.11" kY="-7.62" cX="1" cY="0.99" z="8" dr="5"/>
+          <f x="-12.85" y="2.85" kX="-20.17" kY="-10.75" cX="1.01" cY="1.09" z="8" dr="5"/>
+          <f x="4.5" y="11.85" kX="-30" kY="-23.5" cX="1" cY="0.99" z="8" dr="4"/>
+          <f x="6.5" y="16.3" kX="-47.44" kY="-40.95" cX="1" cY="0.99" z="8" dr="5"/>
+          <f x="-1.85" y="4.1" kX="-17.81" kY="-15.28" cX="1" cY="1" z="8" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_outerleg_upper" sc="1" dl="0">
+          <f x="1.4" y="-6.55" kX="7.04" kY="7.04" cX="1" cY="1" z="9" img="Zombie_f-Zombie_gargantuar_outerleg_upper" dr="5"/>
+          <f x="-0.05" y="-12.15" kX="20.94" kY="20.94" cX="1" cY="1" z="9" dr="5"/>
+          <f x="-1.65" y="-10.55" kX="31.55" kY="26.54" cX="1" cY="1" z="9" dr="4"/>
+          <f x="-13.4" y="-5.75" kX="20.26" kY="17.23" cX="1" cY="1.21" z="9" dr="5"/>
+          <f x="-7.2" y="-5.45" kX="20.49" kY="17.46" cX="1" cY="1.21" z="9" dr="5"/>
+          <f x="-10.6" y="-6.2" kX="7.19" kY="8.71" cX="1" cY="1.21" z="9" dr="5"/>
+          <f x="-2.3" y="-7.05" kX="8.41" kY="9.93" cX="0.99" cY="1.21" z="9" dr="5"/>
+          <f x="0.25" y="2.15" kX="-14.17" kY="-12.66" cX="1" cY="1.21" z="9" dr="4"/>
+          <f x="-0.45" y="5.65" kX="-19.02" kY="-17.5" cX="0.99" cY="1.21" z="9" dr="5"/>
+          <f x="0.45" y="-2" kX="-3.28" kY="-2.76" cX="1" cY="1.08" z="9" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_trashcan2" sc="1" dl="0">
+          <f x="3.35" y="-1.25" kX="1.8" kY="1.8" cX="1" cY="1" z="10" img="Zombie_f-Zombie_gargantuar_trashcan2" dr="5"/>
+          <f x="19.75" y="-2.25" kX="15.54" kY="15.54" cX="1" cY="1" z="10" dr="5"/>
+          <f x="26.8" y="-2.7" kX="20.83" kY="20.83" cX="1" cY="1" z="10" dr="2"/>
+          <f x="12.15" y="-2.9" kX="16.09" kY="16.09" cX="1" cY="1" z="10" dr="2"/>
+          <f x="-15.8" y="1.4" kX="-13.67" kY="-13.67" cX="1" cY="1" z="10" dr="2"/>
+          <f x="-18.95" y="0.8" kX="-15.57" kY="-15.57" cX="1" cY="1" z="10" dr="3"/>
+          <f x="-8.3" y="-0.3" kX="-6.83" kY="-6.83" cX="1" cY="1" z="10" dr="5"/>
+          <f x="2.8" y="-1.7" kX="0.58" kY="0.58" cX="1" cY="1" z="10" dr="5"/>
+          <f x="14.25" y="-1.5" kX="7.92" kY="7.92" cX="1" cY="1" z="10" dr="5"/>
+          <f x="29.85" y="0.95" kX="19.26" kY="19.26" cX="0.99" cY="0.99" z="10" dr="2"/>
+          <f x="11.6" y="0.6" kX="10.28" kY="10.28" cX="1" cY="1" z="10" dr="2"/>
+          <f x="-15.8" y="1.4" kX="-13.67" kY="-13.67" cX="1" cY="1" z="10" dr="2"/>
+          <f x="-18.95" y="0.8" kX="-15.57" kY="-15.57" cX="1" cY="1" z="10" dr="3"/>
+          <f x="-5.9" y="-0.15" kX="-6.46" kY="-6.46" cX="1" cY="1" z="10" dr="5"/>
+        </b>
+        <b name="Zombie_imp_innerarm_upper" sc="1" dl="0">
+          <f x="3.25" y="-1.45" kX="1.8" kY="1.8" cX="1" cY="1" z="11" img="Zombie_f-Zombie_imp_innerarm_upper" dr="5"/>
+          <f x="19.5" y="-4" kX="15.54" kY="15.54" cX="1" cY="1" z="11" dr="5"/>
+          <f x="26.55" y="-5.1" kX="20.83" kY="20.83" cX="1" cY="1" z="11" dr="2"/>
+          <f x="17.9" y="-4.3" kX="43.15" kY="43.15" cX="0.99" cY="0.99" z="11" dr="2"/>
+          <f x="-14.1" y="0.35" kX="-7.66" kY="-7.66" cX="0.99" cY="0.99" z="11" dr="2"/>
+          <f x="-17.6" y="-0.8" kX="-8.29" kY="-8.29" cX="0.99" cY="0.99" z="11" dr="3"/>
+          <f x="-7.35" y="-4.1" kX="2.46" kY="2.46" cX="1" cY="1" z="11" dr="5"/>
+          <f x="4.2" y="-6.3" kX="11.1" kY="11.1" cX="1" cY="1" z="11" dr="5"/>
+          <f x="19" y="-7.45" kX="39.07" kY="39.07" cX="0.99" cY="0.99" z="11" dr="5"/>
+          <f x="34.25" y="-5.2" kX="50.41" kY="50.41" cX="0.99" cY="0.99" z="11" dr="2"/>
+          <f x="14.8" y="-3.65" kX="28.83" kY="28.83" cX="0.99" cY="0.99" z="11" dr="2"/>
+          <f x="-14.1" y="0.35" kX="-7.66" kY="-7.66" cX="0.99" cY="0.99" z="11" dr="2"/>
+          <f x="-17.6" y="-0.8" kX="-8.29" kY="-8.29" cX="0.99" cY="0.99" z="11" dr="3"/>
+          <f x="-4.9" y="-1.6" kX="-1.49" kY="-1.49" cX="1" cY="1" z="11" dr="5"/>
+        </b>
+        <b name="Zombie_imp_body1" sc="1" dl="0">
+          <f x="4.3" y="-1.95" kX="3.96" kY="3.59" cX="1" cY="1" z="12" img="Zombie_f-Zombie_imp_body1" dr="5"/>
+          <f x="28.55" y="-3.15" kX="24.23" kY="27.05" cX="1" cY="1" z="12" dr="5"/>
+          <f x="36.45" y="-1.4" kX="29.89" kY="29.52" cX="0.97" cY="1" z="12" dr="2"/>
+          <f x="21.45" y="-2.8" kX="23.07" kY="26.98" cX="0.96" cY="1" z="12" dr="2"/>
+          <f x="-18.45" y="0.8" kX="-11.18" kY="-11.55" cX="1" cY="1" z="12" dr="2"/>
+          <f x="-22.5" y="-1.55" kX="-15.17" kY="-10.42" cX="1" cY="1" z="12" dr="3"/>
+          <f x="-8.15" y="-2.65" kX="-3.79" kY="-1.48" cX="1" cY="1" z="12" dr="5"/>
+          <f x="5.3" y="-4.4" kX="1.27" kY="6.43" cX="1" cY="1" z="12" dr="5"/>
+          <f x="23.75" y="-3.95" kX="22.97" kY="23.77" cX="0.99" cY="0.99" z="12" dr="5"/>
+          <f x="46.95" y="-2.15" kX="35.68" kY="49.47" cX="1.02" cY="0.99" z="12" dr="2"/>
+          <f x="22.8" y="-1.6" kX="25.8" kY="29.11" cX="1" cY="0.99" z="12" dr="2"/>
+          <f x="-17.5" y="-2" kX="-10.37" kY="-4.67" cX="1" cY="1" z="12" dr="2"/>
+          <f x="-21.4" y="-6.9" kX="-11.15" kY="0.92" cX="1.02" cY="0.99" z="12" dr="3"/>
+          <f x="-6.55" y="-7.3" kX="-8.1" kY="7.46" cX="1.04" cY="1" z="12" dr="5"/>
+        </b>
+        <b name="Zombie_imp_head" sc="1" dl="0">
+          <f x="6.4" y="-1.9" kX="3.8" kY="3.8" cX="1" cY="1" z="13" img="Zombie_f-Zombie_imp_head" dr="5"/>
+          <f x="35.2" y="-4.8" kX="25.15" kY="25.15" cX="1" cY="1" z="13" dr="5"/>
+          <f x="48.15" y="-5.05" kX="34.97" kY="34.97" cX="1" cY="1" z="13" dr="2"/>
+          <f x="32.5" y="-4.85" kX="33.15" kY="33.15" cX="0.99" cY="0.99" z="13" dr="2"/>
+          <f x="-19.1" y="1.9" kX="-8.57" kY="-8.57" cX="1" cY="1" z="13" dr="2"/>
+          <f x="-26.05" y="6.05" kX="-17.56" kY="-17.56" cX="0.99" cY="0.99" z="13" dr="3"/>
+          <f x="-5.8" y="-2.95" kX="2.84" kY="2.84" cX="0.99" cY="0.99" z="13" dr="5"/>
+          <f x="10.25" y="-4.9" kX="10.25" kY="10.25" cX="0.99" cY="0.99" z="13" dr="5"/>
+          <f x="36.75" y="-7.3" kX="36.35" kY="36.35" cX="0.99" cY="0.99" z="13" dr="5"/>
+          <f x="63.25" y="-1.3" kX="53.02" kY="53.02" cX="0.99" cY="0.99" z="13" dr="2"/>
+          <f x="38.2" y="-4.55" kX="40.36" kY="40.36" cX="0.99" cY="0.99" z="13" dr="2"/>
+          <f x="-19.1" y="1.9" kX="-8.57" kY="-8.57" cX="1" cY="1" z="13" dr="2"/>
+          <f x="-26.05" y="6.05" kX="-17.56" kY="-17.56" cX="0.99" cY="0.99" z="13" dr="3"/>
+          <f x="-8.45" y="2.05" kX="-7" kY="-7" cX="1" cY="1" z="13" dr="5"/>
+        </b>
+        <b name="Zombie_imp_jaw" sc="1" dl="0">
+          <f x="4.9" y="0" kX="3.8" kY="0.64" cX="1" cY="1" z="14" img="Zombie_f-Zombie_imp_jaw" dr="5"/>
+          <f x="22" y="0.9" kX="18.31" kY="13.66" cX="1" cY="1" z="14" dr="5"/>
+          <f x="29.85" y="1" kX="24.08" kY="19.43" cX="1" cY="1" z="14" dr="2"/>
+          <f x="15.15" y="-2.75" kX="26.93" kY="22.58" cX="1" cY="0.99" z="14" dr="2"/>
+          <f x="-16.3" y="5.1" kX="-15.19" kY="-19.84" cX="1" cY="0.99" z="14" dr="2"/>
+          <f x="-19.65" y="7.65" kX="-22.33" kY="-26.87" cX="1" cY="0.99" z="14" dr="3"/>
+          <f x="-7.95" y="-0.7" kX="0.73" kY="-3.92" cX="1" cY="0.99" z="14" dr="5"/>
+          <f x="5" y="-2.35" kX="8.14" kY="3.49" cX="1" cY="0.99" z="14" dr="5"/>
+          <f x="18.25" y="-2.95" kX="24.98" kY="20.33" cX="0.99" cY="0.99" z="14" dr="5"/>
+          <f x="36.15" y="0.45" kX="35.11" kY="30.45" cX="0.99" cY="0.99" z="14" dr="2"/>
+          <f x="18" y="-1.8" kX="28.09" kY="23.55" cX="0.99" cY="0.99" z="14" dr="2"/>
+          <f x="-16.3" y="5.1" kX="-15.19" kY="-19.84" cX="1" cY="0.99" z="14" dr="2"/>
+          <f x="-19.65" y="7.65" kX="-22.33" kY="-26.87" cX="1" cY="0.99" z="14" dr="3"/>
+          <f x="-6.1" y="4.45" kX="-10.23" kY="-14.26" cX="1" cY="0.99" z="14" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_trashcan" sc="1" dl="0">
+          <f x="3.15" y="-1.3" kX="1.8" kY="1.8" cX="1" cY="1" z="15" img="Zombie_f-Zombie_gargantuar_trashcan1" dr="5"/>
+          <f x="18.2" y="-2.8" kX="15.54" kY="15.54" cX="1" cY="1" z="15" dr="5"/>
+          <f x="24.75" y="-3.5" kX="20.83" kY="20.83" cX="1" cY="1" z="15" dr="2"/>
+          <f x="10.7" y="-4.25" kX="16.09" kY="16.09" cX="1" cY="1" z="15" dr="2"/>
+          <f x="-14.45" y="1.3" kX="-13.67" kY="-13.67" cX="1" cY="1" z="15" dr="2"/>
+          <f x="-17.45" y="0.75" kX="-15.57" kY="-15.57" cX="1" cY="1" z="15" dr="3"/>
+          <f x="-7.6" y="-0.4" kX="-6.83" kY="-6.83" cX="1" cY="1" z="15" dr="5"/>
+          <f x="3.9" y="-1.8" kX="0.58" kY="0.58" cX="1" cY="1" z="15" dr="5"/>
+          <f x="14.05" y="-3.55" kX="13.78" kY="13.78" cX="1" cY="1" z="15" dr="5"/>
+          <f x="28.95" y="-1.35" kX="25.11" kY="25.11" cX="0.99" cY="0.99" z="15" dr="2"/>
+          <f x="11" y="-1.65" kX="13.08" kY="13.08" cX="0.99" cY="0.99" z="15" dr="2"/>
+          <f x="-14.45" y="1.3" kX="-13.67" kY="-13.67" cX="1" cY="1" z="15" dr="2"/>
+          <f x="-17.45" y="0.75" kX="-15.57" kY="-15.57" cX="1" cY="1" z="15" dr="3"/>
+          <f x="-5.45" y="-0.45" kX="-6.46" kY="-6.46" cX="1" cY="1" z="15" dr="5"/>
+        </b>
+        <b name="Zombie_gargantua_body1" sc="1" dl="0">
+          <f x="3.4" y="-4.15" kX="1.8" kY="1.8" cX="1" cY="1" z="16" img="Zombie_f-Zombie_gargantua_body1" dr="5"/>
+          <f x="11.5" y="-10.4" kX="5.87" kY="5.87" cX="1" cY="1" z="16" dr="5"/>
+          <f x="16.1" y="-14.85" kX="8.37" kY="8.37" cX="1" cY="1" z="16" dr="4"/>
+          <f x="-15.1" y="10.9" kX="-6.01" kY="-6.01" cX="1" cY="1" z="16" dr="2"/>
+          <f x="-14.15" y="10.85" kX="-5.86" kY="-5.86" cX="1" cY="1.02" z="16" dr="3"/>
+          <f x="-10.85" y="6.25" kX="-3.46" kY="-3.46" cX="1" cY="1" z="16" dr="5"/>
+          <f x="-2.65" y="1.15" kX="-0.69" kY="-0.69" cX="1" cY="1" z="16" dr="5"/>
+          <f x="4.6" y="-5.9" kX="3.39" kY="3.39" cX="1" cY="1" z="16" dr="5"/>
+          <f x="17.3" y="-14.35" kX="9.44" kY="9.44" cX="1" cY="1" z="16" dr="4"/>
+          <f x="-15.1" y="10.9" kX="-6.01" kY="-6.01" cX="1" cY="1" z="16" dr="2"/>
+          <f x="-14.15" y="10.85" kX="-5.86" kY="-5.86" cX="1" cY="1.02" z="16" dr="3"/>
+          <f x="-2.9" y="0.25" kX="0.04" kY="0.04" cX="1" cY="1.01" z="16" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_whiterope" sc="1" dl="0">
+          <f x="3.25" y="-2.9" kX="1.79" kY="1.79" cX="1" cY="1" z="17" img="Zombie_f-Zombie_gargantuar_whiterope" dr="5"/>
+          <f x="11.05" y="-6.4" kX="5.87" kY="5.87" cX="1.09" cY="1" z="17" dr="5"/>
+          <f x="14.95" y="-9.35" kX="8.37" kY="8.37" cX="1.17" cY="1" z="17" dr="4"/>
+          <f x="-15.15" y="6.55" kX="-6.01" kY="-5.65" cX="0.97" cY="1" z="17" dr="2"/>
+          <f x="-15.15" y="7.2" kX="-5.98" kY="-5.51" cX="0.9" cY="1" z="17" dr="3"/>
+          <f x="-10.95" y="3.7" kX="-3.47" kY="-3.1" cX="1.02" cY="1" z="17" dr="5"/>
+          <f x="-2.9" y="0.5" kX="-0.7" kY="-0.33" cX="1.02" cY="1" z="17" dr="5"/>
+          <f x="4.3" y="-3.95" kX="3.39" kY="3.76" cX="1.17" cY="1" z="17" dr="5"/>
+          <f x="16.2" y="-8.35" kX="9.43" kY="9.8" cX="1.22" cY="1" z="17" dr="2"/>
+          <f x="0.2" y="-0.65" kX="1.75" kY="2.22" cX="1.09" cY="1" z="17" dr="2"/>
+          <f x="-15.15" y="6.55" kX="-6.01" kY="-5.65" cX="0.97" cY="1" z="17" dr="2"/>
+          <f x="-15.15" y="7.2" kX="-5.98" kY="-5.51" cX="0.9" cY="1" z="17" dr="3"/>
+          <f x="-3.6" y="0.7" kX="0.03" kY="0.29" cX="0.93" cY="1" z="17" dr="5"/>
+        </b>
+        <b name="Zombie_imp_innerarm_lower" sc="1" dl="0">
+          <f x="4.8" y="-2.3" kX="3.8" kY="3.8" cX="1" cY="1" z="18" img="Zombie_f-Zombie__imp_outerarm_lower" dr="5"/>
+          <f x="15.8" y="-2.3" kX="-9.09" kY="-9.09" cX="1.17" cY="1" z="18" dr="5"/>
+          <f x="20.4" y="-3.7" kX="-13.09" kY="-13.09" cX="1.33" cY="1" z="18" dr="2"/>
+          <f x="6.8" y="-2.25" kX="-6.4" kY="-6.4" cX="1.24" cY="0.99" z="18" dr="2"/>
+          <f x="-17.45" y="2.95" kX="-10.51" kY="-10.51" cX="1.15" cY="0.99" z="18" dr="2"/>
+          <f x="-21.05" y="4.3" kX="-12.97" kY="-12.97" cX="1.14" cY="0.99" z="18" dr="3"/>
+          <f x="-13.45" y="2.15" kX="-23.46" kY="-23.46" cX="1.15" cY="0.99" z="18" dr="5"/>
+          <f x="-1.45" y="-0.3" kX="-20.05" kY="-20.05" cX="1.15" cY="0.99" z="18" dr="5"/>
+          <f x="8.9" y="-2.1" kX="-17.71" kY="-17.7" cX="1.14" cY="0.99" z="18" dr="5"/>
+          <f x="24.25" y="-3.25" kX="-6.37" kY="-6.37" cX="1.14" cY="0.99" z="18" dr="2"/>
+          <f x="7.05" y="-0.15" kX="-10.46" kY="-10.45" cX="1.14" cY="0.99" z="18" dr="2"/>
+          <f x="-17.45" y="2.95" kX="-10.51" kY="-10.51" cX="1.15" cY="0.99" z="18" dr="2"/>
+          <f x="-21.05" y="4.3" kX="-12.97" kY="-12.97" cX="1.14" cY="0.99" z="18" dr="3"/>
+          <f x="-6.75" y="0.85" kX="-4.13" kY="-4.13" cX="1.09" cY="0.99" z="18" dr="5"/>
+        </b>
+        <b name="Zombie_imp_outerarm_upper" sc="1" dl="0">
+          <f x="3.7" y="-0.15" kX="-1" kY="-1" cX="1" cY="1" z="19" img="Zombie_f-Zombie_imp_outerarm upper" dr="5"/>
+          <f x="18.85" y="1.2" kX="4.62" kY="4.62" cX="1.13" cY="0.99" z="19" dr="5"/>
+          <f x="23.4" y="1.6" kX="5.71" kY="5.71" cX="1.16" cY="0.94" z="19" dr="2"/>
+          <f x="9" y="1.15" kX="2.08" kY="0.67" cX="1.19" cY="0.99" z="19" dr="2"/>
+          <f x="-18.9" y="2.2" kX="-39.32" kY="-39.32" cX="1.15" cY="1" z="19" dr="2"/>
+          <f x="-20.95" y="4.85" kX="-52.51" kY="-52.52" cX="1.15" cY="0.95" z="19" dr="3"/>
+          <f x="-11.9" y="1.45" kX="-32.47" kY="-32.47" cX="1.15" cY="0.99" z="19" dr="5"/>
+          <f x="0.95" y="-0.45" kX="-11.96" kY="-11.97" cX="1.15" cY="0.99" z="19" dr="5"/>
+          <f x="13.5" y="-0.1" kX="-1.89" kY="-1.89" cX="1.14" cY="0.99" z="19" dr="5"/>
+          <f x="26.25" y="3.9" kX="10.5" kY="10.5" cX="1.14" cY="0.99" z="19" dr="2"/>
+          <f x="7.2" y="2.85" kX="-4.54" kY="-4.73" cX="1.14" cY="0.99" z="19" dr="2"/>
+          <f x="-18.35" y="1.15" kX="-32.48" kY="-32.48" cX="1.15" cY="0.99" z="19" dr="2"/>
+          <f x="-22" y="4.9" kX="-54.52" kY="-54.52" cX="1.15" cY="0.95" z="19" dr="3"/>
+          <f x="-7.45" y="1.65" kX="-28.75" kY="-28.75" cX="1.1" cY="0.97" z="19" dr="5"/>
+        </b>
+        <b name="Zombie_imp_outerarm_lower" sc="1" dl="0">
+          <f x="5.6" y="-1.8" kX="7.86" kY="7.86" cX="1" cY="1" z="20" img="Zombie_f-Zombie__imp_outerarm_lower" dr="5"/>
+          <f x="16.3" y="-3.15" kX="11.61" kY="11.61" cX="1.2" cY="1" z="20" dr="5"/>
+          <f x="19.15" y="-3.4" kX="7.98" kY="7.98" cX="1.32" cY="1" z="20" dr="2"/>
+          <f x="4.35" y="-2.15" kX="6.13" kY="6.13" cX="1.31" cY="0.99" z="20" dr="2"/>
+          <f x="-19.3" y="1.6" kX="-8.71" kY="-8.71" cX="1.31" cY="0.99" z="20" dr="2"/>
+          <f x="-19.65" y="1.15" kX="-0.24" kY="-0.24" cX="1.31" cY="0.99" z="20" dr="3"/>
+          <f x="-13" y="0.7" kX="-6.65" kY="-6.65" cX="1.31" cY="0.99" z="20" dr="5"/>
+          <f x="-1.95" y="-0.75" kX="-2.77" kY="-2.77" cX="1.31" cY="0.99" z="20" dr="5"/>
+          <f x="7.1" y="-1.9" kX="-0.61" kY="-0.61" cX="1.4" cY="0.99" z="20" dr="5"/>
+          <f x="20.55" y="-1.35" kX="10.72" kY="10.73" cX="1.31" cY="0.99" z="20" dr="2"/>
+          <f x="3.85" y="-0.3" kX="4.77" kY="4.77" cX="1.31" cY="0.99" z="20" dr="2"/>
+          <f x="-19.3" y="1.6" kX="-8.71" kY="-8.71" cX="1.31" cY="0.99" z="20" dr="2"/>
+          <f x="-19.6" y="0.55" kX="-0.24" kY="-0.24" cX="1.31" cY="0.99" z="20" dr="3"/>
+          <f x="-6.8" y="-0.4" kX="1.11" kY="1.11" cX="1.21" cY="0.99" z="20" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_rope" sc="1" dl="0">
+          <f x="2.7" y="-2.35" kX="1.8" kY="1.8" cX="1" cY="1" z="21" img="Zombie_f-Zombie_gargantuar_rope" dr="5"/>
+          <f x="6.45" y="-5" kX="5.87" kY="7.51" cX="1.11" cY="1" z="21" dr="5"/>
+          <f x="9.05" y="-6.4" kX="7.35" kY="10.09" cX="1.15" cY="1" z="21" dr="2"/>
+          <f x="-3.95" y="-5.4" kX="7.35" kY="10.09" cX="1.15" cY="1" z="21" dr="2"/>
+          <f x="-20.4" y="6.9" kX="-12.94" kY="-10.21" cX="1.14" cY="1" z="21" dr="2"/>
+          <f x="-22.05" y="8.55" kX="-15.58" kY="-12.95" cX="1.14" cY="1" z="21" dr="3"/>
+          <f x="-15.45" y="3.75" kX="-8.05" kY="-5.31" cX="1.14" cY="1" z="21" dr="5"/>
+          <f x="-6.8" y="0.6" kX="-3.52" kY="-0.79" cX="1.14" cY="1" z="21" dr="5"/>
+          <f x="-1.3" y="-2.2" kX="2.92" kY="5.66" cX="1.14" cY="1" z="21" dr="5"/>
+          <f x="9.2" y="-4.75" kX="12.18" kY="12.25" cX="1.13" cY="1" z="21" dr="2"/>
+          <f x="1.2" y="-0.05" kX="4.7" kY="2.93" cX="1.1" cY="1" z="21" dr="2"/>
+          <f x="-20.4" y="6.9" kX="-12.94" kY="-10.21" cX="1.14" cY="1" z="21" dr="2"/>
+          <f x="-22.05" y="8.55" kX="-15.58" kY="-12.95" cX="1.14" cY="1" z="21" dr="3"/>
+          <f x="-9.7" y="1.75" kX="-6.46" kY="-4.7" cX="1.1" cY="1" z="21" dr="5"/>
+        </b>
+        <b name="anim_head1" sc="1" dl="0">
+          <f x="3.5" y="-4.7" kX="1.8" kY="1.8" cX="1" cY="1" z="22" img="Zombie_f-Zombie_gargantuar_head" dr="5"/>
+          <f x="20.8" y="-18.85" kX="15.1" kY="15.1" cX="1" cY="1" z="22" dr="5"/>
+          <f x="29.95" y="-25.75" kX="21.89" kY="21.89" cX="1" cY="1" z="22" dr="2"/>
+          <f x="17.75" y="-17.6" kX="21.6" kY="21.6" cX="1" cY="1" z="22" dr="2"/>
+          <f x="-10.25" y="7.7" kX="0.71" kY="0.71" cX="1" cY="1" z="22" dr="2"/>
+          <f x="-11.85" y="9.95" kX="-3" kY="-3" cX="1" cY="1" z="22" dr="3"/>
+          <f x="-2.75" y="-1.05" kX="7.03" kY="7.03" cX="1" cY="1" z="22" dr="5"/>
+          <f x="5.95" y="-6.55" kX="9.8" kY="9.8" cX="1" cY="1" z="22" dr="5"/>
+          <f x="16.95" y="-16.85" kX="17.67" kY="17.67" cX="1" cY="1" z="22" dr="5"/>
+          <f x="35.4" y="-28.3" kX="28.01" kY="28.01" cX="1" cY="1" z="22" dr="2"/>
+          <f x="20.3" y="-18.45" kX="24.16" kY="24.16" cX="0.99" cY="0.99" z="22" dr="2"/>
+          <f x="-9.15" y="6.25" kX="2.7" kY="2.7" cX="0.99" cY="0.99" z="22" dr="2"/>
+          <f x="-11.85" y="9.95" kX="-3" kY="-3" cX="1" cY="1" z="22" dr="3"/>
+          <f x="-0.9" y="-1.25" kX="2.02" kY="2.02" cX="1" cY="1" z="22" dr="5"/>
+        </b>
+        <b name="Zombie_gargantua_jaw" sc="1" dl="0">
+          <f x="1.35" y="-1" kX="1.55" kY="-0.84" cX="1" cY="1" z="23" img="Zombie_f-Zombie_gargantuar_jaw" dr="5"/>
+          <f x="4.2" y="-9.55" kX="10" kY="1.63" cX="1.01" cY="1" z="23" dr="5"/>
+          <f x="5.2" y="-14.15" kX="12.73" kY="0.81" cX="1.02" cY="1" z="23" dr="2"/>
+          <f x="-4.6" y="-10.3" kX="17.35" kY="5.86" cX="1.02" cY="1" z="23" dr="2"/>
+          <f x="-9.6" y="18.7" kX="-8.45" kY="-16.82" cX="1.01" cY="1" z="23" dr="2"/>
+          <f x="-7.1" y="21.1" kX="-11.85" kY="-20.33" cX="1.01" cY="1" z="23" dr="3"/>
+          <f x="-9.3" y="9.3" kX="-2.12" kY="-10.49" cX="1.01" cY="1" z="23" dr="5"/>
+          <f x="-3.7" y="-1.15" kX="7.91" kY="-0.46" cX="1.01" cY="1" z="23" dr="5"/>
+          <f x="-1.7" y="-6.25" kX="8.51" kY="0.14" cX="1.01" cY="1" z="23" dr="5"/>
+          <f x="5.25" y="-19.85" kX="18.85" kY="10.48" cX="1.01" cY="1" z="23" dr="2"/>
+          <f x="-5.2" y="-12.5" kX="17.71" kY="9.62" cX="1" cY="0.99" z="23" dr="2"/>
+          <f x="-10.35" y="18.7" kX="-6.45" kY="-14.82" cX="1" cY="0.99" z="23" dr="2"/>
+          <f x="-7.1" y="21.1" kX="-11.85" kY="-20.33" cX="1.01" cY="1" z="23" dr="3"/>
+          <f x="-2.3" y="8" kX="-3.98" kY="-10.48" cX="1" cY="1" z="23" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_telephonepole" sc="1" dl="0">
+          <f x="0" y="-2" kX="0" kY="0" cX="1" cY="1" z="24" img="Zombie_f-Zombie_gargantuar_telephonepole" dr="5"/>
+          <f x="12.3" y="-3.85" kX="0.65" kY="0.65" cX="1" cY="1" z="24" dr="5"/>
+          <f x="18.75" y="9.4" kX="-5.45" kY="-5.45" cX="1" cY="1" z="24" dr="4"/>
+          <f x="22.9" y="20.65" kX="-12.06" kY="-12.06" cX="1" cY="1" z="24" dr="2"/>
+          <f x="15.55" y="18.15" kX="-11.89" kY="-11.89" cX="0.99" cY="0.99" z="24" dr="3"/>
+          <f x="7.1" y="-0.5" kX="-2.69" kY="-2.69" cX="1" cY="1" z="24" dr="5"/>
+          <f x="-1.35" y="-22.75" kX="7.23" kY="7.23" cX="1" cY="1" z="24" dr="5"/>
+          <f x="-10.55" y="-48.3" kX="18.58" kY="18.58" cX="0.99" cY="0.99" z="24" dr="5"/>
+          <f x="-10.95" y="-68.05" kX="27.89" kY="27.89" cX="0.99" cY="0.99" z="24" dr="4"/>
+          <f x="-20.4" y="-14.95" kX="5.93" kY="5.93" cX="0.99" cY="0.99" z="24" dr="2"/>
+          <f x="-17.35" y="0.05" kX="-1.17" kY="-1.17" cX="0.99" cY="0.99" z="24" dr="3"/>
+          <f x="-8.6" y="-0.95" kX="-0.02" kY="-0.02" cX="0.99" cY="0.99" z="24" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_outerarm_upper" sc="1" dl="0">
+          <f x="1.8" y="-2" kX="-2.28" kY="0.1" cX="0.94" cY="1" z="25" img="Zombie_f-Zombie_gargantuar_outerarm_upper" dr="5"/>
+          <f x="2.5" y="-4.75" kX="-12.07" kY="1.53" cX="0.97" cY="1.04" z="25" dr="5"/>
+          <f x="5.9" y="-6.5" kX="-11.64" kY="7.39" cX="1" cY="1.04" z="25" dr="4"/>
+          <f x="-17.5" y="2.6" kX="-30.15" kY="-4.08" cX="1.04" cY="1.01" z="25" dr="5"/>
+          <f x="-16.4" y="0.15" kX="-27.81" kY="-2.96" cX="1.03" cY="1.05" z="25" dr="5"/>
+          <f x="-6.4" y="-2.2" kX="-17.7" kY="2.54" cX="0.99" cY="1.05" z="25" dr="5"/>
+          <f x="3.1" y="-8.4" kX="-1.99" kY="11" cX="0.95" cY="1.05" z="25" dr="5"/>
+          <f x="13.25" y="-10.45" kX="11.07" kY="20.62" cX="0.94" cY="1.05" z="25" dr="4"/>
+          <f x="-11.4" y="-3.85" kX="-3.81" kY="6.88" cX="0.94" cY="1.05" z="25" dr="2"/>
+          <f x="-10.7" y="-1.55" kX="-4.34" kY="3.61" cX="0.92" cY="1.03" z="25" dr="3"/>
+          <f x="-1.75" y="-3.1" kX="-0.19" kY="5.84" cX="0.95" cY="1.02" z="25" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_outerarm_lower" sc="1" dl="0">
+          <f x="3.45" y="-2.1" kX="0.04" kY="0.04" cX="1" cY="1" z="26" img="Zombie_f-Zombie_gargantuar_outerarm_lower" dr="5"/>
+          <f x="15.95" y="-4.1" kX="0.26" kY="0.9" cX="1" cY="1" z="26" dr="5"/>
+          <f x="18.95" y="-3.15" kX="-0.28" kY="0.35" cX="1" cY="1" z="26" dr="4"/>
+          <f x="6.7" y="-1.1" kX="-10.21" kY="-9.57" cX="1" cY="1" z="26" dr="5"/>
+          <f x="9.7" y="-6.35" kX="-0.35" kY="0.29" cX="1" cY="0.99" z="26" dr="5"/>
+          <f x="15.75" y="-8.85" kX="12.34" kY="12.98" cX="0.99" cY="0.99" z="26" dr="5"/>
+          <f x="17.5" y="-10.5" kX="24.99" kY="25.63" cX="0.99" cY="0.99" z="26" dr="5"/>
+          <f x="19.95" y="-9.25" kX="33.08" kY="33.72" cX="0.99" cY="0.99" z="26" dr="4"/>
+          <f x="-4.05" y="-4.45" kX="12.64" kY="13.28" cX="0.99" cY="0.99" z="26" dr="2"/>
+          <f x="-5.65" y="-2.75" kX="5.76" kY="6.23" cX="0.99" cY="0.99" z="26" dr="3"/>
+          <f x="1.15" y="-2" kX="4.58" kY="4.85" cX="1" cY="1" z="26" dr="5"/>
+        </b>
+        <b name="Zombie_gargantuar_outerarm_hand" sc="1" dl="0">
+          <f x="3.4" y="-2.2" kX="0.04" kY="0.04" cX="1" cY="1" z="27" img="Zombie_f-Zombie_gargantuar_outerarm_hand" dr="5"/>
+          <f x="15.15" y="-3.95" kX="0.8" kY="1.22" cX="0.99" cY="1" z="27" dr="5"/>
+          <f x="20.5" y="-1.4" kX="-4.06" kY="-3.64" cX="0.99" cY="1" z="27" dr="4"/>
+          <f x="21.1" y="1.65" kX="-19.04" kY="-18.62" cX="0.99" cY="1" z="27" dr="5"/>
+          <f x="12.5" y="-6.05" kX="-4.87" kY="-4.45" cX="0.99" cY="1" z="27" dr="5"/>
+          <f x="5.2" y="-12.55" kX="7.82" kY="8.24" cX="0.99" cY="1" z="27" dr="5"/>
+          <f x="-4.85" y="-19.05" kX="19.17" kY="19.58" cX="0.99" cY="1" z="27" dr="5"/>
+          <f x="-11.65" y="-25" kX="29.99" kY="30.4" cX="0.99" cY="1" z="27" dr="4"/>
+          <f x="-17.4" y="-5.65" kX="0.69" kY="1.1" cX="0.98" cY="0.99" z="27" dr="2"/>
+          <f x="-12.75" y="-3.5" kX="-0.09" kY="0.16" cX="0.99" cY="0.99" z="27" dr="3"/>
+          <f x="-4.35" y="-2.75" kX="0.76" kY="0.99" cX="0.99" cY="0.99" z="27" dr="5"/>
+        </b>
+      </mov>
+    </animation>
+  </animations>
+  <TextureAtlas name="Example08" width="512" height="256">
+    <SubTexture name="Zombie_f-Zombie_gargantuar_innerarm_upper" x="304" y="68" width="51" height="57" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_innerarm_lower" x="428" y="117" width="46" height="45" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_innerarm_hand" x="300" y="126" width="46" height="42" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_innlerleg_foot" x="133" y="145" width="59" height="29" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_innerleg_lower" x="356" y="70" width="57" height="41" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantua_innerleg_upper" x="209" y="105" width="52" height="42" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantua_body2" x="0" y="86" width="84" height="34" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_outerleg_foot" x="85" y="86" width="65" height="32" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_outerleg_lower" x="151" y="105" width="57" height="39" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_outerleg_upper" x="0" y="121" width="50" height="38" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_trashcan2" x="475" y="117" width="36" height="21" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_imp_innerarm_upper" x="488" y="25" width="16" height="11" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_imp_body1" x="193" y="148" width="45" height="38" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_imp_head" x="262" y="105" width="37" height="40" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_imp_jaw" x="399" y="112" width="28" height="19" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_trashcan1" x="356" y="112" width="42" height="51" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantua_body1" x="175" y="0" width="128" height="104" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_whiterope" x="0" y="160" width="51" height="14" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie__imp_outerarm_lower" x="488" y="0" width="18" height="12" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_imp_outerarm upper" x="488" y="13" width="16" height="11" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_rope" x="304" y="0" width="74" height="67" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_head" x="379" y="0" width="54" height="69" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_jaw" x="262" y="146" width="37" height="24" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_telephonepole" x="0" y="0" width="174" height="85" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_outerarm_upper" x="434" y="64" width="57" height="52" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_outerarm_lower" x="434" y="0" width="53" height="63" pX="0" pY="0"/>
+    <SubTexture name="Zombie_f-Zombie_gargantuar_outerarm_hand" x="85" y="119" width="47" height="42" pX="0" pY="0"/>
+  </TextureAtlas>
+</skeleton>

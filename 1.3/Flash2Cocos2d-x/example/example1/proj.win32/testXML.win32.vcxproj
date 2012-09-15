@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FD67ED85-EF1D-4EE3-90BB-53789A15B38D}</ProjectGuid>
+    <ProjectName>example1.win32</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\..\..\$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>F:\game\cocos2d-x\src\cocos2d-x\Release.win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)../../$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes;..\..\..\..\cocos2dx;..\..\..\..\cocos2dx\include;..\..\..\..\cocos2dx\kazmath\include;..\..\..\..\cocos2dx\platform\win32;..\..\..\..\cocos2dx\platform\third_party\win32;..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\..\..\..\;..\..\..\..\CocosDenshion\Include;..\..\..\Flash2Cocos2d-X;..\..\..\tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>testXML.h</HeaderFileName>
+      <InterfaceIdentifierFileName>testXML_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>testXML_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/testXML.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes;..\..\..\..\cocos2dx;..\..\..\..\cocos2dx\include;..\..\..\..\cocos2dx\kazmath\include;..\..\..\..\cocos2dx\platform\win32;..\..\..\..\cocos2dx\platform\third_party\win32;..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\..\..\..\;..\..\..\..\CocosDenshion\Include;..\Classes\Flash2Cocos2d-X;..\Classes\tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>testXML.h</HeaderFileName>
+      <InterfaceIdentifierFileName>testXML_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>testXML_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/testXML.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Resources\CloseNormal.png" />
+    <None Include="..\Resources\CloseSelected.png" />
+    <None Include="..\Resources\fps_images-hd.png" />
+    <None Include="..\Resources\fps_images-ipadhd.png" />
+    <None Include="..\Resources\fps_images.png" />
+    <None Include="..\Resources\HelloWorld.png" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="res\testXML.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="example1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CAnimation.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CArmature.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CArmatureAniData.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CBaseNode.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CBone.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CBoneAniData.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CConstValue.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CConnectionData.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CTextureData.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CEventFrame.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CFrameNode.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CFrameNodeList.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CMathHelper.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CProcessBase.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CTween.h" />
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CTweenNode.h" />
+    <ClInclude Include="..\..\..\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\..\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CAnimation.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CArmature.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CArmatureAniData.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CBaseNode.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CBone.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CBoneAniData.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CConnectionData.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CEventFrame.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CFrameNode.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CFrameNodeList.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CMathHelper.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CProcessBase.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CTween.cpp" />
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CTweenNode.cpp" />
+    <ClCompile Include="..\..\..\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\..\..\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

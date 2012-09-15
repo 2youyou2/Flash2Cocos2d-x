@@ -1,0 +1,31 @@
+#pragma once
+
+#include <string>
+#include "cocos2d.h"
+
+using namespace cocos2d;
+
+/*事件帧数据*/
+class CCEventFrame : public CCObject
+{
+public:
+	static CCEventFrame *create(std::string _name, int _frame);
+public:
+    /**
+    * @param _name 帧事件名
+    * @param _frame 该事件发生在第几帧
+    */
+    CCEventFrame(std::string _name, int _frame);
+    ~CCEventFrame(void);
+
+	virtual bool init();
+
+public:
+    /*帧事件名*/
+    std::string name;
+
+    /*该事件发生在第几帧*/
+    int frame;
+
+};
+

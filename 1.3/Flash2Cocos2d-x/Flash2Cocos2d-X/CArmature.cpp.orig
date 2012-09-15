@@ -1,0 +1,218 @@
+#include "CArmature.h"
+#include "CBaseCommand.h"
+#include "CConnectionData.h"
+
+CCSpriteFrameCache* CCArmature::cache			= NULL;
+std::string			CCArmature::eachImageSuffix = ".png";
+
+CCArmature *CCArmature::create(std::string _name, std::string _animationName, std::string _plistPath, std::string _imagePath, bool _isRadian, bool _useLocalXYZ, std::string _eachImageSuffix) {
+    //CCXLOG("Enter CCArmature::createArmature");
+
+	CCArmature *_armature = new CCArmature();
+	if (_armature && _armature->init(_name, _animationName, _plistPath, _imagePath, _isRadian, _useLocalXYZ, _eachImageSuffix)) {
+		_armature->autorelease();
+		return _armature;
+	}
+	CC_SAFE_DELETE(_armature);
+	return NULL;
+
+    //CCXLOG("Finish CCArmature::createArmature");
+}
+
+
+CCSprite* CCArmature::createBoneDisplay(std::string _boneName) {
+    if (cache) {
+        return getTextureDisplay(cache, _boneName + eachImageSuffix);
+    }
+    return NULL;
+}
+
+CCSprite* CCArmature::getTextureDisplay(CCSpriteFrameCache* _cache, std::string _boneName) {
+    CCSprite *_display = CCSprite::createWithSpriteFrameName(_boneName.c_str());
+    return _display;
+}
+
+CCSprite* CCArmature::createArmatureDisplay(std::string _armatureName) {
+    return CCSprite::create();
+}
+
+
+CCArmature::CCArmature() {
+    animation	= NULL;
+    display		= NULL;
+	isRadian	= false;
+	mArmaureDisplayFactory = NULL;
+	mBoneDisplayFactory = NULL;
+}
+
+
+CCArmature::~CCArmature(void) {
+	CC_SAFE_DELETE( animation );
+}
+
+bool CCArmature::init(std::string _name, std::string _animationName, std::string _plistPath, std::string _imagePath, bool _isRadian, bool _useLocalXYZ, std::string _eachImageSuffix){
+	bool bRet = false;
+	do {
+
+		animation = CCARmatureAnimation::create();
+		isRadian	= _isRadian;
+
+		CCAssert(animation, "create CCArmature::animation fail!");
+		addChild(animation);
+
+		eachImageSuffix = _eachImageSuffix;
+
+		cache =  CCSpriteFrameCache::sharedSpriteFrameCache();
+		cache->addSpriteFramesWithFile(_plistPath.c_str(), _imagePath.c_str());
+
+		
+
+		CCArray *_armatureData = CCConnectionData::sharedConnectionData()->getArmatureData(_name);
+		if(_armatureData->count()<=0){
+			return NULL;
+		}
+
+		CCSprite* _armatureDisplay = NULL;
+
+		if( !mArmaureDisplayFactory ){
+			mArmaureDisplayFactory = this;
+		}
+
+		do{
+			display = mArmaureDisplayFactory->createArmatureDisplay(_name);
+			CCAssert(display, "create CCArmature::init::_armatureDisplay fail.");
+		} while (0);
+		
+
+
+		name = _name;
+
+		CCArmatureAniData* _animationData = CCConnectionData::sharedConnectionData()->getAnimationData(_animationName);
+		if (_animationData) {
+			animation->setData(_animationData);
+		}
+
+		CCBone* _bone;
+		PCCArmatureData _boneData;
+		std::string _boneName;
+		std::string _parentName;
+		CCSprite* _boneDisplay;
+		CCSprite* _displayHigher;
+		int _indexZ;
+		//std::vector<?> _list;
+		int _length = _armatureData->count();
+
+		for(int indexI = 0; indexI < _length; indexI++){
+			_boneData = (PCCArmatureData)_armatureData->objectAtIndex(indexI);
+			_boneName = _boneData->name;
+			_parentName = _boneData->parent;
+			_indexZ = _useLocalXYZ? -2:_boneData->z;
+
+			if( !mBoneDisplayFactory ){
+				mBoneDisplayFactory = this;
+			}
+			do{
+				_boneDisplay = mBoneDisplayFactory->createBoneDisplay(_boneName);
+				CCAssert(_boneDisplay, "create CCArmature::init::_boneDisplay fail.");
+			} while (0);
+			
+
+			_bone = addBone(_boneName, _parentName, _boneDisplay, _indexZ);
+
+			float _anchorPointX = -_boneData->registrationPointX / _boneData->width;
+			float _anchorPointY = (_boneData->height - _boneData->registrationPointY) / _boneData->height;
+			_bone->display->setAnchorPoint(ccp(_anchorPointX, _anchorPointY));
+			_bone->setLockPosition( _boneData->x, _boneData->y );
+
+			//CCLOG( "%s: %f, %f, %f, %f" , _boneData->name.c_str(), _anchorPointX, _anchorPointY, _boneData->x, _boneData->y);
+
+		}
+
+		scheduleUpdate();
+
+		bRet = true;
+	} while (0);
+
+	return bRet;
+}
+
+/**
+* 更新 Tween、Bone、Animation
+*/
+void CCArmature::update(float dt) {
+    //CCLOG("test");
+
+    int _len = boneList.size();
+    CCBone* _bone;
+    for (int _i = 0; _i < _len; _i++ ) {
+        _bone = boneList[_i];
+        animation->updateTween(_bone->name, dt);
+        _bone->update( dt );
+    }
+    animation->update( dt );
+}
+
+void CCArmature::remove() {
+    for (std::vector<CCBone*>::iterator _bone; _bone!=boneList.end(); _bone++) {
+        (*_bone)->remove();
+    }
+
+    animation->remove();
+    animation = NULL;
+    display = NULL;
+    boneDic.clear();
+    boneList.clear();
+}
+
+/**
+* 获取骨架显示对象
+* @return 返回骨架的显示对象
+*/
+CCNode* CCArmature::getDisplay() {
+    return display;
+}
+
+CCBone* CCArmature::addBone(std::string _name, std::string _parentName, CCNode* _display, int _index) {
+    CCBone* _bone = boneDic[_name];
+    if(!_bone) {
+        _bone = CCBone::create(isRadian);
+        _bone->name = _name;
+        boneList.push_back(_bone);
+        boneDic[_name] = _bone;
+        CCBone* _boneParent = boneDic[_parentName];
+        if(_boneParent) {
+            _boneParent->addBoneChild(_bone);
+        }
+        animation->addTween(_bone);
+    }
+    if(_display) {
+        /*if(_display->name != _name){
+        	_display->name = _name;
+        }*/
+        CCNode* _displayOld = _bone->display;
+        _bone->display = _display;
+        if(_displayOld) {
+            display->addChild(_display, _displayOld->getZOrder() - 1);
+        } else if (_index == -1) {
+            display->addChild(_display);
+        } else if (_index >= 0) {
+            display->addChild(_display, _index);
+        }
+    }
+    return _bone;
+}
+
+CCBone* CCArmature::getBone(std::string _name) {
+    return boneDic[_name];
+}
+
+void CCArmature::removeBone(std::string _name) {
+    CCBone* _bone = boneDic[_name];
+    if(_bone) {
+        if(_bone->display /*&& display->contains(_bone->display)*/) {
+            display->removeChild(_bone->display, false);
+        }
+        animation->removeTween(_bone);
+        _bone->remove();
+    }
+}

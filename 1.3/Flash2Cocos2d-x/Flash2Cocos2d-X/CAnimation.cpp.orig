@@ -1,0 +1,270 @@
+#include "CAnimation.h"
+#include "CEventFrame.h"
+using namespace std;
+
+CCARmatureAnimation *CCARmatureAnimation::create(CCArmature *_armature){
+	CCARmatureAnimation *pARmatureAnimation = new CCARmatureAnimation();
+	if (pARmatureAnimation && pARmatureAnimation->init(_armature)) {
+		pARmatureAnimation->autorelease();
+		return pARmatureAnimation;
+	}
+	CC_SAFE_DELETE(pARmatureAnimation);
+	return NULL;
+}
+
+CCARmatureAnimation::CCARmatureAnimation() {
+    armature		= NULL;
+    onAnimation		= NULL;
+    armatureAniData = NULL;
+    boneAniData		= NULL;
+}
+
+CCARmatureAnimation::~CCARmatureAnimation(void) {
+	CC_SAFE_DELETE( tweens );
+}
+
+bool CCARmatureAnimation::init(CCArmature *_armature){
+	bool bRet = false;
+	do {
+		armature	= _armature;
+
+		tweens		= new CCDictionary();
+		CCAssert(tweens, "create CCARmatureAnimation::tweens fail!");
+
+		bRet = true;
+	} while (0);
+
+	return bRet;
+}
+
+void CCARmatureAnimation::remove() {
+    stop();
+    CCProcessBase::remove();
+
+	CCDictElement *_element = NULL;
+	CCDICT_FOREACH(tweens, _element){
+		CCTween* _tween = (CCTween*)_element->getObject();
+		_tween->remove();
+	}
+    CC_SAFE_DELETE( armatureAniData );
+    CC_SAFE_DELETE( boneAniData );
+    armatureAniData = NULL;
+    boneAniData = NULL;
+    aniIDNow = "";
+    //tweens->removeAllObjects();
+}
+
+void CCARmatureAnimation:: pause() {
+    CCProcessBase::pause();
+
+	CCDictElement *_element = NULL;
+	CCDICT_FOREACH(tweens, _element){
+		CCTween* _tween = (CCTween*)_element->getObject();
+		_tween->pause();
+	}
+}
+
+void CCARmatureAnimation::resume() {
+    CCProcessBase::resume();
+    
+	CCDictElement *_element = NULL;
+	CCDICT_FOREACH(tweens, _element){
+		CCTween* _tween = (CCTween*)_element->getObject();
+		_tween->resume();
+	}
+}
+
+void CCARmatureAnimation::stop() {
+    CCProcessBase::stop();
+
+	CCDictElement *_element = NULL;
+	CCDICT_FOREACH(tweens, _element){
+		CCTween* _tween = (CCTween*)_element->getObject();
+		_tween->stop();
+	}
+}
+
+CCArmatureAniData* CCARmatureAnimation::getData() {
+    return armatureAniData;
+}
+
+void CCARmatureAnimation::setData(CCArmatureAniData* _aniData) {
+    remove();
+    armatureAniData = _aniData;
+}
+
+void CCARmatureAnimation::setAnimationScale(float _scale, std::string _boneName ) {
+    CCTween* _tween;
+    if (_boneName!="") {
+        _tween = (CCTween*)tweens->objectForKey(_boneName);
+        if (_tween) {
+            _tween->scale = _scale;
+        }
+    } else {
+        scale = _scale;
+
+		CCDictElement *_element = NULL;
+		CCDICT_FOREACH(tweens, _element){
+			CCTween* _tween = (CCTween*)_element->getObject();
+			_tween->scale = _scale;
+		}
+    }
+}
+
+void CCARmatureAnimation::addTween(CCBone* _bone) {
+    std::string _boneID = _bone->name;
+    CCTween		*_tween = (CCTween*)tweens->objectForKey(_boneID);
+    if (!_tween) {
+		_tween = CCTween::create();
+        tweens->setObject(_tween, _boneID);
+    }
+    _tween->setNode(_bone->tweenNode);
+}
+
+void CCARmatureAnimation::removeTween(CCBone* _bone) {
+    std::string _boneID = _bone->name;
+    CCTween		*_tween = (CCTween*)tweens->objectForKey(_boneID);
+    if (_tween) {
+        _tween->remove();
+    }
+}
+
+CCTween* CCARmatureAnimation::getTween(std::string _boneID) {
+    return (CCTween*)tweens->objectForKey(_boneID);
+}
+
+void CCARmatureAnimation::updateTween(std::string _boneID, float dt) {
+    CCTween* _tween = (CCTween*)tweens->objectForKey(_boneID);
+    if (_tween) {
+        _tween->update( dt );
+    }
+}
+
+void CCARmatureAnimation::playTo(void * _to, int _toFrames, int _listFrames, bool _loop, int _ease) {
+    //CCXLOG("Enter CCARmatureAnimation::playTo");
+    if (!armatureAniData) {
+        return;
+    }
+    boneAniData = armatureAniData->getAnimation( (const char *)_to );
+    if (!boneAniData) {
+        return;
+    }
+    CCProcessBase::playTo(_to, _toFrames, _listFrames, _loop, _ease);
+    aniIDNow = (const char *)_to;
+    CCFrameNodeList *_eachA;
+	CCDictElement	*_element = NULL;
+    CCTween			*_tween;
+
+	CCDICT_FOREACH(tweens, _element){
+		_tween = (CCTween*)_element->getObject();
+		_eachA = boneAniData->getAnimation(_element->getStrKey());
+		if (_eachA) {
+			_tween->playTo(_eachA, _toFrames, _listFrames, _loop, _ease);
+		}
+	}
+
+   /* for(map<string, CCTween*>::iterator _boneName = tweens.begin(); _boneName != tweens.end(); ++_boneName) {
+
+        _tween = tweens[_boneName->first];
+        _eachA = boneAniData->getAnimation(_boneName->first);
+        if (_eachA) {
+            _tween->playTo(_eachA, _toFrames, _listFrames, _loop, _ease);
+        }
+    }*/
+    noScaleListFrames = boneAniData->frame;
+
+    if (noScaleListFrames == 1) {
+        //普通过渡
+        loop = -4;
+    } else {
+        if (_loop) {
+            //循环过渡
+            loop = -2;
+        } else {
+            //列表过渡
+            loop = -3;
+            noScaleListFrames --;
+        }
+        listFrames = _listFrames;
+    }
+    //CCXLOG("Finish CCARmatureAnimation::playTo");
+}
+
+void CCARmatureAnimation::updateHandler() {
+
+    if (currentPrecent >= 1) {
+        switch(loop) {
+        case -3:
+            //列表过渡
+            loop = -1;
+            currentPrecent = (currentPrecent - 1) * totalFrames / listFrames;
+            if (currentPrecent >= 1) {
+                //
+            } else {
+                currentPrecent = (int)(currentPrecent) % 1;
+                totalFrames = listFrames;
+                listEndFrame = 0;
+                if (onAnimation!=NULL) {
+                    onAnimation(START, aniIDNow, armature, "");
+                }
+                break;
+            }
+        case -1:
+        case -4:
+            currentPrecent = 1;
+            isComplete = true;
+            if (onAnimation!=NULL) {
+                onAnimation(COMPLETE, aniIDNow, armature, "");
+            }
+            break;
+        case -2:
+            //循环开始
+            loop = 0;
+            currentPrecent = (int)(currentPrecent) % 1;
+            totalFrames = listFrames;
+            listEndFrame = 0;
+            if (onAnimation!=NULL) {
+                onAnimation(START, aniIDNow, armature, "");
+            }
+            break;
+        default:
+            //继续循环
+            loop += int(currentPrecent);
+            currentPrecent = (int)(currentPrecent) % 1;
+            if (onAnimation != NULL) {
+                onAnimation(LOOP_COMPLETE, aniIDNow, armature, "");
+            }
+            break;
+        }
+    }
+
+    if (loop >= -1 && boneAniData->eventList->count() > 0) {
+        //多关键帧动画过程
+        updateCurrentPrecent();
+    }
+}
+
+void CCARmatureAnimation::updateCurrentPrecent() {
+    float _playedFrames = noScaleListFrames * currentPrecent;
+    if (_playedFrames <= listEndFrame-betweenFrame || _playedFrames > listEndFrame) {
+        toFrameID = 0;
+        listEndFrame = 0;
+
+        CCEventFrame *_eventFrame = (CCEventFrame*)(boneAniData->eventList->objectAtIndex(toFrameID));
+        int _prevFrameID;
+        do {
+            betweenFrame = _eventFrame->frame;
+            listEndFrame += betweenFrame;
+            _prevFrameID = toFrameID;
+            if (++toFrameID >= boneAniData->eventList->count()) {
+                toFrameID = 0;
+            }
+        } while (_playedFrames >= listEndFrame);
+
+        if (onAnimation != NULL) {
+            onAnimation(IN_FRAME, aniIDNow, armature, _eventFrame->name);
+        }
+    }
+
+    currentPrecent = 1 - (listEndFrame - _playedFrames) / betweenFrame;
+}

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{0d01abdf-c184-4d1e-8243-0995fd73014e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{942f1295-df4f-476c-9e7b-a982e5918ade}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{c8a873e0-aa06-4501-8ef9-6aa90575db92}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="Flash2Cocos2d-x">
+      <UniqueIdentifier>{ddae32aa-1857-490c-ae2a-84a6ffe671ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TinyXML">
+      <UniqueIdentifier>{baec578d-f284-421b-b02d-de5a1a5c270f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\testXML.ico">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CloseSelected.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CloseNormal.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\HelloWorld.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\fps_images.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\fps_images-hd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\fps_images-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CAnimation.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CArmature.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CArmatureAniData.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CBaseNode.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CBone.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CBoneAniData.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CConnectionData.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CEventFrame.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CFrameNode.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CFrameNodeList.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CMathHelper.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CProcessBase.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CTween.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CTweenNode.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tinyxml\tinystr.h">
+      <Filter>TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tinyxml\tinyxml.h">
+      <Filter>TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CConstValue.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Flash2Cocos2d-X\CTextureData.h">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CAnimation.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CArmature.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CArmatureAniData.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CBaseNode.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CBone.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CBoneAniData.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CConnectionData.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CEventFrame.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CFrameNode.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CFrameNodeList.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CMathHelper.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CProcessBase.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CTween.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Flash2Cocos2d-X\CTweenNode.cpp">
+      <Filter>Flash2Cocos2d-x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tinyxml\tinystr.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tinyxml\tinyxml.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tinyxml\tinyxmlerror.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tinyxml\tinyxmlparser.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="example1.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
