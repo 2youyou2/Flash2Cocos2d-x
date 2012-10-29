@@ -148,7 +148,7 @@ void CCArmature::createBones(CCArray *_armatureDatas){
 		float _anchorPointX = _boneData->pivotX / _boneData->width;
 		float _anchorPointY = (_boneData->height - _boneData->pivotY) / _boneData->height;
 		_bone->getDisplay()->setAnchorPoint(ccp(_anchorPointX, _anchorPointY));
-		_bone->setLockPosition( _boneData->x, _boneData->y , _boneData->rotation);
+		_bone->setLockPosition( _boneData->x, _boneData->y , _boneData->skewX, _boneData->skewY);
 	}
 
 
@@ -174,7 +174,7 @@ void CCArmature::update(float dt) {
 	CCObject *_object = NULL;
 	CCARRAY_FOREACH(mBoneList, _object){
 		CCBone *_bone = (CCBone*)_object;
-		mAnimation->updateTween(&_bone->getName(), dt);
+		mAnimation->updateTween(_bone->getName(), dt);
 		_bone->update( dt );
 	}
 

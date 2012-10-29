@@ -96,6 +96,8 @@ void CCTween::playTo(void * _to, int _toFrames, int _listFrames, bool _loop, int
 	mFrom->copy(mNode);
 	mTweenList = (CCFrameNodeList*)_to;
 
+	mEase = _ease;
+
 	if (mTweenList->getLength() == 1) {
 		//普通过渡
 		mLoop = SINGLE;
@@ -139,6 +141,7 @@ void CCTween::playTo(void * _to, int _toFrames, int _listFrames, bool _loop, int
 			mTo->copy(mTweenList->getFrame(0));
 		}
 	}
+	
 	mNode->betweenValue(mFrom, mTo);
 }
 
@@ -153,17 +156,19 @@ void CCTween::updateHandler() {
 		case LIST_LOOP_START:
 			//循环开始
 			mLoop = 0;
+			mCurrentPrecent = mCurrentPrecent * mTotalFrames / mDurationTween;
 			mTotalFrames = mDurationTween;
 			if (mTweenList->getDelay() != 0) {
 				mCurrentFrame = (1 - mTweenList->getDelay()) * mTotalFrames;
 				mCurrentPrecent += mCurrentFrame / mTotalFrames;
 			}
-			mCurrentPrecent = (int)(mCurrentPrecent) % 1;
+			
 			mTotalDuration = 0;
+			
 			break;
 		case LIST_START:
 			//列表过渡
-			mLoop = -1;
+			mLoop = SINGLE;
 			mCurrentFrame = mCurrentPrecent * mTotalFrames;
 			mCurrentPrecent = mCurrentFrame / mDurationTween;
 			if (mCurrentPrecent >= 1) {
@@ -188,7 +193,6 @@ void CCTween::updateHandler() {
 	}else if (mLoop < -1) {
 		mCurrentPrecent = sin(mCurrentPrecent * HALF_PI);
 	}
-
 	if (mLoop >= -1) {
 		//多关键帧动画过程
 		updateCurrentPrecent();
@@ -199,10 +203,11 @@ void CCTween::updateHandler() {
 void CCTween::updateCurrentPrecent(){
 	float _playedFrames = mDuration * mCurrentPrecent;
 
+	//播放头到达当前帧的前面或后面则重新寻找当前帧
 	if (_playedFrames <= mTotalDuration-mBetweenDuration || _playedFrames > mTotalDuration) {
 		mTotalDuration = 0;
 		mToFrameID = 0;
-		int _prevFrameID;
+		int _prevFrameID = 0;
 		
 		do {
 			mBetweenDuration = mTweenList->getFrame(mToFrameID)->frame;
@@ -215,20 +220,24 @@ void CCTween::updateCurrentPrecent(){
 
 		mFrom->copy(mTweenList->getFrame(_prevFrameID));
 		mTo->copy(mTweenList->getFrame(mToFrameID));
+		
 		mNode->betweenValue(mFrom, mTo);
+
 	}
 
 	mCurrentPrecent = 1 - (mTotalDuration - _playedFrames) / mBetweenDuration;
-	if (mEase == 2) {
+
+	
+	/*if (mEase == 2) {
 		mCurrentPrecent = 0.5 * (1 - cos(mCurrentPrecent * M_PI ));
 	}else if (mEase != 0) {
 		mCurrentPrecent = mEase > 0?sin(mCurrentPrecent * HALF_PI):(1 - cos(mCurrentPrecent * HALF_PI));
-	}
+	}*/
 }
 
 void CCTween::setActive(bool _active){
 	mActive = _active;
-	mNode->visible = _active;
+	mNode->active = _active;
 }
 
 bool CCTween::getActive(){

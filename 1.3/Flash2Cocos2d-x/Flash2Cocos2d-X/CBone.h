@@ -47,7 +47,7 @@ public:
 	/* 添加子骨骼 */
 	void	addBoneChild(CCBone* _child);
 	/* 调整在父骨骼中的绑定位置，仅在拥有 parent 时起作用 */
-	void	setLockPosition(float _x, float _y, float _r = 0);
+	void	setLockPosition(float _x, float _y, float _skewX = 0, float _skewY = 0);
 	/* 更新位置 */
 	void	update( float dt );
 	/* 获取在 Armatur.display 中的全局 x 坐标 */
@@ -56,6 +56,8 @@ public:
 	float	getGlobalY();
 	/* 获取在 Armatur.display 中的全局 rotation */
 	float	getGlobalR();
+	float	getGlobalSkewX();
+	float	getGlobalSkewY();
 
 
 protected:
@@ -68,8 +70,8 @@ protected:
 public:
 
 	/* 骨骼名称 Armature 通过骨骼名索引 Bone。Animation 通过骨骼名建立 Bone 与 Tween 的关联 */	
-	CC_SYNTHESIZE_PASS_BY_REF(std::string, mName, Name);
-
+	CC_SYNTHESIZE(const char *, mName, Name);
+	
 	/* 骨骼绑定的显示对象，并不是必须的，可以不绑定显示对象 */
 	CC_SYNTHESIZE_RETAIN(CCNode	*, mDisplay, Display);
 
@@ -87,11 +89,19 @@ protected:
 	bool	mIsRadian;
 	float	mTransformX;
 	float	mTransformY;
+	float	mTransformSkewX;
+	float	mTransformSkewY;
+	float	mTransformRotation;
 	float	mLockX;
 	float	mLockY;
 	float	mLockR;
+	float	mLockSkewX;
+	float	mLockSkewY;
 	float	mParentX;
 	float	mParentY;
 	float	mParentR;
+	float	mParentSkewX;
+	float	mParentSkewY;
+
 };
 

@@ -30,12 +30,17 @@ protected:
 	float sY;
 	float sSX;
 	float sSY;
+	float sSKX;
+	float sSKY;
 	float sA;
+
 	float dR;
 	float dX;
 	float dY;
 	float dSX;
 	float dSY;
+	float dSKX;
+	float dSKY;
 	float dA;
 };
 

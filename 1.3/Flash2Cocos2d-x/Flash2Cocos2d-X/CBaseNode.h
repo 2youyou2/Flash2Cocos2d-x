@@ -33,5 +33,6 @@ public:
 	float skewY;
 	float tweenRotate;
 	bool  visible;
+	bool  active;
 };
 

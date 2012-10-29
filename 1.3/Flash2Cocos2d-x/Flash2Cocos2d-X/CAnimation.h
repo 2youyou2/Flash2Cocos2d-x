@@ -4,6 +4,7 @@
 #include "CArmatureAniData.h"
 #include "CTween.h"
 #include "CBone.h"
+#include <hash_map>
 
 class CCArmature;
 
@@ -75,7 +76,7 @@ public:
     /**
     * 更新指定的 Tween 实例
     */
-    void updateTween(const std::string *_boneID, float dt);
+    void updateTween(const char *_boneID, float dt);
     /**
     * 播放动画
     * @param _to ArmatureAniData 在 ConnectionData 中的字符串索引
@@ -84,7 +85,7 @@ public:
     * @param _loop 是否循环
     * @param _ease FrameNodeList 各个关键点的缓动方式，-1:SineOut，0:Line，1:SineIn，2:SineInOut
     */
-    void playTo(void * _to,int _durationTo = -1, int _durationTween = -1,  bool _loop = true, int _ease = std::numeric_limits<float>::quiet_NaN());
+    void playTo(void * _to, int _durationTo = -1, int _durationTween = -1,  bool _loop = true, int _ease = std::numeric_limits<float>::quiet_NaN());
 
     void updateHandler();
 
@@ -103,6 +104,7 @@ private:
 	
     // <const char*, CCTween*>
     CCDictionary	*mTweens;
+	
     const char*		mAniIDNow;
 
 };

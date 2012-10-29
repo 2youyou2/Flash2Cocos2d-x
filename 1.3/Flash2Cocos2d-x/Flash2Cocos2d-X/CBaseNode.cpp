@@ -34,6 +34,7 @@ void CCBaseNode::reset(){
 
 	alpha = 255;
 	visible = true;
+	active = true;
 }
 
 bool CCBaseNode::init( float _x, float _y, float _rotation, float _scaleX, float _scaleY,  float _z, float _skewX, float _skewY){
@@ -67,4 +68,5 @@ void CCBaseNode::copy( CCBaseNode* _fV ) {
 	skewY = _fV->skewY;
 	tweenRotate = _fV->tweenRotate;
 	alpha = _fV->alpha;
+	visible = _fV->visible;
 }

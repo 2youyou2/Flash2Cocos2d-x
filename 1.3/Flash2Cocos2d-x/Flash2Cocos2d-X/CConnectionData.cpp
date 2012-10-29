@@ -227,7 +227,6 @@ void CCConnectionData::decodeAnimations(TiXmlElement *_animationsXML){
 			_movement = _movement->NextSiblingElement(MOVEMENT);
 
 		}
-
 		_animationXML = _animationXML->NextSiblingElement(ANIMATION);
 
 	}
@@ -258,6 +257,7 @@ CCFrameNodeList* CCConnectionData::getFrameNodeList(TiXmlElement* _frameXMLList,
 CCFrameNode* CCConnectionData::getFrameNode(TiXmlElement* _nodeXML) {
     float _x, _y, _scale_x, _scale_y, _skew_x, _skew_y, _rotation, _off_r, _alpha = 0;
     int _frame = 0;
+	int _hide = 0;
 
     CCFrameNode* _node = CCFrameNode::create();
 
@@ -278,17 +278,23 @@ CCFrameNode* CCConnectionData::getFrameNode(TiXmlElement* _nodeXML) {
     }
 	if( _nodeXML->QueryFloatAttribute(A_SKEW_X, &_skew_x) == TIXML_SUCCESS ) {
 		_node->skewX = _skew_x;
-		_node->rotation = _skew_x;
+		//_node->rotation = _skew_x;
 	}
 	if( _nodeXML->QueryFloatAttribute(A_SKEW_Y, &_skew_y) == TIXML_SUCCESS ) {
 		_node->skewY = -_skew_y;
 	}
-	if( _nodeXML->QueryIntAttribute(FRAME, &_frame) == TIXML_SUCCESS ) {
+	if( _nodeXML->QueryIntAttribute(A_DURATION, &_frame) == TIXML_SUCCESS ) {
 		_node->frame = _frame;
+		//CCXLOG("%d", _frame);
 	}
     if( _nodeXML->QueryFloatAttribute(A_ALPHA, &_alpha) == TIXML_SUCCESS ) {
         _node->alpha = _alpha * 255;
     }
+	if(  _nodeXML->QueryIntAttribute(A_HIDE, &_hide) == TIXML_SUCCESS ) {
+		_node->visible = !(bool)_hide;
+	}
+	
+
 	/*if( _nodeXML->QueryFloatAttribute(A_OFF_R, &_off_r) == TIXML_SUCCESS ) {
 		_node->offR = _off_r;
 	}*/

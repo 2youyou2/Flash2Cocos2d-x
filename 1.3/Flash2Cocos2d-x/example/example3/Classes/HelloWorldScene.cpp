@@ -50,10 +50,15 @@ bool HelloWorld::init(){
 
 		CCSize size = CCDirector::sharedDirector()->getWinSize();
 		CCConnectionData::sharedConnectionData()->addData("skeleton.xml");
+
+		
+		CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("robotbiped.plist", "robotbiped.png");
+
 		batchNode = CCSpriteBatchNode::create( "robotbiped.png" );
 		addChild(batchNode);
 
-		armature = CCArmature::create("RobotBiped", "RobotBiped", "robotbiped.plist", "robotbiped.png", batchNode);
+
+		armature = CCArmature::create("RobotBiped", "RobotBiped", batchNode);
 		armature->getDisplay()->setPosition(ccp(size.width/2, 150));
 		addChild(armature);
 		

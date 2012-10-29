@@ -20,7 +20,7 @@ public:
 	/* 停止 */
 	void stop();
 	/* 播放到 */
-	void playTo(void * _to,int _durationTo = -1, int _durationTween = -1,  bool _loop = true, int _ease = std::numeric_limits<float>::quiet_NaN());
+	virtual void playTo(void * _to,int _durationTo = -1, int _durationTween = -1,  bool _loop = true, int _ease = std::numeric_limits<float>::quiet_NaN());
 	/* 更新 */
 	void update(float dt);
 

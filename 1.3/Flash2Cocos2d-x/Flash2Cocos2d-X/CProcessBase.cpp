@@ -6,7 +6,7 @@ CCProcessBase::CCProcessBase(void) {
     mIsComplete = true;
     mIsPause = false;
     mCurrentFrame = 0;
-
+	mToFrameID = 0;
 	mAnimationInternal = CCDirector::sharedDirector()->getAnimationInterval();
 }
 

@@ -1,5 +1,6 @@
 #include "CAnimation.h"
 #include "CEventFrame.h"
+#include "support/data_support/uthash.h"
 using namespace std;
 
 CCArmatureAnimation *CCArmatureAnimation::create() {
@@ -41,11 +42,14 @@ void CCArmatureAnimation::remove() {
     stop();
     CCProcessBase::remove();
 
-    CCDictElement *_element = NULL;
-    CCDICT_FOREACH(mTweens, _element) {
-        CCTween* _tween = (CCTween*)_element->getObject();
-        _tween->remove();
-    }
+	CCDictElement *_element = NULL;
+	CCDICT_FOREACH(mTweens, _element) {
+	CCTween* _tween = (CCTween*)_element->getObject();
+	_tween->remove();
+	}
+
+	
+
 	mArmatureAniData = NULL;
 	mBoneAniData = NULL;
     mAniIDNow = "";
@@ -61,6 +65,7 @@ void CCArmatureAnimation:: pause() {
         CCTween* _tween = (CCTween*)_element->getObject();
         _tween->pause();
     }
+	
 }
 
 void CCArmatureAnimation::resume() {
@@ -71,6 +76,7 @@ void CCArmatureAnimation::resume() {
         CCTween* _tween = (CCTween*)_element->getObject();
         _tween->resume();
     }
+
 }
 
 void CCArmatureAnimation::stop() {
@@ -81,6 +87,7 @@ void CCArmatureAnimation::stop() {
         CCTween* _tween = (CCTween*)_element->getObject();
         _tween->stop();
     }
+
 }
 
 CCArmatureAniData* CCArmatureAnimation::getData() {
@@ -96,6 +103,7 @@ void CCArmatureAnimation::setAnimationScale(float _scale, const char* _boneName 
     CCTween* _tween;
     if (_boneName != "") {
         _tween = (CCTween*)mTweens->objectForKey(_boneName);
+		
         if (_tween) {
             _tween->setScale(_scale);
         }
@@ -107,36 +115,48 @@ void CCArmatureAnimation::setAnimationScale(float _scale, const char* _boneName 
             CCTween* _tween = (CCTween*)_element->getObject();
             _tween->setScale(_scale);
         }
-    }
+    
+	}
 }
 
 void CCArmatureAnimation::addTween(CCBone* _bone) {
-    const char* _boneID = _bone->getName().c_str();
+    const char* _boneID = _bone->getName();
     CCTween		*_tween = (CCTween*)mTweens->objectForKey(_boneID);
     if (!_tween) {
         _tween = CCTween::create();
         mTweens->setObject(_tween, _boneID);
     }
+
+
     _tween->setNode(_bone->getTweenNode());
 }
 
 void CCArmatureAnimation::removeTween(CCBone* _bone) {
-    const char* _boneID = _bone->getName().c_str();
+    const char* _boneID = _bone->getName();
     CCTween		*_tween = (CCTween*)mTweens->objectForKey(_boneID);
     if (_tween) {
         _tween->remove();
     }
+	
 }
 
 CCTween* CCArmatureAnimation::getTween(const char* _boneID) {
     return (CCTween*)mTweens->objectForKey(_boneID);
 }
 
-void CCArmatureAnimation::updateTween(const std::string *_boneID, float dt) {
-	CCTween* _tween = (CCTween*)mTweens->objectForKey(*_boneID);
+void CCArmatureAnimation::updateTween(const char *_boneID, float dt) {
+	CCTween* _tween = NULL;
+	CCDictElement *pElement = NULL;
+	HASH_FIND_STR(mTweens->m_pElements, _boneID, pElement);
+	if (pElement != NULL)
+	{
+		_tween = (CCTween*)pElement->getObject();
+	}
+
     if (_tween) {
         _tween->update( dt );
     }
+	
 }
 
 void CCArmatureAnimation::playTo(void * _to, int _durationTo, int _durationTween,  bool _loop, int _ease) {
@@ -152,6 +172,7 @@ void CCArmatureAnimation::playTo(void * _to, int _durationTo, int _durationTween
 	_durationTo		= _durationTo<0 ? mBoneAniData->getDurationTo() : _durationTo;
 	_durationTween	= _durationTween<0 ? mBoneAniData->getDurationTween() : _durationTween;
 	_ease			= isnan(_ease) ? mBoneAniData->getTweenEasing() : _ease;
+	_loop			= mBoneAniData->getLoop();
 
 
     CCProcessBase::playTo(_to, _durationTo, _durationTween, _loop, _ease);
@@ -185,6 +206,8 @@ void CCArmatureAnimation::playTo(void * _to, int _durationTo, int _durationTween
 		}
 	}
 
+	
+
     //CCXLOG("Finish CCArmatureAnimation::playTo");
 }
 
@@ -197,7 +220,7 @@ void CCArmatureAnimation::updateHandler() {
             mLoop = -1;
 			mCurrentFrame = mCurrentPrecent * mTotalFrames;
             mCurrentPrecent = mCurrentFrame / mDurationTween;
-			CCXLOG("currentPercent : %f", mCurrentPrecent);
+			//CCXLOG("currentPercent : %f", mCurrentPrecent);
             if (mCurrentPrecent >= 1.0f) {
                 //播放速度太快或durationTween时间太短，进入下面的case
             } else {
