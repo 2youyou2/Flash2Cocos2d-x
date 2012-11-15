@@ -260,6 +260,12 @@ CCFrameNode* CCConnectionData::getFrameNode(TiXmlElement* _nodeXML) {
 	int _hide = 0;
 
     CCFrameNode* _node = CCFrameNode::create();
+	
+	if( _nodeXML->Attribute(A_IMAGE) != NULL )
+	{
+		_node->img = _nodeXML->Attribute(A_IMAGE);
+	}
+	
 
 	if(_nodeXML->QueryFloatAttribute(A_ROTATION, &_rotation) == TIXML_SUCCESS){
 		_node->rotation = _rotation;
@@ -285,7 +291,6 @@ CCFrameNode* CCConnectionData::getFrameNode(TiXmlElement* _nodeXML) {
 	}
 	if( _nodeXML->QueryIntAttribute(A_DURATION, &_frame) == TIXML_SUCCESS ) {
 		_node->frame = _frame;
-		//CCXLOG("%d", _frame);
 	}
     if( _nodeXML->QueryFloatAttribute(A_ALPHA, &_alpha) == TIXML_SUCCESS ) {
         _node->alpha = _alpha * 255;
@@ -300,7 +305,7 @@ CCFrameNode* CCConnectionData::getFrameNode(TiXmlElement* _nodeXML) {
 	}*/
 
 
-    //_node->toString();
+    
 
     return _node;
 }
@@ -321,5 +326,5 @@ void CCConnectionData::removeAll(bool _deletMe) {
 		delete mTextureDatas;
 		mTextureDatas = NULL;
 	}
-    //delete this;
+    
 }

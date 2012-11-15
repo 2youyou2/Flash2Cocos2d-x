@@ -22,5 +22,6 @@ protected:
 public:
 	float	offR;
 	int		frame;
+	std::string img;
 };
 

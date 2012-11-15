@@ -166,6 +166,19 @@ void CCBone::updateDisplay(){
 		float _skx = sin( CC_DEGREES_TO_RADIANS(mTransformSkewX)); 
 		float _sky = sin( CC_DEGREES_TO_RADIANS(mTransformSkewY));
 
+		if( mTweenNode->img.compare("") != 0 )
+		{
+			
+			CCSprite *_newSprite = CCSprite::createWithSpriteFrameName(mTweenNode->img.c_str());
+			_newSprite->setAnchorPoint(mDisplay->getAnchorPoint());
+
+			mDisplay->getParent()->addChild(_newSprite);
+			mDisplay->removeFromParentAndCleanup(true);
+			
+
+			mDisplay = _newSprite;
+		}
+
 		mDisplay->setPositionX	( mTransformX );
 		mDisplay->setPositionY	( mTransformY );
 		mDisplay->setScaleX		( mTweenNode->scaleX * _cky );
@@ -173,6 +186,7 @@ void CCBone::updateDisplay(){
 		mDisplay->setSkewX		( CC_RADIANS_TO_DEGREES(atanf(mTweenNode->scaleY * _skx / mDisplay->getScaleX())) );
 		mDisplay->setSkewY		( CC_RADIANS_TO_DEGREES(atanf(mTweenNode->scaleX * _sky / mDisplay->getScaleY())) );
 	
+		
 
 		if( static_cast<CCSprite*>(mDisplay) ){
 			( (CCSprite*)mDisplay )->setOpacity( mTweenNode->alpha );

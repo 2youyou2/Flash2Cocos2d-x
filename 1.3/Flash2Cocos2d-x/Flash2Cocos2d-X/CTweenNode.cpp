@@ -39,6 +39,11 @@ void CCTweenNode::betweenValue(CCFrameNode* _from, CCFrameNode* _to) {
 
 	//CCXLOG("%f, %f", sX, sY);
 
+	if( _from->img.compare("") != 0 )
+	{
+		img = _from->img + ".png";
+	}
+
 	if (_to->offR) {
 		dR = _to->rotation + _to->offR * 360 - sR;
 	}else {

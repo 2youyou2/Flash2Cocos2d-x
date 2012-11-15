@@ -22,6 +22,7 @@ void CCFrameNode::reset(){
 	CCBaseNode::reset();
 	frame = 1;
 	offR = 0;
+	img = "";
 }
 
 void CCFrameNode::copy(CCBaseNode* _fv) {
@@ -31,6 +32,7 @@ void CCFrameNode::copy(CCBaseNode* _fv) {
 		if (_nV) {
 			frame	= _nV->frame;
 			offR	= _nV->offR;
+			img		= _nV->img;
 		}
 	}
 	
