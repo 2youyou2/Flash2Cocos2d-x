@@ -171,7 +171,7 @@ void CCArmatureAnimation::playTo(void * _to, int _durationTo, int _durationTween
 
 	_durationTo		= _durationTo<0 ? mBoneAniData->getDurationTo() : _durationTo;
 	_durationTween	= _durationTween<0 ? mBoneAniData->getDurationTween() : _durationTween;
-	_ease			= isnan(_ease) ? mBoneAniData->getTweenEasing() : _ease;
+	_ease			= (_ease == -2) ? mBoneAniData->getTweenEasing() : _ease;
 	_loop			= mBoneAniData->getLoop();
 
 

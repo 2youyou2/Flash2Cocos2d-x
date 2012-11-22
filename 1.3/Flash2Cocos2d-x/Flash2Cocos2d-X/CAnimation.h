@@ -4,7 +4,6 @@
 #include "CArmatureAniData.h"
 #include "CTween.h"
 #include "CBone.h"
-#include <hash_map>
 
 class CCArmature;
 
@@ -85,7 +84,7 @@ public:
     * @param _loop 是否循环
     * @param _ease FrameNodeList 各个关键点的缓动方式，-1:SineOut，0:Line，1:SineIn，2:SineInOut
     */
-    void playTo(void * _to, int _durationTo = -1, int _durationTween = -1,  bool _loop = true, int _ease = std::numeric_limits<float>::quiet_NaN());
+    void playTo(void * _to, int _durationTo = -1, int _durationTween = -1,  bool _loop = true, int _ease = -2);
 
     void updateHandler();
 
