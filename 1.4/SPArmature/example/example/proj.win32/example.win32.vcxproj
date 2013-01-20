@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E7E7E25F-E3EC-423A-8E79-FDA3DA53F3BE}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>F:\game\cocos2d-x\src\cocos2d-2.0-x-2.0.3\SPArmature\example\example\proj.win32\Debug.win32</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>F:\game\cocos2d-x\src\cocos2d-2.0-x-2.0.3\SPArmature\example\example\proj.win32\Debug.win32;F:\game\cocos2d-x\src\cocos2d-2.0-x-2.0.3\Debug.win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\Release.win32</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>F:\game\cocos2d-x\src\cocos2d-2.0-x-2.0.3\Release.win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes;..\..\..\..\cocos2dx;..\..\..\..\cocos2dx\include;..\..\..\..\cocos2dx\kazmath\include;..\..\..\..\cocos2dx\platform\win32;..\..\..\..\cocos2dx\platform\third_party\win32;..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\..\..\..\;..\..\..\..\CocosDenshion\Include;..\..\..\SPArmature\display;..\..\..\SPArmature\utils;..\..\..\SPArmature\animation;..\..\..\SPArmature\datas;..\..\..\SPArmature;..\..\..\tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;libExtensions.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>example.h</HeaderFileName>
+      <InterfaceIdentifierFileName>example_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>example_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/example.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes;..\..\..\..\cocos2dx;..\..\..\..\cocos2dx\include;..\..\..\..\cocos2dx\kazmath\include;..\..\..\..\cocos2dx\platform\win32;..\..\..\..\cocos2dx\platform\third_party\win32;..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\..\..\..\;..\..\..\..\CocosDenshion\Include;..\..\..\SPArmature\display;..\..\..\SPArmature\utils;..\..\..\SPArmature\animation;..\..\..\SPArmature\datas;..\..\..\SPArmature;..\..\..\tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;libExtensions.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>example.h</HeaderFileName>
+      <InterfaceIdentifierFileName>example_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>example_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/example.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinyxml.suo" />
+    <None Include="..\Resources\CloseNormal.png" />
+    <None Include="..\Resources\CloseSelected.png" />
+    <None Include="..\Resources\HelloWorld.png" />
+    <None Include="res\example.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="example.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\..\..\SPArmature\animation\SPAnimation.h" />
+    <ClInclude Include="..\..\..\SPArmature\animation\SPProcessBase.h" />
+    <ClInclude Include="..\..\..\SPArmature\animation\SPTween.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPAnimationData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPArmatureData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPContourData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPFrameData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPMovementBoneData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPMovementData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPMovementFrameData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPNode.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPBoneData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPDisplayData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPTextureData.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\SPContourSprite.h" />
+    <ClInclude Include="..\..\..\SPArmature\SPArmature.h" />
+    <ClInclude Include="..\..\..\SPArmature\SPBone.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPArmatureDataManager.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPBatchNode.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPBatchNodeManager.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPConstValue.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPMath.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPTransformHelp.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\animation\SPAnimation.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\animation\SPProcessBase.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\animation\SPTween.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPAnimationData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPArmatureData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPContourData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPFrameData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPMovementBoneData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPMovementData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPMovementFrameData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPNode.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPBoneData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPDisplayData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPTextureData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\SPContourSprite.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\SPArmature.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\SPBone.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\utils\SPArmatureDataManager.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\utils\SPBatchNode.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\utils\SPBatchNodeManager.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\utils\SPTransformHelp.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

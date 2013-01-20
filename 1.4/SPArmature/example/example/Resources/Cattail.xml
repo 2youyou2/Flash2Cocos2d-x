@@ -1,0 +1,211 @@
+<skeleton name="Plant" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="Cattail">
+   <b name="Cattail_paw2" x="6.5" y="54.05" kX="0" kY="0" cX="0.8" cY="0.8" z="0">
+    <d name="Cattail_folder-Cattail_paw2.png"/>
+   </b>
+   <b name="Cattail_paw3" x="57.75" y="50.65" kX="0" kY="0" cX="0.8" cY="0.8" z="1">
+    <d name="Cattail_folder-Cattail_paw3.png"/>
+   </b>
+   <b name="Cattail_tail" x="2.4" y="33.8" kX="0" kY="0" cX="0.8" cY="0.8" z="2">
+    <d name="Cattail_folder-Cattail_tail.png"/>
+   </b>
+   <b name="Cattail_tail2" x="-1.55" y="4.7" kX="0" kY="0" cX="0.8" cY="0.8" z="3">
+    <d name="Cattail_folder-Cattail_tail2.png"/>
+   </b>
+   <b name="Cattail_spike" x="8.3" y="2.4" kX="0" kY="0" cX="0.8" cY="0.8" z="4">
+    <d name="Cattail_folder-Cattail_spike.png"/>
+   </b>
+   <b name="Cattail_tail2_overlay" x="-0.85" y="8.75" kX="0" kY="0" cX="0.8" cY="0.8" z="5">
+    <d name="Cattail_folder-Cattail_tail2_overlay.png"/>
+   </b>
+   <b name="anim_face" x="25.95" y="25.1" kX="0" kY="0" cX="0.8" cY="0.8" z="6">
+    <d name="Cattail_folder-Cattail_head.png"/>
+   </b>
+   <b name="Cattail_paw1" x="31.15" y="59.35" kX="0" kY="0" cX="0.85" cY="0.85" z="7">
+    <d name="Cattail_folder-Cattail_paw1.png"/>
+   </b>
+   <b name="Cattail_hat" x="11.75" y="9.25" kX="0" kY="0" cX="0.8" cY="0.8" z="8">
+    <d name="Cattail_folder-Cattail_hat.png"/>
+   </b>
+   <b name="Cattail_eyebrow1" x="38.65" y="34" kX="0" kY="0" cX="0.8" cY="0.8" z="9">
+    <d name="Cattail_folder-Cattail_eyebrow1.png"/>
+   </b>
+   <b name="Cattail_eyebrow2" x="60.9" y="31.4" kX="0" kY="0" cX="0.8" cY="0.8" z="10">
+    <d name="Cattail_folder-Cattail_eyebrow2.png"/>
+   </b>
+   <b name="Cattail_blink" x="46.65" y="36.2" kX="23.47" kY="13.21" cX="0.8" cY="0.82" z="9">
+    <d name="Cattail_folder-Cattail_blink1.png"/>
+    <d name="Cattail_folder-Cattail_blink2.png"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="Cattail">
+   <mov name="anim_idle" dr="19" to="6" drTW="72" lp="1" twE="0">
+    <b name="Cattail_paw2" sc="1" dl="0">
+     <f x="6.5" y="54.05" kX="0" kY="0" cX="0.8" cY="0.8" z="0" pX="0" pY="0" width="34" height="18" dI="0" twE="0" dr="9"/>
+     <f x="5.2" y="54.05" kX="0" kY="0" cX="0.83" cY="0.8" z="0" pX="0" pY="0" width="35" height="18" dI="0" twE="0" dr="9"/>
+     <f x="6.5" y="54.05" kX="0" kY="0" cX="0.8" cY="0.8" z="0" pX="0" pY="0" width="34" height="18" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_paw3" sc="1" dl="0">
+     <f x="57.75" y="50.65" kX="0" kY="0" cX="0.8" cY="0.8" z="1" pX="0" pY="0" width="24" height="17" dI="0" twE="0" dr="9"/>
+     <f x="57.5" y="50.65" kX="0" kY="0" cX="0.89" cY="0.8" z="1" pX="0" pY="0" width="26" height="17" dI="0" twE="0" dr="9"/>
+     <f x="57.75" y="50.65" kX="0" kY="0" cX="0.8" cY="0.8" z="1" pX="0" pY="0" width="24" height="17" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_tail" sc="1" dl="0">
+     <f x="2.4" y="33.8" kX="0" kY="0" cX="0.8" cY="0.8" z="2" pX="0" pY="0" width="29" height="26" dI="0" twE="0" dr="3"/>
+     <f x="5.25" y="33" kX="5.25" kY="3.01" cX="0.8" cY="0.8" z="2" pX="2.35" pY="0" width="32" height="27" dI="0" twE="0" dr="6"/>
+     <f x="-2.35" y="38.8" kX="-10.77" kY="-10.77" cX="0.8" cY="0.8" z="2" pX="0" pY="5.35" width="33" height="31" dI="0" twE="0" dr="3"/>
+     <f x="-2.4" y="39.85" kX="-11.4" kY="-11.94" cX="0.81" cY="0.79" z="2" pX="0" pY="6" width="34" height="31" dI="0" twE="0" dr="6"/>
+     <f x="2.4" y="33.8" kX="0" kY="0" cX="0.8" cY="0.8" z="2" pX="0" pY="0" width="29" height="26" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_tail2" sc="1" dl="0">
+     <f x="-1.55" y="4.7" kX="0" kY="0" cX="0.8" cY="0.8" z="3" pX="0" pY="0" width="25" height="33" dI="0" twE="0" dr="3"/>
+     <f x="13.15" y="3.45" kX="23.57" kY="18.72" cX="0.79" cY="0.81" z="3" pX="13.2" pY="0" width="37" height="39" dI="0" twE="0" dr="6"/>
+     <f x="-17.65" y="15.35" kX="-25.77" kY="-25.77" cX="0.8" cY="0.8" z="3" pX="0" pY="10.75" width="37" height="41" dI="0" twE="0" dr="3"/>
+     <f x="-23.3" y="21.6" kX="-39.81" kY="-36.16" cX="0.8" cY="0.8" z="3" pX="0" pY="14.65" width="41" height="40" dI="0" twE="0" dr="6"/>
+     <f x="-1.55" y="4.7" kX="0" kY="0" cX="0.8" cY="0.8" z="3" pX="0" pY="0" width="25" height="33" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_spike" sc="1" dl="0">
+     <f x="8.3" y="2.4" kX="0" kY="0" cX="0.8" cY="0.8" z="4" pX="0" pY="0" width="12" height="17" dI="0" twE="0" dr="3"/>
+     <f x="23.2" y="4.5" kX="23.57" kY="18.72" cX="0.79" cY="0.81" z="4" pX="6.75" pY="0" width="18" height="20" dI="0" twE="0" dr="6"/>
+     <f x="-9.85" y="8.95" kX="-25.77" kY="-25.77" cX="0.8" cY="0.8" z="4" pX="0" pY="5.2" width="19" height="21" dI="0" twE="0" dr="3"/>
+     <f x="-16.85" y="14.2" kX="-39.81" kY="-36.16" cX="0.8" cY="0.8" z="4" pX="0" pY="7.05" width="21" height="20" dI="0" twE="0" dr="6"/>
+     <f x="8.3" y="2.4" kX="0" kY="0" cX="0.8" cY="0.8" z="4" pX="0" pY="0" width="12" height="17" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_tail2_overlay" sc="1" dl="0">
+     <f x="-0.85" y="8.75" kX="0" kY="0" cX="0.8" cY="0.8" z="5" pX="0" pY="0" width="23" height="22" dI="0" twE="0" dr="3"/>
+     <f x="12.25" y="7.35" kX="23.57" kY="18.72" cX="0.79" cY="0.81" z="5" pX="8.7" pY="0" width="30" height="28" dI="0" twE="0" dr="6"/>
+     <f x="-15.3" y="18.7" kX="-25.77" kY="-25.77" cX="0.8" cY="0.8" z="5" pX="0" pY="9.7" width="30" height="30" dI="0" twE="0" dr="3"/>
+     <f x="-20.15" y="24.3" kX="-39.81" kY="-36.16" cX="0.8" cY="0.8" z="5" pX="0" pY="13.25" width="32" height="30" dI="0" twE="0" dr="6"/>
+     <f x="-0.85" y="8.75" kX="0" kY="0" cX="0.8" cY="0.8" z="5" pX="0" pY="0" width="23" height="22" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="anim_face" sc="1" dl="0">
+     <f x="25.95" y="25.1" kX="0" kY="0" cX="0.8" cY="0.8" z="6" pX="0" pY="0" width="49" height="39" dI="0" twE="0" dr="9"/>
+     <f x="24.55" y="26.9" kX="0" kY="0" cX="0.86" cY="0.76" z="6" pX="0" pY="0" width="53" height="37" dI="0" twE="0" dr="9"/>
+     <f x="25.95" y="25.1" kX="0" kY="0" cX="0.8" cY="0.8" z="6" pX="0" pY="0" width="49" height="39" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_paw1" sc="1" dl="0">
+     <f x="31.15" y="59.35" kX="0" kY="0" cX="0.85" cY="0.85" z="7" pX="0" pY="0" width="38" height="17" dI="0" twE="0" dr="9"/>
+     <f x="30.4" y="59.6" kX="0" kY="0" cX="0.88" cY="0.9" z="7" pX="0" pY="0" width="39" height="18" dI="0" twE="0" dr="9"/>
+     <f x="31.15" y="59.35" kX="0" kY="0" cX="0.85" cY="0.85" z="7" pX="0" pY="0" width="38" height="17" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_hat" sc="1" dl="0">
+     <f x="11.75" y="9.25" kX="0" kY="0" cX="0.8" cY="0.8" z="8" pX="0" pY="0" width="60" height="52" dI="0" twE="0" dr="9"/>
+     <f x="9.25" y="11.75" kX="0" kY="0" cX="0.86" cY="0.76" z="8" pX="0" pY="0" width="64" height="49" dI="0" twE="0" dr="9"/>
+     <f x="11.75" y="9.25" kX="0" kY="0" cX="0.8" cY="0.8" z="8" pX="0" pY="0" width="60" height="52" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_eyebrow1" sc="1" dl="0">
+     <f x="38.65" y="34" kX="0" kY="0" cX="0.8" cY="0.8" z="9" pX="0" pY="0" width="11" height="10" dI="0" twE="0" dr="9"/>
+     <f x="38.25" y="36.9" kX="0" kY="0" cX="0.86" cY="0.76" z="9" pX="0" pY="0" width="12" height="10" dI="0" twE="0" dr="9"/>
+     <f x="38.65" y="34" kX="0" kY="0" cX="0.8" cY="0.8" z="9" pX="0" pY="0" width="11" height="10" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_eyebrow2" sc="1" dl="0">
+     <f x="60.9" y="31.4" kX="0" kY="0" cX="0.8" cY="0.8" z="10" pX="0" pY="0" width="9" height="5" dI="0" twE="0" dr="9"/>
+     <f x="62.3" y="34.4" kX="0" kY="0" cX="0.86" cY="0.76" z="10" pX="0" pY="0" width="10" height="5" dI="0" twE="0" dr="9"/>
+     <f x="60.9" y="31.4" kX="0" kY="0" cX="0.8" cY="0.8" z="10" pX="0" pY="0" width="9" height="5" dI="0" twE="0" dr="1"/>
+    </b>
+   </mov>
+   <mov name="anim_shooting" dr="16" to="6" drTW="71" lp="1" twE="NaN">
+    <b name="Cattail_paw2" sc="1" dl="0">
+     <f x="6.5" y="54.05" kX="0" kY="0" cX="0.8" cY="0.8" z="0" pX="0" pY="0" width="34" height="18" dI="0" twE="0" dr="5"/>
+     <f x="6.5" y="54.05" kX="0" kY="0" cX="0.8" cY="0.8" z="0" pX="0" pY="0" width="34" height="18" dI="0" twE="0" dr="5"/>
+     <f x="9" y="54.05" kX="11.31" kY="0" cX="0.8" cY="0.82" z="0" pX="3.5" pY="0" width="38" height="18" dI="0" twE="0" dr="5"/>
+     <f x="6.5" y="54.05" kX="0" kY="0" cX="0.8" cY="0.8" z="0" pX="0" pY="0" width="34" height="18" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_paw3" sc="1" dl="0">
+     <f x="57.75" y="50.65" kX="0" kY="0" cX="0.8" cY="0.8" z="1" pX="0" pY="0" width="24" height="17" dI="0" twE="0" dr="5"/>
+     <f x="57.75" y="50.65" kX="0" kY="0" cX="0.8" cY="0.8" z="1" pX="0" pY="0" width="24" height="17" dI="0" twE="0" dr="5"/>
+     <f x="56.5" y="50.15" kX="0" kY="6.12" cX="0.8" cY="0.8" z="1" pX="0" pY="0" width="24" height="20" dI="0" twE="0" dr="5"/>
+     <f x="57.75" y="50.65" kX="0" kY="0" cX="0.8" cY="0.8" z="1" pX="0" pY="0" width="24" height="17" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_tail" sc="1" dl="0">
+     <f x="2.4" y="33.8" kX="0" kY="0" cX="0.8" cY="0.8" z="2" pX="0" pY="0" width="29" height="26" dI="0" twE="0" dr="5"/>
+     <f x="-14.7" y="50.55" kX="-45.27" kY="-25.35" cX="0.8" cY="0.85" z="2" pX="0" pY="12.3" width="46" height="32" dI="0" twE="0" dr="2"/>
+     <f x="-2.75" y="32.9" kX="-15.05" kY="-0.27" cX="0.8" cY="0.83" z="2" pX="0" pY="0.15" width="36" height="26" dI="0" twE="0" dr="3"/>
+     <f x="22.65" y="20.1" kX="30" kY="37.15" cX="0.81" cY="0.8" z="2" pX="12.8" pY="0" width="36" height="40" dI="0" twE="0" dr="2"/>
+     <f x="16" y="24.9" kX="21.04" kY="22.79" cX="0.79" cY="0.81" z="2" pX="9.35" pY="0" width="36" height="36" dI="0" twE="0" dr="3"/>
+     <f x="2.4" y="33.8" kX="0" kY="0" cX="0.8" cY="0.8" z="2" pX="0" pY="0" width="29" height="26" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_tail2" sc="1" dl="0">
+     <f x="-1.55" y="4.7" kX="0" kY="0" cX="0.8" cY="0.8" z="3" pX="0" pY="0" width="25" height="33" dI="0" twE="0" dr="5"/>
+     <f x="-40.15" y="30.5" kX="-45.27" kY="-25.35" cX="0.8" cY="0.85" z="3" pX="0" pY="10.6" width="48" height="36" dI="0" twE="0" dr="2"/>
+     <f x="-30.7" y="16.85" kX="-50.95" kY="-34.35" cX="0.78" cY="0.88" z="3" pX="0" pY="13.65" width="48" height="37" dI="0" twE="0" dr="3"/>
+     <f x="36.25" y="-13.45" kX="29.8" kY="42.03" cX="0.76" cY="0.92" z="3" pX="18.75" pY="0" width="37" height="49" dI="0" twE="0" dr="2"/>
+     <f x="31.15" y="-5.75" kX="32.89" kY="37.77" cX="0.76" cY="0.89" z="3" pX="19.7" pY="0" width="39" height="45" dI="0" twE="0" dr="3"/>
+     <f x="-1.55" y="4.7" kX="0" kY="0" cX="0.8" cY="0.8" z="3" pX="0" pY="0" width="25" height="33" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_spike" sc="1" dl="0">
+     <f x="8.3" y="2.4" kX="0" kY="0" cX="0.8" cY="0.8" z="4" pX="0" pY="0" width="12" height="17" dI="0" twE="0" dr="5"/>
+     <f x="-31.9" y="24" kX="-45.27" kY="-25.35" cX="0.8" cY="0.85" z="4" pX="0" pY="5.1" width="24" height="18" dI="0" twE="0" dr="2"/>
+     <f x="-23.1" y="10.75" kX="-50.95" kY="-34.35" cX="0.78" cY="0.88" z="4" pX="0" pY="6.6" width="24" height="19" dI="0" twE="0" dr="2"/>
+     <f x="23.1" y="-6.95" kX="2.78" kY="16.53" cX="0.77" cY="0.91" z="4" pX="0.9" pY="0" width="12" height="23" dI="0" twE="0" dr="1"/>
+     <f dr="5" dI="-1"/>
+     <f x="8.3" y="2.4" kX="0" kY="0" cX="0.8" cY="0.8" z="4" pX="0" pY="0" width="12" height="17" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_tail2_overlay" sc="1" dl="0">
+     <f x="-0.85" y="8.75" kX="0" kY="0" cX="0.8" cY="0.8" z="5" pX="0" pY="0" width="23" height="22" dI="0" twE="0" dr="5"/>
+     <f x="-36.5" y="33.2" kX="-45.27" kY="-25.35" cX="0.8" cY="0.85" z="5" pX="0" pY="9.55" width="37" height="26" dI="0" twE="0" dr="2"/>
+     <f x="-26.3" y="19.35" kX="-50.95" kY="-34.35" cX="0.78" cY="0.88" z="5" pX="0" pY="12.35" width="37" height="28" dI="0" twE="0" dr="3"/>
+     <f x="34.45" y="-8.95" kX="29.8" kY="42.03" cX="0.76" cY="0.92" z="4" pX="12.3" pY="0" width="29" height="36" dI="0" twE="0" dr="2"/>
+     <f x="29.35" y="-1.5" kX="32.89" kY="37.77" cX="0.76" cY="0.89" z="4" pX="13" pY="0" width="30" height="34" dI="0" twE="0" dr="3"/>
+     <f x="-0.85" y="8.75" kX="0" kY="0" cX="0.8" cY="0.8" z="5" pX="0" pY="0" width="23" height="22" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="anim_face" sc="1" dl="0">
+     <f x="25.95" y="25.1" kX="0" kY="0" cX="0.8" cY="0.8" z="6" pX="0" pY="0" width="49" height="39" dI="0" twE="0" dr="5"/>
+     <f x="19.5" y="25.1" kX="-8.4" kY="0" cX="0.8" cY="0.81" z="6" pX="0" pY="0" width="55" height="39" dI="0" twE="0" dr="5"/>
+     <f x="37.85" y="21.95" kX="23.57" kY="21.21" cX="0.8" cY="0.8" z="5" pX="15.3" pY="0" width="61" height="53" dI="0" twE="0" dr="5"/>
+     <f x="25.95" y="25.1" kX="0" kY="0" cX="0.8" cY="0.8" z="6" pX="0" pY="0" width="49" height="39" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_paw1" sc="1" dl="0">
+     <f x="31.15" y="59.35" kX="0" kY="0" cX="0.85" cY="0.85" z="7" pX="0" pY="0" width="38" height="17" dI="0" twE="0" dr="5"/>
+     <f x="31.15" y="59.35" kX="0" kY="0" cX="0.85" cY="0.85" z="7" pX="0" pY="0" width="38" height="17" dI="0" twE="0" dr="5"/>
+     <f x="28.9" y="54.8" kX="0" kY="7.37" cX="0.91" cY="0.85" z="6" pX="0" pY="0" width="40" height="23" dI="0" twE="0" dr="5"/>
+     <f x="31.15" y="59.35" kX="0" kY="0" cX="0.85" cY="0.85" z="7" pX="0" pY="0" width="38" height="17" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_hat" sc="1" dl="0">
+     <f x="11.75" y="9.25" kX="0" kY="0" cX="0.8" cY="0.8" z="8" pX="0" pY="0" width="60" height="52" dI="0" twE="0" dr="5"/>
+     <f x="3" y="9.25" kX="-8.4" kY="0" cX="0.8" cY="0.81" z="8" pX="0" pY="0" width="67" height="52" dI="0" twE="0" dr="5"/>
+     <f x="30.95" y="2.3" kX="23.57" kY="21.21" cX="0.8" cY="0.8" z="7" pX="20.45" pY="0" width="76" height="69" dI="0" twE="0" dr="5"/>
+     <f x="11.75" y="9.25" kX="0" kY="0" cX="0.8" cY="0.8" z="8" pX="0" pY="0" width="60" height="52" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_blink" sc="1" dl="0">
+     <f dr="9" dI="-1"/>
+     <f x="46.65" y="36.2" kX="23.47" kY="13.21" cX="0.8" cY="0.82" z="9" pX="7.15" pY="0" width="39" height="24" dI="0" dr="1"/>
+     <f x="45.75" y="35.15" kX="14.55" kY="19.42" cX="0.85" cY="0.8" z="8" pX="4.4" pY="0" width="37" height="29" dI="1" twE="0" dr="1"/>
+     <f dr="5" dI="-1"/>
+    </b>
+    <b name="Cattail_eyebrow1" sc="1" dl="0">
+     <f x="38.65" y="34" kX="0" kY="0" cX="0.8" cY="0.8" z="9" pX="0" pY="0" width="11" height="10" dI="0" twE="0" dr="5"/>
+     <f x="35.15" y="31" kX="0" kY="0" cX="0.8" cY="0.8" z="9" pX="0" pY="0" width="11" height="10" dI="0" twE="0" dr="3"/>
+     <f x="44.85" y="35.65" kX="36.61" kY="35.32" cX="0.8" cY="0.8" z="10" pX="5.7" pY="0" width="15" height="14" dI="0" twE="0" dr="2"/>
+     <f x="51" y="43.05" kX="61.16" kY="58.79" cX="0.8" cY="0.8" z="8" pX="8.35" pY="0" width="14" height="14" dI="0" twE="0" dr="5"/>
+     <f x="38.65" y="34" kX="0" kY="0" cX="0.8" cY="0.8" z="9" pX="0" pY="0" width="11" height="10" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Cattail_eyebrow2" sc="1" dl="0">
+     <f x="60.9" y="31.4" kX="0" kY="0" cX="0.8" cY="0.8" z="10" pX="0" pY="0" width="9" height="5" dI="0" twE="0" dr="5"/>
+     <f x="57.4" y="28.4" kX="0" kY="0" cX="0.8" cY="0.8" z="10" pX="0" pY="0" width="9" height="5" dI="0" twE="0" dr="3"/>
+     <f x="62.05" y="39.35" kX="-14.54" kY="-16.02" cX="0.8" cY="0.8" z="11" pX="0" pY="2.4" width="10" height="7" dI="0" twE="0" dr="2"/>
+     <f x="65.7" y="49.7" kX="-24.34" kY="-26.7" cX="0.8" cY="0.8" z="9" pX="0" pY="3.95" width="10" height="9" dI="0" twE="0" dr="5"/>
+     <f x="60.9" y="31.4" kX="0" kY="0" cX="0.8" cY="0.8" z="10" pX="0" pY="0" width="9" height="5" dI="0" twE="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="Plant" width="512" height="128">
+  <SubTexture name="Cattail_folder-Cattail_blink2.png" pX="0" pY="0" width="40" height="22" x="300" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_blink1.png" pX="0" pY="0" width="40" height="22" x="342" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_eyebrow2.png" pX="0" pY="0" width="11" height="6" x="477" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_eyebrow1.png" pX="0" pY="0" width="13" height="12" x="462" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_hat.png" pX="0" pY="0" width="74" height="64" x="0" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_paw1.png" pX="0" pY="0" width="44" height="20" x="210" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_head.png" pX="0" pY="0" width="61" height="48" x="76" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_tail2_overlay.png" pX="0" pY="0" width="28" height="27" x="384" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_spike.png" pX="0" pY="0" width="15" height="21" x="445" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_tail2.png" pX="0" pY="0" width="31" height="41" x="139" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_tail.png" pX="0" pY="0" width="36" height="32" x="172" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_paw3.png" pX="0" pY="0" width="29" height="21" x="414" y="0"/>
+  <SubTexture name="Cattail_folder-Cattail_paw2.png" pX="0" pY="0" width="42" height="22" x="256" y="0"/>
+ </TextureAtlas>
+</skeleton>

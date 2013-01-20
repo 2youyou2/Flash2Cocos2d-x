@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{f22294b2-db1a-4b2d-bb57-22b1860b799f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{2f349fc5-1002-4328-b649-f1b65eb18ede}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{ffdb916e-ceab-4ad1-883c-9ae64d4b595f}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{fe664b0b-799b-423a-a2ce-0ed42d611e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SPArmature">
+      <UniqueIdentifier>{3a490158-0b98-43a2-8943-3151a1fb995e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SPArmature\utils">
+      <UniqueIdentifier>{b52d4086-f139-49c1-ba6f-daa859803c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SPArmature\datas">
+      <UniqueIdentifier>{4d501508-868f-406a-ad99-145958bc822d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SPArmature\animation">
+      <UniqueIdentifier>{b97c87e7-fe5e-48b4-a5c6-130e5f5d9206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SPArmature\display">
+      <UniqueIdentifier>{06d8048e-5cd3-4e7a-8fce-1c0d58f9922d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\example.ico">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CloseSelected.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CloseNormal.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\HelloWorld.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinyxml.suo">
+      <Filter>tinyxml</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="example.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinystr.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinyxml.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\utils\SPArmatureDataManager.h">
+      <Filter>SPArmature\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\utils\SPConstValue.h">
+      <Filter>SPArmature\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\utils\SPTransformHelp.h">
+      <Filter>SPArmature\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\utils\SPMath.h">
+      <Filter>SPArmature\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\datas\SPArmatureData.h">
+      <Filter>SPArmature\datas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\datas\SPAnimationData.h">
+      <Filter>SPArmature\datas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\datas\SPDisplayData.h">
+      <Filter>SPArmature\datas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\datas\SPBoneData.h">
+      <Filter>SPArmature\datas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\datas\SPNode.h">
+      <Filter>SPArmature\datas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\datas\SPMovementData.h">
+      <Filter>SPArmature\datas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\datas\SPMovementBoneData.h">
+      <Filter>SPArmature\datas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\datas\SPFrameData.h">
+      <Filter>SPArmature\datas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\datas\SPMovementFrameData.h">
+      <Filter>SPArmature\datas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\animation\SPProcessBase.h">
+      <Filter>SPArmature\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\animation\SPTween.h">
+      <Filter>SPArmature\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\animation\SPAnimation.h">
+      <Filter>SPArmature\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\SPArmature.h">
+      <Filter>SPArmature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\SPBone.h">
+      <Filter>SPArmature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\datas\SPTextureData.h">
+      <Filter>SPArmature\datas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\utils\SPBatchNodeManager.h">
+      <Filter>SPArmature\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\utils\SPBatchNode.h">
+      <Filter>SPArmature\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\display\SPContourSprite.h">
+      <Filter>SPArmature\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SPArmature\datas\SPContourData.h">
+      <Filter>SPArmature\datas</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinystr.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinyxml.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinyxmlerror.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\cocos2d-x\Flash2Cocos2d-x\tinyxml\tinyxmlparser.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\utils\SPArmatureDataManager.cpp">
+      <Filter>SPArmature\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\utils\SPTransformHelp.cpp">
+      <Filter>SPArmature\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\datas\SPArmatureData.cpp">
+      <Filter>SPArmature\datas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\datas\SPAnimationData.cpp">
+      <Filter>SPArmature\datas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\datas\SPDisplayData.cpp">
+      <Filter>SPArmature\datas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\datas\SPBoneData.cpp">
+      <Filter>SPArmature\datas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\datas\SPNode.cpp">
+      <Filter>SPArmature\datas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\datas\SPMovementData.cpp">
+      <Filter>SPArmature\datas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\datas\SPMovementBoneData.cpp">
+      <Filter>SPArmature\datas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\datas\SPFrameData.cpp">
+      <Filter>SPArmature\datas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\datas\SPMovementFrameData.cpp">
+      <Filter>SPArmature\datas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\animation\SPProcessBase.cpp">
+      <Filter>SPArmature\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\animation\SPTween.cpp">
+      <Filter>SPArmature\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\animation\SPAnimation.cpp">
+      <Filter>SPArmature\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\SPArmature.cpp">
+      <Filter>SPArmature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\SPBone.cpp">
+      <Filter>SPArmature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\datas\SPTextureData.cpp">
+      <Filter>SPArmature\datas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\utils\SPBatchNodeManager.cpp">
+      <Filter>SPArmature\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\utils\SPBatchNode.cpp">
+      <Filter>SPArmature\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\display\SPContourSprite.cpp">
+      <Filter>SPArmature\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SPArmature\datas\SPContourData.cpp">
+      <Filter>SPArmature\datas</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

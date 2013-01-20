@@ -1,0 +1,1094 @@
+<skeleton name="loading_animations_2" frameRate="12" version="1.4">
+ <armatures>
+  <armature name="cycle1_stage">
+   <b name="1" x="-0.6" y="-24.05" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="cycle_circle1"/>
+   </b>
+   <b name="2" x="11.65" y="-20.45" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="cycle_circle1"/>
+   </b>
+   <b name="3" x="21.35" y="-11.4" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="cycle_circle1"/>
+   </b>
+   <b name="4" x="23.5" y="0.65" kX="0" kY="0" cX="1" cY="1" z="3">
+    <d name="cycle_circle1"/>
+   </b>
+   <b name="5" x="20.1" y="12.1" kX="0" kY="0" cX="1" cY="1" z="4">
+    <d name="cycle_circle1"/>
+   </b>
+   <b name="6" x="11.5" y="20.4" kX="0" kY="0" cX="1" cY="1" z="5">
+    <d name="cycle_circle1"/>
+   </b>
+   <b name="7" x="-0.05" y="24.15" kX="0" kY="0" cX="1" cY="1" z="6">
+    <d name="cycle_circle1"/>
+   </b>
+   <b name="8" x="-12.25" y="20.4" kX="0" kY="0" cX="1" cY="1" z="7">
+    <d name="cycle_circle1"/>
+   </b>
+   <b name="9" x="-20.45" y="12.1" kX="0" kY="0" cX="1" cY="1" z="8">
+    <d name="cycle_circle1"/>
+   </b>
+   <b name="10" x="-23.45" y="0.65" kX="0" kY="0" cX="1" cY="1" z="9">
+    <d name="cycle_circle1"/>
+   </b>
+   <b name="11" x="-21.05" y="-10.8" kX="0" kY="0" cX="1" cY="1" z="10">
+    <d name="cycle_circle1"/>
+   </b>
+   <b name="12" x="-12.6" y="-20.25" kX="0" kY="0" cX="1" cY="1" z="11">
+    <d name="cycle_circle1"/>
+   </b>
+  </armature>
+  <armature name="cycle2_stage">
+   <b name="1" x="-0.65" y="-26.8" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="2" x="13.05" y="-22.8" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="3" x="23.9" y="-12.65" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="4" x="26.35" y="0.9" kX="0" kY="0" cX="1" cY="1" z="3">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="5" x="22.35" y="13.4" kX="0" kY="0" cX="1" cY="1" z="4">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="6" x="13.05" y="22.9" kX="0" kY="0" cX="1" cY="1" z="5">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="7" x="-0.3" y="27.1" kX="0" kY="0" cX="1" cY="1" z="6">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="8" x="-13.6" y="22.8" kX="0" kY="0" cX="1" cY="1" z="7">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="9" x="-22.7" y="13.6" kX="0" kY="0" cX="1" cY="1" z="8">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="10" x="-26.25" y="0.85" kX="0" kY="0" cX="1" cY="1" z="9">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="11" x="-23.55" y="-12.05" kX="0" kY="0" cX="1" cY="1" z="10">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="12" x="-14" y="-22.4" kX="0" kY="0" cX="1" cY="1" z="11">
+    <d name="cycle_circle2"/>
+   </b>
+  </armature>
+  <armature name="cycle4_stage">
+   <b name="1" x="0" y="0.05" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="Layer 45" x="0.15" y="-13.25" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="cycle_circle2"/>
+   </b>
+   <b name="2" x="13.05" y="-22.8" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="cycle_circle2"/>
+   </b>
+  </armature>
+  <armature name="gear1_stage">
+   <b name="Layer 47" x="-11.3" y="-11.3" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="gear1"/>
+   </b>
+   <b name="Layer 48" x="13.6" y="9.95" kX="0" kY="0" cX="0.59" cY="0.59" z="1">
+    <d name="gear1"/>
+   </b>
+  </armature>
+  <armature name="scroll_box1_stage"/>
+  <armature name="cycle3_stage">
+   <b name="1" x="-0.65" y="-26.8" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="cycle_circle3"/>
+   </b>
+   <b name="2" x="13.05" y="-22.8" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="cycle_circle3"/>
+   </b>
+   <b name="3" x="23.9" y="-12.65" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="cycle_circle3"/>
+   </b>
+   <b name="4" x="26.35" y="0.9" kX="0" kY="0" cX="1" cY="1" z="3">
+    <d name="cycle_circle3"/>
+   </b>
+   <b name="5" x="22.35" y="13.4" kX="0" kY="0" cX="1" cY="1" z="4">
+    <d name="cycle_circle3"/>
+   </b>
+   <b name="6" x="13.05" y="22.9" kX="0" kY="0" cX="1" cY="1" z="5">
+    <d name="cycle_circle3"/>
+   </b>
+   <b name="7" x="-0.3" y="27.1" kX="0" kY="0" cX="1" cY="1" z="6">
+    <d name="cycle_circle3"/>
+   </b>
+   <b name="8" x="-13.6" y="22.8" kX="0" kY="0" cX="1" cY="1" z="7">
+    <d name="cycle_circle3"/>
+   </b>
+   <b name="9" x="-22.7" y="13.6" kX="0" kY="0" cX="1" cY="1" z="8">
+    <d name="cycle_circle3"/>
+   </b>
+   <b name="10" x="-26.25" y="0.85" kX="0" kY="0" cX="1" cY="1" z="9">
+    <d name="cycle_circle3"/>
+   </b>
+   <b name="11" x="-23.55" y="-12.05" kX="0" kY="0" cX="1" cY="1" z="10">
+    <d name="cycle_circle3"/>
+   </b>
+   <b name="12" x="-14" y="-22.4" kX="0" kY="0" cX="1" cY="1" z="11">
+    <d name="cycle_circle3"/>
+   </b>
+  </armature>
+  <armature name="circle_in_circle_stage">
+   <b name="Layer 45" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="circle_in_circle_little_clip"/>
+   </b>
+   <b name="Layer 44" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="circle_in_circle_big_clip"/>
+   </b>
+  </armature>
+  <armature name="circle_in_circle_stage2">
+   <b name="Layer 45" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="circle_in_circle_little"/>
+   </b>
+   <b name="Layer 44" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="circle_in_circle_big"/>
+   </b>
+  </armature>
+  <armature name="circle_in_circle_stage3">
+   <b name="Layer 45" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="circle_in_circle_little"/>
+   </b>
+   <b name="Layer 44" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="circle_in_circle_big"/>
+   </b>
+   <b name="Layer 46" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="cycle_in_cycle_center"/>
+   </b>
+  </armature>
+  <armature name="circle_in_circle_stage4">
+   <b name="Layer 45" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="circle_in_circle_little"/>
+   </b>
+   <b name="Layer 48" x="0" y="0" kX="-162.23" kY="-162.23" cX="1" cY="1" z="1">
+    <d name="circle_in_circle_little"/>
+   </b>
+   <b name="Layer 44" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="circle_in_circle_big"/>
+   </b>
+   <b name="Layer 47" x="0" y="0" kX="-21.82" kY="-21.82" cX="1" cY="1" z="3">
+    <d name="circle_in_circle_big"/>
+   </b>
+   <b name="Layer 46" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4">
+    <d name="cycle_in_cycle_center"/>
+   </b>
+   <b name="Layer 49" x="0.05" y="0" kX="172.23" kY="172.23" cX="1" cY="1" z="5">
+    <d name="cycle_in_cycle_center"/>
+   </b>
+  </armature>
+  <armature name="circle_in_circle_stage5">
+   <b name="Layer 45" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="circle_in_circle_little"/>
+   </b>
+   <b name="Layer 48" x="0" y="0" kX="-162.23" kY="-162.23" cX="1" cY="1" z="1">
+    <d name="circle_in_circle_little"/>
+   </b>
+   <b name="Layer 44" x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="circle_in_circle_big"/>
+   </b>
+   <b name="Layer 47" x="0" y="0" kX="-21.82" kY="-21.82" cX="1" cY="1" z="3">
+    <d name="circle_in_circle_big"/>
+   </b>
+  </armature>
+  <armature name="eco_stage1">
+   <b name="Layer 50" x="-15.8" y="0" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="eco1" isArmature="1"/>
+   </b>
+   <b name="Layer 51" x="-5.25" y="0" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="eco1" isArmature="1"/>
+   </b>
+   <b name="Layer 52" x="5.3" y="0" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="eco1" isArmature="1"/>
+   </b>
+   <b name="Layer 53" x="15.85" y="0" kX="0" kY="0" cX="1" cY="1" z="3">
+    <d name="eco1" isArmature="1"/>
+   </b>
+  </armature>
+  <armature name="eco1"/>
+  <armature name="pie1_stage">
+   <b name="1" x="-11.2" y="-22.35" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="pie1"/>
+   </b>
+   <b name="2" x="11.15" y="-22.35" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="pie2"/>
+   </b>
+   <b name="3" x="23" y="-10.3" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="pie3"/>
+   </b>
+   <b name="4" x="23" y="10.3" kX="0" kY="0" cX="1" cY="1" z="3">
+    <d name="pie4"/>
+   </b>
+   <b name="5" x="11.15" y="22.35" kX="0" kY="0" cX="1" cY="1" z="4">
+    <d name="pie5"/>
+   </b>
+   <b name="6" x="-11.2" y="22.35" kX="0" kY="0" cX="1" cY="1" z="5">
+    <d name="pie6"/>
+   </b>
+   <b name="7" x="-23" y="10.3" kX="0" kY="0" cX="1" cY="1" z="6">
+    <d name="pie7"/>
+   </b>
+   <b name="8" x="-23" y="-10.3" kX="0" kY="0" cX="1" cY="1" z="7">
+    <d name="pie8"/>
+   </b>
+  </armature>
+  <armature name="cubes1_stage">
+   <b name="1" x="-16.2" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="2" x="-5.35" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="3" x="5.3" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="4" x="15.9" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="3">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="5" x="15.9" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="4">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="6" x="5.3" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="5">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="7" x="-5.35" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="6">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="8" x="-16.2" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="7">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="9" x="-16.2" y="4.75" kX="0" kY="0" cX="1" cY="1" z="8">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="10" x="-5.35" y="4.75" kX="0" kY="0" cX="1" cY="1" z="9">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="11" x="5.3" y="4.75" kX="0" kY="0" cX="1" cY="1" z="10">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="12" x="15.9" y="4.75" kX="0" kY="0" cX="1" cY="1" z="11">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="13" x="15.9" y="15.45" kX="0" kY="0" cX="1" cY="1" z="12">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="14" x="5.3" y="15.45" kX="0" kY="0" cX="1" cY="1" z="13">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="15" x="-5.35" y="15.45" kX="0" kY="0" cX="1" cY="1" z="14">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="16" x="-16.2" y="15.45" kX="0" kY="0" cX="1" cY="1" z="15">
+    <d name="cube1" isArmature="1"/>
+   </b>
+  </armature>
+  <armature name="cubes4_stage">
+   <b name="1" x="-16.2" y="0.15" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="2" x="-5.35" y="0.15" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="3" x="5.3" y="0.15" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="4" x="15.9" y="0.15" kX="0" kY="0" cX="1" cY="1" z="3">
+    <d name="cube1" isArmature="1"/>
+   </b>
+  </armature>
+  <armature name="cubes5_stage">
+   <b name="1" x="-28.35" y="0.05" kX="0" kY="0" cX="0.83" cY="1" z="0">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="2" x="-18.9" y="0.05" kX="0" kY="0" cX="0.83" cY="1.85" z="1">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="3" x="-9.45" y="0.1" kX="0" kY="0" cX="0.83" cY="2.97" z="2">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="4" x="0" y="0.1" kX="0" kY="0" cX="0.83" cY="3.81" z="3">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="Layer 60" x="9.45" y="0.1" kX="0" kY="0" cX="0.83" cY="2.97" z="4">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="Layer 61" x="18.9" y="0.05" kX="0" kY="0" cX="0.83" cY="1.85" z="5">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="Layer 62" x="28.35" y="0.05" kX="0" kY="0" cX="0.83" cY="1" z="6">
+    <d name="cube1" isArmature="1"/>
+   </b>
+  </armature>
+  <armature name="cubes6_stage">
+   <b name="1" x="-28.4" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="0">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="2" x="-18.95" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="1">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="3" x="-9.5" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="2">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="4" x="-0.05" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="3">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="Layer 60" x="9.4" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="4">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="Layer 61" x="18.85" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="5">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="Layer 62" x="28.3" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="6">
+    <d name="cube1" isArmature="1"/>
+   </b>
+  </armature>
+  <armature name="cubes7_stage">
+   <b name="4" x="-0.35" y="-0.2" kX="0" kY="0" cX="0.83" cY="0.82" z="0">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="3" x="-9.15" y="-0.2" kX="0" kY="0" cX="0.83" cY="0.82" z="1">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="Layer 65" x="-9.15" y="-9" kX="0" kY="0" cX="0.83" cY="0.82" z="2">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="Layer 66" x="-0.15" y="-26.75" kX="0" kY="0" cX="0.83" cY="0.82" z="3">
+    <d name="cube1" isArmature="1"/>
+   </b>
+   <b name="Layer 67" x="-9.15" y="-26.7" kX="0" kY="0" cX="0.83" cY="0.82" z="4">
+    <d name="cube1" isArmature="1"/>
+   </b>
+  </armature>
+  <armature name="cube1"/>
+  <armature name="cubes2_stage">
+   <b name="1" x="-16.2" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="2" x="-5.35" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="3" x="5.3" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="4" x="15.9" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="3">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="5" x="15.9" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="4">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="6" x="5.3" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="5">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="7" x="-5.35" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="6">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="8" x="-16.2" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="7">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="9" x="-16.2" y="4.75" kX="0" kY="0" cX="1" cY="1" z="8">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="10" x="-5.35" y="4.75" kX="0" kY="0" cX="1" cY="1" z="9">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="11" x="5.3" y="4.75" kX="0" kY="0" cX="1" cY="1" z="10">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="12" x="15.9" y="4.75" kX="0" kY="0" cX="1" cY="1" z="11">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="13" x="15.9" y="15.45" kX="0" kY="0" cX="1" cY="1" z="12">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="14" x="5.3" y="15.45" kX="0" kY="0" cX="1" cY="1" z="13">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="15" x="-5.35" y="15.45" kX="0" kY="0" cX="1" cY="1" z="14">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="16" x="-16.2" y="15.45" kX="0" kY="0" cX="1" cY="1" z="15">
+    <d name="cube2" isArmature="1"/>
+   </b>
+  </armature>
+  <armature name="cubes3_stage">
+   <b name="1" x="-16.2" y="-0.45" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="2" x="-5.35" y="-0.45" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="3" x="5.3" y="-0.45" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="cube2" isArmature="1"/>
+   </b>
+   <b name="4" x="15.9" y="-0.45" kX="0" kY="0" cX="1" cY="1" z="3">
+    <d name="cube2" isArmature="1"/>
+   </b>
+  </armature>
+  <armature name="cube2"/>
+ </armatures>
+ <animations>
+  <animation name="cycle1_stage">
+   <mov name="loading" dr="25" to="6" drTW="25" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-0.6" y="-24.05" kX="0" kY="0" cX="1" cY="1" z="0" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="25"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="11.65" y="-20.45" kX="0" kY="0" cX="1" cY="1" z="1" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="24"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="21.35" y="-11.4" kX="0" kY="0" cX="1" cY="1" z="2" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="23"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="23.5" y="0.65" kX="0" kY="0" cX="1" cY="1" z="3" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="22"/>
+    </b>
+    <b name="5" sc="1" dl="0">
+     <f dr="4" dI="-1"/>
+     <f x="20.1" y="12.1" kX="0" kY="0" cX="1" cY="1" z="4" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="21"/>
+    </b>
+    <b name="6" sc="1" dl="0">
+     <f dr="5" dI="-1"/>
+     <f x="11.5" y="20.4" kX="0" kY="0" cX="1" cY="1" z="5" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="20"/>
+    </b>
+    <b name="7" sc="1" dl="0">
+     <f dr="6" dI="-1"/>
+     <f x="-0.05" y="24.15" kX="0" kY="0" cX="1" cY="1" z="6" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="19"/>
+    </b>
+    <b name="8" sc="1" dl="0">
+     <f dr="7" dI="-1"/>
+     <f x="-12.25" y="20.4" kX="0" kY="0" cX="1" cY="1" z="7" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="18"/>
+    </b>
+    <b name="9" sc="1" dl="0">
+     <f dr="8" dI="-1"/>
+     <f x="-20.45" y="12.1" kX="0" kY="0" cX="1" cY="1" z="8" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="17"/>
+    </b>
+    <b name="10" sc="1" dl="0">
+     <f dr="9" dI="-1"/>
+     <f x="-23.45" y="0.65" kX="0" kY="0" cX="1" cY="1" z="9" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="16"/>
+    </b>
+    <b name="11" sc="1" dl="0">
+     <f dr="10" dI="-1"/>
+     <f x="-21.05" y="-10.8" kX="0" kY="0" cX="1" cY="1" z="10" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="15"/>
+    </b>
+    <b name="12" sc="1" dl="0">
+     <f dr="11" dI="-1"/>
+     <f x="-12.6" y="-20.25" kX="0" kY="0" cX="1" cY="1" z="11" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="14"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="cycle2_stage">
+   <mov name="loading" dr="25" to="6" drTW="25" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-0.65" y="-26.8" kX="0" kY="0" cX="1" cY="1" z="0" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="25"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="13.05" y="-22.8" kX="0" kY="0" cX="1" cY="1" z="1" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="24"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="23.9" y="-12.65" kX="0" kY="0" cX="1" cY="1" z="2" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="23"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="26.35" y="0.9" kX="0" kY="0" cX="1" cY="1" z="3" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="22"/>
+    </b>
+    <b name="5" sc="1" dl="0">
+     <f dr="4" dI="-1"/>
+     <f x="22.35" y="13.4" kX="0" kY="0" cX="1" cY="1" z="4" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="21"/>
+    </b>
+    <b name="6" sc="1" dl="0">
+     <f dr="5" dI="-1"/>
+     <f x="13.05" y="22.9" kX="0" kY="0" cX="1" cY="1" z="5" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="20"/>
+    </b>
+    <b name="7" sc="1" dl="0">
+     <f dr="6" dI="-1"/>
+     <f x="-0.3" y="27.1" kX="0" kY="0" cX="1" cY="1" z="6" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="19"/>
+    </b>
+    <b name="8" sc="1" dl="0">
+     <f dr="7" dI="-1"/>
+     <f x="-13.6" y="22.8" kX="0" kY="0" cX="1" cY="1" z="7" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="18"/>
+    </b>
+    <b name="9" sc="1" dl="0">
+     <f dr="8" dI="-1"/>
+     <f x="-22.7" y="13.6" kX="0" kY="0" cX="1" cY="1" z="8" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="17"/>
+    </b>
+    <b name="10" sc="1" dl="0">
+     <f dr="9" dI="-1"/>
+     <f x="-26.25" y="0.85" kX="0" kY="0" cX="1" cY="1" z="9" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="16"/>
+    </b>
+    <b name="11" sc="1" dl="0">
+     <f dr="10" dI="-1"/>
+     <f x="-23.55" y="-12.05" kX="0" kY="0" cX="1" cY="1" z="10" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="15"/>
+    </b>
+    <b name="12" sc="1" dl="0">
+     <f dr="11" dI="-1"/>
+     <f x="-14" y="-22.4" kX="0" kY="0" cX="1" cY="1" z="11" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="14"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="cycle4_stage">
+   <mov name="loading" dr="25" to="6" drTW="25" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="0" y="0.05" kX="0" kY="0" cX="1" cY="1" z="0" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="25"/>
+    </b>
+    <b name="Layer 45" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="0.15" y="-13.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="23"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="4" dI="-1"/>
+     <f x="13.05" y="-22.8" kX="0" kY="0" cX="1" cY="1" z="2" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="21"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="gear1_stage">
+   <mov name="loading" dr="5" to="6" drTW="5" lp="0" twE="NaN">
+    <b name="Layer 47" sc="1" dl="0">
+     <f x="-11.3" y="-11.3" kX="0" kY="0" cX="1" cY="1" z="0" pX="19.5" pY="19.6" width="39" height="40" dI="0" twE="0" dr="4"/>
+     <f x="-11.25" y="-11.35" kX="-28.05" kY="-28.05" cX="1" cY="1" z="0" pX="26.4" pY="26.4" width="53" height="53" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Layer 48" sc="1" dl="0">
+     <f x="13.6" y="9.95" kX="0" kY="0" cX="0.59" cY="0.59" z="1" pX="11.55" pY="11.65" width="24" height="24" dI="0" twE="0" dr="4"/>
+     <f x="13.6" y="10" kX="28.31" kY="28.31" cX="0.59" cY="0.59" z="1" pX="15.65" pY="15.7" width="32" height="32" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="scroll_box1_stage">
+   <mov name="loading" dr="11" to="6" drTW="11" lp="0" twE="NaN"/>
+  </animation>
+  <animation name="cycle3_stage">
+   <mov name="loading" dr="25" to="6" drTW="25" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-0.65" y="-26.8" kX="0" kY="0" cX="1" cY="1" z="0" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="25"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="13.05" y="-22.8" kX="0" kY="0" cX="1" cY="1" z="1" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="24"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="23.9" y="-12.65" kX="0" kY="0" cX="1" cY="1" z="2" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="23"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="26.35" y="0.9" kX="0" kY="0" cX="1" cY="1" z="3" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="22"/>
+    </b>
+    <b name="5" sc="1" dl="0">
+     <f dr="4" dI="-1"/>
+     <f x="22.35" y="13.4" kX="0" kY="0" cX="1" cY="1" z="4" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="21"/>
+    </b>
+    <b name="6" sc="1" dl="0">
+     <f dr="5" dI="-1"/>
+     <f x="13.05" y="22.9" kX="0" kY="0" cX="1" cY="1" z="5" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="20"/>
+    </b>
+    <b name="7" sc="1" dl="0">
+     <f dr="6" dI="-1"/>
+     <f x="-0.3" y="27.1" kX="0" kY="0" cX="1" cY="1" z="6" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="19"/>
+    </b>
+    <b name="8" sc="1" dl="0">
+     <f dr="7" dI="-1"/>
+     <f x="-13.6" y="22.8" kX="0" kY="0" cX="1" cY="1" z="7" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="18"/>
+    </b>
+    <b name="9" sc="1" dl="0">
+     <f dr="8" dI="-1"/>
+     <f x="-22.7" y="13.6" kX="0" kY="0" cX="1" cY="1" z="8" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="17"/>
+    </b>
+    <b name="10" sc="1" dl="0">
+     <f dr="9" dI="-1"/>
+     <f x="-26.25" y="0.85" kX="0" kY="0" cX="1" cY="1" z="9" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="16"/>
+    </b>
+    <b name="11" sc="1" dl="0">
+     <f dr="10" dI="-1"/>
+     <f x="-23.55" y="-12.05" kX="0" kY="0" cX="1" cY="1" z="10" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="15"/>
+    </b>
+    <b name="12" sc="1" dl="0">
+     <f dr="11" dI="-1"/>
+     <f x="-14" y="-22.4" kX="0" kY="0" cX="1" cY="1" z="11" pX="4.55" pY="4.6" width="10" height="10" dI="0" dr="14"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="circle_in_circle_stage">
+   <mov name="loading" dr="20" to="6" drTW="20" lp="0" twE="NaN">
+    <b name="Layer 45" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" pX="21.2" pY="20.65" width="43" height="42" dI="0" twE="0" dr="19"/>
+     <f x="0" y="0" kX="170.46" kY="170.46" cX="1" cY="1" z="0" pX="24.35" pY="23.85" width="49" height="48" dI="0" dr="1"/>
+    </b>
+    <b name="Layer 44" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" pX="30.3" pY="29.6" width="61" height="60" dI="0" twE="0" dr="19"/>
+     <f x="0" y="0" kX="137.38" kY="137.38" cX="1" cY="1" z="1" pX="42.3" pY="42.2" width="85" height="85" dI="0" dr="1" twR="1"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="circle_in_circle_stage2">
+   <mov name="loading" dr="20" to="6" drTW="20" lp="0" twE="NaN">
+    <b name="Layer 45" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" pX="21.2" pY="20.65" width="43" height="42" dI="0" twE="0" dr="19"/>
+     <f x="0" y="0" kX="-162.23" kY="-162.23" cX="1" cY="1" z="0" pX="26.5" pY="26.15" width="53" height="53" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Layer 44" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" pX="30.3" pY="29.6" width="61" height="60" dI="0" twE="0" dr="19"/>
+     <f x="0" y="0" kX="-21.82" kY="-21.82" cX="1" cY="1" z="1" pX="39.1" pY="38.7" width="79" height="78" dI="0" twE="0" twR="2" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="circle_in_circle_stage3">
+   <mov name="loading" dr="20" to="6" drTW="100" lp="0" twE="NaN">
+    <b name="Layer 45" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" pX="21.2" pY="20.65" width="43" height="42" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-8.51" kY="-8.51" cX="1" cY="1" z="0" pX="24" pY="23.55" width="49" height="48" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-17.03" kY="-17.03" cX="1" cY="1" z="0" pX="26.3" pY="25.9" width="53" height="52" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-25.56" kY="-25.56" cX="1" cY="1" z="0" pX="28" pY="27.75" width="57" height="56" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-34.09" kY="-34.09" cX="1" cY="1" z="0" pX="29.05" pY="28.95" width="59" height="58" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-42.63" kY="-42.63" cX="1" cY="1" z="0" pX="29.5" pY="29.5" width="60" height="59" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-51.17" kY="-51.17" cX="1" cY="1" z="0" pX="29.3" pY="29.4" width="59" height="59" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-59.7" kY="-59.7" cX="1" cY="1" z="0" pX="28.45" pY="28.7" width="57" height="58" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-68.42" kY="-68.42" cX="1" cY="1" z="0" pX="26.95" pY="27.3" width="54" height="55" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-76.95" kY="-76.95" cX="1" cY="1" z="0" pX="24.9" pY="25.3" width="50" height="51" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-85.47" kY="-85.47" cX="1" cY="1" z="0" pX="22.2" pY="22.8" width="45" height="46" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-93.79" kY="-93.79" cX="1" cY="1" z="0" pX="22" pY="22.55" width="44" height="46" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-102.31" kY="-102.31" cX="1" cY="1" z="0" pX="24.65" pY="25.1" width="50" height="51" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-110.83" kY="-110.83" cX="1" cY="1" z="0" pX="26.8" pY="27.15" width="54" height="55" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-119.55" kY="-119.55" cX="1" cY="1" z="0" pX="28.35" pY="28.6" width="57" height="58" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-128.09" kY="-128.09" cX="1" cY="1" z="0" pX="29.25" pY="29.4" width="59" height="59" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-136.63" kY="-136.63" cX="1" cY="1" z="0" pX="29.55" pY="29.5" width="60" height="59" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-145.16" kY="-145.16" cX="1" cY="1" z="0" pX="29.15" pY="29" width="59" height="58" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-153.7" kY="-153.7" cX="1" cY="1" z="0" pX="28.1" pY="27.85" width="57" height="56" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-162.23" kY="-162.23" cX="1" cY="1" z="0" pX="26.5" pY="26.15" width="53" height="53" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Layer 44" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" pX="30.3" pY="29.6" width="61" height="60" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="36.63" kY="36.63" cX="1" cY="1" z="1" pX="41.95" pY="41.75" width="84" height="84" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="33.34" kY="33.34" cX="1" cY="1" z="1" pX="41.5" pY="41.25" width="83" height="83" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="30.08" kY="30.08" cX="1" cY="1" z="1" pX="40.95" pY="40.7" width="82" height="82" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="26.82" kY="26.82" cX="1" cY="1" z="1" pX="40.3" pY="40" width="81" height="81" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="23.57" kY="23.57" cX="1" cY="1" z="1" pX="39.5" pY="39.15" width="79" height="79" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="20.31" kY="20.31" cX="1" cY="1" z="1" pX="38.6" pY="38.2" width="78" height="77" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="17.05" kY="17.05" cX="1" cY="1" z="1" pX="37.55" pY="37.1" width="76" height="75" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="13.8" kY="13.8" cX="1" cY="1" z="1" pX="36.4" pY="35.9" width="73" height="72" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="10.54" kY="10.54" cX="1" cY="1" z="1" pX="35.15" pY="34.6" width="71" height="70" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="7.29" kY="7.29" cX="1" cY="1" z="1" pX="33.75" pY="33.15" width="68" height="67" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="4.04" kY="4.04" cX="1" cY="1" z="1" pX="32.3" pY="31.65" width="65" height="64" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="0.79" kY="0.79" cX="1" cY="1" z="1" pX="30.65" pY="29.95" width="62" height="60" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-2.27" kY="-2.27" cX="1" cY="1" z="1" pX="31.4" pY="30.75" width="63" height="62" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-5.52" kY="-5.52" cX="1" cY="1" z="1" pX="32.95" pY="32.3" width="66" height="65" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-8.77" kY="-8.77" cX="1" cY="1" z="1" pX="34.4" pY="33.8" width="69" height="68" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-12.03" kY="-12.03" cX="1" cY="1" z="1" pX="35.75" pY="35.2" width="72" height="71" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-15.28" kY="-15.28" cX="1" cY="1" z="1" pX="36.95" pY="36.45" width="74" height="73" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-18.54" kY="-18.54" cX="1" cY="1" z="1" pX="38.05" pY="37.6" width="77" height="76" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="-21.82" kY="-21.82" cX="1" cY="1" z="1" pX="39.1" pY="38.7" width="79" height="78" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Layer 46" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" pX="11.4" pY="11.25" width="23" height="23" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="9.02" kY="9.02" cX="1" cY="1" z="2" pX="13" pY="12.9" width="27" height="26" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="18.04" kY="18.04" cX="1" cY="1" z="2" pX="14.3" pY="14.25" width="29" height="29" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="27.08" kY="27.08" cX="1" cY="1" z="2" pX="15.3" pY="15.2" width="31" height="31" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="36.12" kY="36.12" cX="1" cY="1" z="2" pX="15.85" pY="15.75" width="32" height="32" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="45.36" kY="45.36" cX="1" cY="1" z="2" pX="16" pY="16" width="33" height="33" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="54.4" kY="54.4" cX="1" cY="1" z="2" pX="15.75" pY="15.8" width="32" height="32" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="63.44" kY="63.44" cX="1" cY="1" z="2" pX="15.2" pY="15.2" width="31" height="31" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="72.48" kY="72.48" cX="1" cY="1" z="2" pX="14.2" pY="14.25" width="29" height="29" dI="0" twE="0" dr="1"/>
+     <f x="0" y="0" kX="81.7" kY="81.7" cX="1" cY="1" z="2" pX="12.8" pY="12.85" width="26" height="26" dI="0" twE="0" dr="1"/>
+     <f x="0.05" y="0" kX="90.53" kY="90.53" cX="1" cY="1" z="2" pX="11.4" pY="11.5" width="23" height="24" dI="0" twE="0" dr="1"/>
+     <f x="0.05" y="0" kX="99.55" kY="99.55" cX="1" cY="1" z="2" pX="13.05" pY="13.1" width="27" height="27" dI="0" twE="0" dr="1"/>
+     <f x="0.05" y="0" kX="108.77" kY="108.77" cX="1" cY="1" z="2" pX="14.4" pY="14.45" width="29" height="29" dI="0" twE="0" dr="1"/>
+     <f x="0.05" y="0" kX="117.81" kY="117.81" cX="1" cY="1" z="2" pX="15.35" pY="15.3" width="31" height="31" dI="0" twE="0" dr="1"/>
+     <f x="0.05" y="0" kX="126.85" kY="126.85" cX="1" cY="1" z="2" pX="15.85" pY="15.85" width="32" height="32" dI="0" twE="0" dr="1"/>
+     <f x="0.05" y="0" kX="135.9" kY="135.9" cX="1" cY="1" z="2" pX="16.05" pY="16" width="32" height="32" dI="0" twE="0" dr="1"/>
+     <f x="0.05" y="0" kX="145.13" kY="145.13" cX="1" cY="1" z="2" pX="15.85" pY="15.75" width="32" height="32" dI="0" twE="0" dr="1"/>
+     <f x="0.05" y="0" kX="154.18" kY="154.18" cX="1" cY="1" z="2" pX="15.2" pY="15.1" width="31" height="31" dI="0" twE="0" dr="1"/>
+     <f x="0.05" y="0" kX="163.21" kY="163.21" cX="1" cY="1" z="2" pX="14.2" pY="14.1" width="29" height="29" dI="0" twE="0" dr="1"/>
+     <f x="0.05" y="0" kX="172.23" kY="172.23" cX="1" cY="1" z="2" pX="12.9" pY="12.75" width="26" height="26" dI="0" dr="1" twR="19"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="circle_in_circle_stage4">
+   <mov name="loading" dr="40" to="6" drTW="40" lp="0" twE="NaN">
+    <b name="Layer 45" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" pX="21.2" pY="20.65" width="43" height="42" dI="0" twE="0" dr="39"/>
+     <f x="0" y="0" kX="-162.23" kY="-162.23" cX="1" cY="1" z="0" pX="26.5" pY="26.15" width="53" height="53" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Layer 48" sc="1" dl="0">
+     <f x="0" y="0" kX="-162.23" kY="-162.23" cX="1" cY="1" z="1" pX="26.5" pY="26.15" width="53" height="53" dI="0" twE="0" dr="39"/>
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" pX="21.2" pY="20.65" width="43" height="42" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Layer 44" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" pX="30.3" pY="29.6" width="61" height="60" dI="0" twE="0" dr="39"/>
+     <f x="0" y="0" kX="-21.82" kY="-21.82" cX="1" cY="1" z="2" pX="39.1" pY="38.7" width="79" height="78" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Layer 47" sc="1" dl="0">
+     <f x="0" y="0" kX="-21.82" kY="-21.82" cX="1" cY="1" z="3" pX="39.1" pY="38.7" width="79" height="78" dI="0" twE="0" dr="39"/>
+     <f x="0" y="0" kX="167.7" kY="167.7" cX="1" cY="1" z="3" pX="35.85" pY="35.35" width="72" height="71" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Layer 46" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="4" pX="11.4" pY="11.25" width="23" height="23" dI="0" twE="0" dr="39"/>
+     <f x="0.05" y="0" kX="172.23" kY="172.23" cX="1" cY="1" z="4" pX="12.9" pY="12.75" width="26" height="26" dI="0" dr="1"/>
+    </b>
+    <b name="Layer 49" sc="1" dl="0">
+     <f x="0.05" y="0" kX="172.23" kY="172.23" cX="1" cY="1" z="5" pX="12.9" pY="12.75" width="26" height="26" dI="0" twE="0" dr="39"/>
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="5" pX="11.4" pY="11.25" width="23" height="23" dI="0" twE="0" dr="1" twR="5"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="circle_in_circle_stage5">
+   <mov name="loading" dr="40" to="6" drTW="40" lp="0" twE="NaN">
+    <b name="Layer 45" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="0" pX="21.2" pY="20.65" width="43" height="42" dI="0" twE="0" dr="39"/>
+     <f x="0" y="0" kX="-162.23" kY="-162.23" cX="1" cY="1" z="0" pX="26.5" pY="26.15" width="53" height="53" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Layer 48" sc="1" dl="0">
+     <f x="0" y="0" kX="-162.23" kY="-162.23" cX="1" cY="1" z="1" pX="26.5" pY="26.15" width="53" height="53" dI="0" twE="0" dr="39"/>
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="1" pX="21.2" pY="20.65" width="43" height="42" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Layer 44" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="1" cY="1" z="2" pX="30.3" pY="29.6" width="61" height="60" dI="0" twE="0" dr="39"/>
+     <f x="0" y="0" kX="-21.82" kY="-21.82" cX="1" cY="1" z="2" pX="39.1" pY="38.7" width="79" height="78" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="Layer 47" sc="1" dl="0">
+     <f x="0" y="0" kX="-21.82" kY="-21.82" cX="1" cY="1" z="3" pX="39.1" pY="38.7" width="79" height="78" dI="0" twE="0" dr="39"/>
+     <f x="0" y="0" kX="167.7" kY="167.7" cX="1" cY="1" z="3" pX="35.85" pY="35.35" width="72" height="71" dI="0" twE="0" twR="3" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="eco_stage1">
+   <mov name="loading" dr="40" to="6" drTW="40" lp="0" twE="NaN">
+    <b name="Layer 50" sc="1" dl="0">
+     <f x="-15.8" y="0" kX="0" kY="0" cX="1" cY="1" z="0" pX="3.4" pY="17.15" width="7" height="35" dI="0" dr="40"/>
+    </b>
+    <b name="Layer 51" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="-5.25" y="0" kX="0" kY="0" cX="1" cY="1" z="1" pX="3.4" pY="17.15" width="7" height="35" dI="0" dr="38"/>
+    </b>
+    <b name="Layer 52" sc="1" dl="0">
+     <f dr="4" dI="-1"/>
+     <f x="5.3" y="0" kX="0" kY="0" cX="1" cY="1" z="2" pX="3.4" pY="17.15" width="7" height="35" dI="0" dr="36"/>
+    </b>
+    <b name="Layer 53" sc="1" dl="0">
+     <f dr="6" dI="-1"/>
+     <f x="15.85" y="0" kX="0" kY="0" cX="1" cY="1" z="3" pX="3.4" pY="17.15" width="7" height="35" dI="0" dr="34"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="eco1">
+   <mov name="loading" dr="20" to="6" drTW="20" lp="0" twE="NaN"/>
+  </animation>
+  <animation name="pie1_stage">
+   <mov name="loop" dr="15" to="6" drTW="15" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-11.2" y="-22.35" kX="0" kY="0" cX="1" cY="1" z="0" pX="9.9" pY="7.4" width="20" height="15" dI="0" dr="15"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f x="11.15" y="-22.35" kX="0" kY="0" cX="1" cY="1" z="1" pX="9.85" pY="7.4" width="20" height="15" dI="0" dr="15"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f x="23" y="-10.3" kX="0" kY="0" cX="1" cY="1" z="2" pX="7" pY="9.1" width="14" height="19" dI="0" dr="15"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f x="23" y="10.3" kX="0" kY="0" cX="1" cY="1" z="3" pX="7" pY="9.1" width="14" height="19" dI="0" dr="15"/>
+    </b>
+    <b name="5" sc="1" dl="0">
+     <f x="11.15" y="22.35" kX="0" kY="0" cX="1" cY="1" z="4" pX="9.85" pY="7.4" width="20" height="15" dI="0" dr="15"/>
+    </b>
+    <b name="6" sc="1" dl="0">
+     <f x="-11.2" y="22.35" kX="0" kY="0" cX="1" cY="1" z="5" pX="9.9" pY="7.4" width="20" height="15" dI="0" dr="15"/>
+    </b>
+    <b name="7" sc="1" dl="0">
+     <f x="-23" y="10.3" kX="0" kY="0" cX="1" cY="1" z="6" pX="7" pY="9.1" width="14" height="19" dI="0" dr="15"/>
+    </b>
+    <b name="8" sc="1" dl="0">
+     <f x="-23" y="-10.3" kX="0" kY="0" cX="1" cY="1" z="7" pX="7" pY="9.1" width="14" height="19" dI="0" dr="15"/>
+    </b>
+    <f st="0" dr="14"/>
+    <f st="14" dr="1"/>
+   </mov>
+  </animation>
+  <animation name="cubes1_stage">
+   <mov name="loading" dr="32" to="6" drTW="32" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-16.2" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="0" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="32"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="-5.35" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="1" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="31"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="5.3" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="2" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="30"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="15.9" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="3" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="29"/>
+    </b>
+    <b name="5" sc="1" dl="0">
+     <f dr="4" dI="-1"/>
+     <f x="15.9" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="4" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="28"/>
+    </b>
+    <b name="6" sc="1" dl="0">
+     <f dr="5" dI="-1"/>
+     <f x="5.3" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="5" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="27"/>
+    </b>
+    <b name="7" sc="1" dl="0">
+     <f dr="6" dI="-1"/>
+     <f x="-5.35" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="6" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="26"/>
+    </b>
+    <b name="8" sc="1" dl="0">
+     <f dr="7" dI="-1"/>
+     <f x="-16.2" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="7" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="25"/>
+    </b>
+    <b name="9" sc="1" dl="0">
+     <f dr="8" dI="-1"/>
+     <f x="-16.2" y="4.75" kX="0" kY="0" cX="1" cY="1" z="8" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="24"/>
+    </b>
+    <b name="10" sc="1" dl="0">
+     <f dr="9" dI="-1"/>
+     <f x="-5.35" y="4.75" kX="0" kY="0" cX="1" cY="1" z="9" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="23"/>
+    </b>
+    <b name="11" sc="1" dl="0">
+     <f dr="10" dI="-1"/>
+     <f x="5.3" y="4.75" kX="0" kY="0" cX="1" cY="1" z="10" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="22"/>
+    </b>
+    <b name="12" sc="1" dl="0">
+     <f dr="11" dI="-1"/>
+     <f x="15.9" y="4.75" kX="0" kY="0" cX="1" cY="1" z="11" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="21"/>
+    </b>
+    <b name="13" sc="1" dl="0">
+     <f dr="12" dI="-1"/>
+     <f x="15.9" y="15.45" kX="0" kY="0" cX="1" cY="1" z="12" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="20"/>
+    </b>
+    <b name="14" sc="1" dl="0">
+     <f dr="13" dI="-1"/>
+     <f x="5.3" y="15.45" kX="0" kY="0" cX="1" cY="1" z="13" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="19"/>
+    </b>
+    <b name="15" sc="1" dl="0">
+     <f dr="14" dI="-1"/>
+     <f x="-5.35" y="15.45" kX="0" kY="0" cX="1" cY="1" z="14" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="18"/>
+    </b>
+    <b name="16" sc="1" dl="0">
+     <f dr="15" dI="-1"/>
+     <f x="-16.2" y="15.45" kX="0" kY="0" cX="1" cY="1" z="15" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="17"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="cubes4_stage">
+   <mov name="loading" dr="32" to="6" drTW="32" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-16.2" y="0.15" kX="0" kY="0" cX="1" cY="1" z="0" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="32"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="-5.35" y="0.15" kX="0" kY="0" cX="1" cY="1" z="1" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="31"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="5.3" y="0.15" kX="0" kY="0" cX="1" cY="1" z="2" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="30"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="15.9" y="0.15" kX="0" kY="0" cX="1" cY="1" z="3" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="29"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="cubes5_stage">
+   <mov name="loading" dr="32" to="6" drTW="32" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="-28.35" y="0.05" kX="0" kY="0" cX="0.83" cY="1" z="0" pX="3.5" pY="4.3" width="7" height="9" dI="0" dr="29"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="-18.9" y="0.05" kX="0" kY="0" cX="0.83" cY="1.85" z="1" pX="3.5" pY="7.95" width="7" height="16" dI="0" dr="30"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="-9.45" y="0.1" kX="0" kY="0" cX="0.83" cY="2.97" z="2" pX="3.5" pY="12.75" width="7" height="26" dI="0" dr="31"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f x="0" y="0.1" kX="0" kY="0" cX="0.83" cY="3.81" z="3" pX="3.5" pY="16.35" width="7" height="33" dI="0" dr="32"/>
+    </b>
+    <b name="Layer 60" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="9.45" y="0.1" kX="0" kY="0" cX="0.83" cY="2.97" z="4" pX="3.5" pY="12.75" width="7" height="26" dI="0" dr="31"/>
+    </b>
+    <b name="Layer 61" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="18.9" y="0.05" kX="0" kY="0" cX="0.83" cY="1.85" z="5" pX="3.5" pY="7.95" width="7" height="16" dI="0" dr="30"/>
+    </b>
+    <b name="Layer 62" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="28.35" y="0.05" kX="0" kY="0" cX="0.83" cY="1" z="6" pX="3.5" pY="4.3" width="7" height="9" dI="0" dr="29"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="cubes6_stage">
+   <mov name="loading" dr="32" to="6" drTW="32" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="-28.4" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="0" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="29"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="-18.95" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="1" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="30"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="-9.5" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="2" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="31"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f x="-0.05" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="3" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="32"/>
+    </b>
+    <b name="Layer 60" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="9.4" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="4" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="31"/>
+    </b>
+    <b name="Layer 61" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="18.85" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="5" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="30"/>
+    </b>
+    <b name="Layer 62" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="28.3" y="0" kX="0" kY="0" cX="0.83" cY="0.82" z="6" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="29"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="cubes7_stage">
+   <mov name="loading" dr="32" to="6" drTW="32" lp="0" twE="NaN">
+    <b name="4" sc="1" dl="0">
+     <f x="-0.35" y="-0.2" kX="0" kY="0" cX="0.83" cY="0.82" z="0" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="32"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="-9.15" y="-0.2" kX="0" kY="0" cX="0.83" cY="0.82" z="1" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="31"/>
+    </b>
+    <b name="Layer 65" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="-9.15" y="-9" kX="0" kY="0" cX="0.83" cY="0.82" z="2" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="30"/>
+    </b>
+    <b name="Layer 66" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="-0.15" y="-26.75" kX="0" kY="0" cX="0.83" cY="0.82" z="3" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="29"/>
+    </b>
+    <b name="Layer 67" sc="1" dl="0">
+     <f dr="4" dI="-1"/>
+     <f x="-9.15" y="-26.7" kX="0" kY="0" cX="0.83" cY="0.82" z="4" pX="3.5" pY="3.5" width="7" height="7" dI="0" dr="28"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="cube1">
+   <mov name="loading" dr="16" to="6" drTW="16" lp="0" twE="NaN"/>
+  </animation>
+  <animation name="cubes2_stage">
+   <mov name="loading" dr="32" to="6" drTW="32" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-16.2" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="0" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="32"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="-5.35" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="1" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="31"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="5.3" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="2" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="30"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="15.9" y="-16.65" kX="0" kY="0" cX="1" cY="1" z="3" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="29"/>
+    </b>
+    <b name="5" sc="1" dl="0">
+     <f dr="4" dI="-1"/>
+     <f x="15.9" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="4" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="28"/>
+    </b>
+    <b name="6" sc="1" dl="0">
+     <f dr="5" dI="-1"/>
+     <f x="5.3" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="5" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="27"/>
+    </b>
+    <b name="7" sc="1" dl="0">
+     <f dr="6" dI="-1"/>
+     <f x="-5.35" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="6" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="26"/>
+    </b>
+    <b name="8" sc="1" dl="0">
+     <f dr="7" dI="-1"/>
+     <f x="-16.2" y="-5.95" kX="0" kY="0" cX="1" cY="1" z="7" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="25"/>
+    </b>
+    <b name="9" sc="1" dl="0">
+     <f dr="8" dI="-1"/>
+     <f x="-16.2" y="4.75" kX="0" kY="0" cX="1" cY="1" z="8" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="24"/>
+    </b>
+    <b name="10" sc="1" dl="0">
+     <f dr="9" dI="-1"/>
+     <f x="-5.35" y="4.75" kX="0" kY="0" cX="1" cY="1" z="9" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="23"/>
+    </b>
+    <b name="11" sc="1" dl="0">
+     <f dr="10" dI="-1"/>
+     <f x="5.3" y="4.75" kX="0" kY="0" cX="1" cY="1" z="10" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="22"/>
+    </b>
+    <b name="12" sc="1" dl="0">
+     <f dr="11" dI="-1"/>
+     <f x="15.9" y="4.75" kX="0" kY="0" cX="1" cY="1" z="11" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="21"/>
+    </b>
+    <b name="13" sc="1" dl="0">
+     <f dr="12" dI="-1"/>
+     <f x="15.9" y="15.45" kX="0" kY="0" cX="1" cY="1" z="12" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="20"/>
+    </b>
+    <b name="14" sc="1" dl="0">
+     <f dr="13" dI="-1"/>
+     <f x="5.3" y="15.45" kX="0" kY="0" cX="1" cY="1" z="13" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="19"/>
+    </b>
+    <b name="15" sc="1" dl="0">
+     <f dr="14" dI="-1"/>
+     <f x="-5.35" y="15.45" kX="0" kY="0" cX="1" cY="1" z="14" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="18"/>
+    </b>
+    <b name="16" sc="1" dl="0">
+     <f dr="15" dI="-1"/>
+     <f x="-16.2" y="15.45" kX="0" kY="0" cX="1" cY="1" z="15" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="17"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="cubes3_stage">
+   <mov name="loading" dr="32" to="6" drTW="32" lp="0" twE="NaN">
+    <b name="1" sc="1" dl="0">
+     <f x="-16.2" y="-0.45" kX="0" kY="0" cX="1" cY="1" z="0" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="32"/>
+    </b>
+    <b name="2" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="-5.35" y="-0.45" kX="0" kY="0" cX="1" cY="1" z="1" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="31"/>
+    </b>
+    <b name="3" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="5.3" y="-0.45" kX="0" kY="0" cX="1" cY="1" z="2" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="30"/>
+    </b>
+    <b name="4" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="15.9" y="-0.45" kX="0" kY="0" cX="1" cY="1" z="3" pX="4.25" pY="4.3" width="9" height="9" dI="0" dr="29"/>
+    </b>
+   </mov>
+  </animation>
+  <animation name="cube2">
+   <mov name="loading" dr="16" to="6" drTW="16" lp="0" twE="NaN"/>
+  </animation>
+ </animations>
+ <TextureAtlas name="loading_animations_2" width="512" height="64">
+  <SubTexture name="pie8" pX="7" pY="9.1" width="14" height="19" x="418" y="0"/>
+  <SubTexture name="pie7" pX="7" pY="9.1" width="14" height="19" x="402" y="0"/>
+  <SubTexture name="pie6" pX="9.9" pY="7.4" width="20" height="15" x="282" y="0"/>
+  <SubTexture name="pie5" pX="9.85" pY="7.4" width="20" height="15" x="348" y="0"/>
+  <SubTexture name="pie4" pX="7" pY="9.1" width="14" height="19" x="386" y="0"/>
+  <SubTexture name="pie3" pX="7" pY="9.1" width="14" height="19" x="370" y="0"/>
+  <SubTexture name="pie2" pX="9.85" pY="7.4" width="20" height="15" x="304" y="0"/>
+  <SubTexture name="pie1" pX="9.9" pY="7.4" width="20" height="15" x="326" y="0"/>
+  <SubTexture name="circle_in_circle_big" pX="30.3" pY="29.6" width="61" height="60" x="0" y="0"/>
+  <SubTexture name="circle_in_circle_little" pX="21.2" pY="20.65" width="43" height="42" x="126" y="0"/>
+  <SubTexture name="cycle_in_cycle_center" pX="11.4" pY="11.25" width="23" height="23" x="257" y="0"/>
+  <SubTexture name="circle_in_circle_big_clip" pX="30.3" pY="29.6" width="61" height="60" x="63" y="0"/>
+  <SubTexture name="circle_in_circle_little_clip" pX="21.2" pY="20.65" width="43" height="42" x="171" y="0"/>
+  <SubTexture name="cycle_circle3" pX="4.55" pY="4.6" width="10" height="10" x="458" y="0"/>
+  <SubTexture name="gear1" pX="19.5" pY="19.6" width="39" height="40" x="216" y="0"/>
+  <SubTexture name="cycle_circle2" pX="4.55" pY="4.6" width="10" height="10" x="434" y="0"/>
+  <SubTexture name="cycle_circle1" pX="4.55" pY="4.6" width="10" height="10" x="446" y="0"/>
+ </TextureAtlas>
+</skeleton>
