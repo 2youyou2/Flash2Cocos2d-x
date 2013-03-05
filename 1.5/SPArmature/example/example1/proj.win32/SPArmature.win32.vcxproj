@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{03267016-DC4C-4EA7-979F-05F27C0DC9FE}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\..\..\$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>F:\game\cocos2d-x\src\cocos2d-2.1beta3-x-2.1.1\Debug.win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\Visual Leak Detector\include;.;..\Classes;..\..\..\..\cocos2dx;..\..\..\..\cocos2dx\include;..\..\..\..\cocos2dx\kazmath\include;..\..\..\..\cocos2dx\platform\win32;..\..\..\..\cocos2dx\platform\third_party\win32;..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\..\..\..\;..\..\..\..\external;..\..\..\..\CocosDenshion\Include;..\..\..\SPArmature\display\display_factory;..\..\..\SPArmature\display;..\..\..\SPArmature\utils;..\..\..\SPArmature\animation;..\..\..\SPArmature\datas\display_data;..\..\..\SPArmature\datas;..\..\..\SPArmature\external_tool\Json\json;..\..\..\SPArmature\external_tool\Json\lib_json;..\..\..\SPArmature\external_tool\Json;..\..\..\SPArmature\external_tool;..\..\..\SPArmature;..\..\..\tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>SPArmature.h</HeaderFileName>
+      <InterfaceIdentifierFileName>SPArmature_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>SPArmature_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/SPArmature.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes;$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)external;$(SolutionDir)CocosDenshion\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>SPArmature.h</HeaderFileName>
+      <InterfaceIdentifierFileName>SPArmature_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>SPArmature_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/SPArmature.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\SPArmature\external_tool\Json\lib_json\json_internalarray.inl" />
+    <None Include="..\..\..\SPArmature\external_tool\Json\lib_json\json_internalmap.inl" />
+    <None Include="..\..\..\SPArmature\external_tool\Json\lib_json\json_valueiterator.inl" />
+    <None Include="..\..\..\SPArmature\external_tool\Json\lib_json\sconscript" />
+    <None Include="..\..\..\tinyxml\tinyxml.suo" />
+    <None Include="..\Resources\CloseNormal.png" />
+    <None Include="..\Resources\CloseSelected.png" />
+    <None Include="..\Resources\HelloWorld.png" />
+    <None Include="res\SPArmature.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SPArmature.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\SPArmature\animation\SPAnimation.h" />
+    <ClInclude Include="..\..\..\SPArmature\animation\SPProcessBase.h" />
+    <ClInclude Include="..\..\..\SPArmature\animation\SPTween.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\display_data\SPArmatureDisplayData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\display_data\SPDisplayData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\display_data\SPParticleDisplayData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\display_data\SPShaderDisplayData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\display_data\SPSpriteDisplayData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPAnimationData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPArmatureData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPBoneData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPContourData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPFrameData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPJsonData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPMovementBoneData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPMovementData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPMovementFrameData.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPNode.h" />
+    <ClInclude Include="..\..\..\SPArmature\datas\SPTextureData.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\CCTexture2DMutable.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\display_factory\SPArmatureDisplayFactory.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\display_factory\SPDisplayFactory.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\display_factory\SPDisplayFactoryManager.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\display_factory\SPParticleDisplayFactory.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\display_factory\SPShaderDisplayFactory.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\display_factory\SPSpriteDisplayFactory.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\SPContourPoints.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\SPContourSprite.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\SPDecorativeDisplay.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\SPDisplayManager.h" />
+    <ClInclude Include="..\..\..\SPArmature\display\SPShaderNode.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\Json\json\autolink.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\Json\json\config.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\Json\json\features.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\Json\json\forwards.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\Json\json\json_lib.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\Json\json\reader.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\Json\json\value.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\Json\json\writer.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\Json\lib_json\json_batchallocator.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\Json\lib_json\json_tool.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\Json\SPContentJsonDictionary.h" />
+    <ClInclude Include="..\..\..\SPArmature\external_tool\sigslot.h" />
+    <ClInclude Include="..\..\..\SPArmature\SPArmature.h" />
+    <ClInclude Include="..\..\..\SPArmature\SPBone.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPArmatureDataManager.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPArmatureDefine.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPBatchNode.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPBatchNodeManager.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPConstValue.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPDataReaderHelper.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPTransformHelp.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPTweenFunction.h" />
+    <ClInclude Include="..\..\..\SPArmature\utils\SPUtilMath.h" />
+    <ClInclude Include="..\..\..\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\..\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SPArmature\animation\SPAnimation.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\animation\SPProcessBase.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\animation\SPTween.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\display_data\SPArmatureDisplayData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\display_data\SPDisplayData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\display_data\SPParticleDisplayData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\display_data\SPShaderDisplayData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\display_data\SPSpriteDisplayData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPAnimationData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPArmatureData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPBoneData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPContourData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPFrameData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPJsonData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPMovementBoneData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPMovementData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPMovementFrameData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPNode.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\datas\SPTextureData.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\CCTexture2DMutable.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\display_factory\SPArmatureDisplayFactory.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\display_factory\SPDisplayFactory.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\display_factory\SPDisplayFactoryManager.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\display_factory\SPParticleDisplayFactory.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\display_factory\SPShaderDisplayFactory.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\display_factory\SPSpriteDisplayFactory.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\SPContourPoints.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\SPContourSprite.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\SPDecorativeDisplay.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\SPDisplayManager.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\display\SPShaderNode.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\external_tool\Json\lib_json\json_reader.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\external_tool\Json\lib_json\json_value.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\external_tool\Json\lib_json\json_writer.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\external_tool\Json\SPContentJsonDictionary.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\SPArmature.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\SPBone.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\utils\SPArmatureDataManager.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\utils\SPBatchNode.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\utils\SPBatchNodeManager.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\utils\SPDataReaderHelper.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\utils\SPTransformHelp.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\utils\SPTweenFunction.cpp" />
+    <ClCompile Include="..\..\..\SPArmature\utils\SPUtilMath.cpp" />
+    <ClCompile Include="..\..\..\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\..\..\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

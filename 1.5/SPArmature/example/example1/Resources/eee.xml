@@ -1,0 +1,30 @@
+<skeleton name="未命名-1" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="e">
+   <b name="e2" x="-139.15" y="0" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="e2"/>
+   </b>
+   <b name="e1" x="-85" y="-115" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="e1"/>
+   </b>
+  </armature>
+ </armatures>
+  <animations>
+    <animation name="e">
+      <mov name="eee" dr="2" to="6" drTW="60" lp="1" twE="2">
+        <b name="e2" sc="1" dl="0">
+          <f x="-139.15" y="0" kX="0" kY="0" cX="1" cY="1" z="0" pX="0" pY="0" width="284" height="140" dI="0" dr="1"/>
+          <f x="-147.1" y="-14.05" kX="-12.73" kY="-12.73" cX="1" cY="1" z="0" pX="0" pY="62.55" width="308" height="200" dI="0" dr="1"/>
+        </b>
+        <b name="e1" sc="1" dl="0">
+          <f x="-85" y="-115" kX="0" kY="0" cX="1" cY="1" z="1" pX="0" pY="0" width="175" height="115" dI="0" dr="1"/>
+          <f x="23.4" y="-160" kX="40.76" kY="-3.48" cX="1" cY="1.4" z="1" pX="104.8" pY="10.65" width="280" height="133" dI="0" dr="1"/>
+        </b>
+      </mov>
+    </animation>
+  </animations>
+ <TextureAtlas name="未命名-1" width="512" height="256">
+  <SubTexture name="e1" pX="0" pY="0" width="175" height="115" x="286" y="0"/>
+  <SubTexture name="e2" pX="0" pY="0" width="284" height="140" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

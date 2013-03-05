@@ -1,0 +1,129 @@
+<skeleton name="weapon" frameRate="24" version="1.4">
+  <armatures>
+    <armature name="weapon">
+      <b name="图层 1" x="-21.65" y="-1.5" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="0">
+        <d name="weapon_f-hammer"/>
+      </b>
+      <b name="图层 2" x="-3.65" y="-74.55" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="1">
+        <d name="weapon_f-sword2"/>
+      </b>
+      <b name="图层 3" x="-27" y="70" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="2">
+        <d name="weapon_f-knife"/>
+      </b>
+      <b name="图层 4" x="-14" y="143.5" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="3">
+        <d name="weapon_f-sword3"/>
+      </b>
+      <b name="图层 5" x="-285.65" y="1" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="4">
+        <d name="weapon_f-sword4"/>
+      </b>
+      <b name="图层 6" x="-299.65" y="51.5" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="5">
+        <d name="weapon_f-sword5"/>
+      </b>
+      <b name="图层 7" x="-320.3" y="-60.15" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="6">
+        <d name="weapon_f-sword"/>
+      </b>
+    </armature>
+  </armatures>
+  <animations/>
+  <TextureAtlas name="weapon" width="512" height="256">
+    <SubTexture name="weapon_f-sword" pX="10" pY="15" width="90" height="30" x="175" y="162">
+      <con>
+        <con_vt x="22.5" y="-16.25"/>
+        <con_vt x="9.5" y="-4.25"/>
+        <con_vt x="-10.75" y="-4.75"/>
+        <con_vt x="-10.25" y="4.5"/>
+        <con_vt x="9.5" y="3"/>
+        <con_vt x="25.4" y="14.9"/>
+        <con_vt x="20.25" y="5"/>
+        <con_vt x="54.5" y="7"/>
+        <con_vt x="80" y="0"/>
+        <con_vt x="56.25" y="-8.75"/>
+        <con_vt x="21.5" y="-6"/>
+      </con>
+    </SubTexture>
+    <SubTexture name="weapon_f-sword5" pX="30.65" pY="11.65" width="250" height="56" x="0" y="93">
+      <con>
+        <con_vt x="19" y="-7"/>
+        <con_vt x="9.5" y="-2"/>
+        <con_vt x="-19" y="-10"/>
+        <con_vt x="-16" y="15.5"/>
+        <con_vt x="24.5" y="19"/>
+        <con_vt x="83.5" y="22.5"/>
+        <con_vt x="176" y="25"/>
+        <con_vt x="219.45" y="3"/>
+        <con_vt x="113" y="10.5"/>
+        <con_vt x="27.5" y="-0.5"/>
+      </con>
+    </SubTexture>
+    <SubTexture name="weapon_f-sword4" pX="44.65" pY="46.15" width="250" height="91" x="0" y="0">
+      <con>
+        <con_vt x="27" y="-9.5"/>
+        <con_vt x="-15" y="-10"/>
+        <con_vt x="-45.5" y="-7.5"/>
+        <con_vt x="-30.5" y="15.5"/>
+        <con_vt x="-16" y="6.5"/>
+        <con_vt x="22" y="7"/>
+        <con_vt x="29" y="10.5"/>
+        <con_vt x="24" y="33"/>
+        <con_vt x="45.5" y="46.5"/>
+        <con_vt x="43.5" y="26.5"/>
+        <con_vt x="207.45" y="-2"/>
+        <con_vt x="40" y="-31.5"/>
+        <con_vt x="50" y="-49"/>
+        <con_vt x="23.5" y="-34.5"/>
+      </con>
+    </SubTexture>
+    <SubTexture name="weapon_f-sword3" pX="44.65" pY="28" width="250" height="60" x="252" y="0">
+      <con>
+        <con_vt x="11.5" y="-7.5"/>
+        <con_vt x="-23.5" y="-6.5"/>
+        <con_vt x="-39.5" y="-11.5"/>
+        <con_vt x="-49.5" y="-1.5"/>
+        <con_vt x="-38" y="15.5"/>
+        <con_vt x="-23.5" y="6.5"/>
+        <con_vt x="13" y="7"/>
+        <con_vt x="27.5" y="34"/>
+        <con_vt x="30" y="13"/>
+        <con_vt x="206.95" y="4"/>
+        <con_vt x="29.5" y="-9"/>
+        <con_vt x="26.5" y="-32.5"/>
+      </con>
+    </SubTexture>
+    <SubTexture name="weapon_f-knife" pX="31.65" pY="26.15" width="250" height="59" x="252" y="62">
+      <con>
+        <con_vt x="30" y="-10"/>
+        <con_vt x="-33" y="-1"/>
+        <con_vt x="-3.5" y="23.5"/>
+        <con_vt x="34.5" y="21.5"/>
+        <con_vt x="154.5" y="24"/>
+        <con_vt x="220.5" y="-26.5"/>
+      </con>
+    </SubTexture>
+    <SubTexture name="weapon_f-sword2" pX="55" pY="18.5" width="250" height="37" x="252" y="123">
+      <con>
+        <con_vt x="15" y="-8.5"/>
+        <con_vt x="-29" y="-8.5"/>
+        <con_vt x="-55" y="3"/>
+        <con_vt x="-33" y="10"/>
+        <con_vt x="13.5" y="5.5"/>
+        <con_vt x="9.8" y="12.7"/>
+        <con_vt x="8" y="19.5"/>
+        <con_vt x="195" y="0"/>
+        <con_vt x="16.5" y="-19.5"/>
+      </con>
+    </SubTexture>
+    <SubTexture name="weapon_f-hammer" pX="37" pY="34" width="173" height="69" x="0" y="151">
+      <con>
+        <con_vt x="76.5" y="-10.5"/>
+        <con_vt x="-37.5" y="-15.5"/>
+        <con_vt x="-36" y="12"/>
+        <con_vt x="77" y="12.5"/>
+        <con_vt x="79" y="33.5"/>
+        <con_vt x="123.5" y="31.5"/>
+        <con_vt x="136" y="8"/>
+        <con_vt x="125.5" y="-27"/>
+        <con_vt x="75.5" y="-36"/>
+      </con>
+    </SubTexture>
+  </TextureAtlas>
+</skeleton>

@@ -1,0 +1,50 @@
+<skeleton name="bird" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="bird">
+   <b name="star3" x="-114" y="-96" kX="0" kY="0" cX="1" cY="1" z="0">
+    <d name="star_f-star3"/>
+   </b>
+   <b name="star4" x="-113" y="66" kX="0" kY="0" cX="1" cY="1" z="1">
+    <d name="star_f-star4"/>
+   </b>
+   <b name="star5" x="88" y="-97" kX="0" kY="0" cX="1" cY="1" z="2">
+    <d name="star_f-star5"/>
+   </b>
+   <b name="star6" x="87" y="64" kX="0" kY="0" cX="1" cY="1" z="3">
+    <d name="star_f-star6"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bird">
+   <mov name="changeColor" dr="3" to="6" drTW="150" lp="1" twE="2">
+    <b name="star3" sc="1" dl="0">
+     <f x="-114" y="-96" kX="0" kY="0" cX="1" cY="1" z="0" pX="18.65" pY="21.5" width="40" height="45" alpha="23" red="83" green="3" blue="72" dI="0" dr="1"/>
+     <f x="127" y="-100" kX="0" kY="0" cX="1" cY="1" z="0" pX="18.65" pY="21.5" width="40" height="45" alpha="51" red="5" green="100" blue="6" dI="0" dr="1"/>
+     <f x="-43.95" y="-40" kX="0" kY="0" cX="1" cY="1" z="0" pX="18.65" pY="21.5" width="40" height="45" alpha="100" red="100" green="100" blue="6" dI="0" dr="1"/>
+    </b>
+    <b name="star4" sc="1" dl="0">
+     <f x="-113" y="66" kX="0" kY="0" cX="1" cY="1" z="1" pX="19.65" pY="24.5" width="40" height="45" alpha="86" red="0" green="0" blue="0" dI="0" dr="1"/>
+     <f x="-42" y="8" kX="0" kY="0" cX="1" cY="1" z="1" pX="19.65" pY="24.5" width="40" height="45" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="41.95" y="-118" kX="0" kY="0" cX="1" cY="1" z="1" pX="19.65" pY="24.5" width="40" height="45" alpha="50" red="100" green="100" blue="30" dI="0" dr="1"/>
+    </b>
+    <b name="star5" sc="1" dl="0">
+     <f x="88" y="-97" kX="0" kY="0" cX="1" cY="1" z="2" pX="18.65" pY="20.5" width="40" height="45" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-83" y="-101" kX="0" kY="0" cX="1" cY="1" z="2" pX="18.65" pY="20.5" width="40" height="45" alpha="100" red="100" green="0" blue="100" dI="0" dr="1"/>
+     <f x="37.95" y="4" kX="0" kY="0" cX="1" cY="1" z="2" pX="18.65" pY="20.5" width="40" height="45" alpha="100" red="0" green="0" blue="100" dI="0" dr="1"/>
+    </b>
+    <b name="star6" sc="1" dl="0">
+     <f x="87" y="64" kX="0" kY="0" cX="1" cY="1" z="3" pX="17.65" pY="22.5" width="40" height="45" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-84" y="6" kX="0" kY="0" cX="1" cY="1" z="3" pX="17.65" pY="22.5" width="40" height="45" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="83.95" y="-39" kX="0" kY="0" cX="1" cY="1" z="3" pX="17.65" pY="22.5" width="40" height="45" alpha="0" red="100" green="100" blue="100" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="bird" width="512" height="64">
+  <SubTexture name="star_f-star6" pX="17.65" pY="22.5" width="40" height="45" x="84" y="0"/>
+  <SubTexture name="star_f-star5" pX="18.65" pY="20.5" width="40" height="45" x="126" y="0"/>
+  <SubTexture name="star_f-star4" pX="19.65" pY="24.5" width="40" height="45" x="0" y="0"/>
+  <SubTexture name="star_f-star3" pX="18.65" pY="21.5" width="40" height="45" x="42" y="0"/>
+ </TextureAtlas>
+</skeleton>
