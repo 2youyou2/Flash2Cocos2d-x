@@ -209,6 +209,7 @@ public:
 	 */
 	CC_SYNTHESIZE_PASS_BY_REF(bool, m_bIgnoreMovementBoneData, IgnoreMovementBoneData)
     
+	CC_SYNTHESIZE(bool, m_bRootBone, RootBone);
 	
 public:
     CCAffineTransform m_pSlefTransformMatrix;

@@ -503,6 +503,7 @@ void Armature::initRootBone()
 	m_pRootBone->setIgnoreMovementBoneData(true);
     m_pRootBone->getDisplayManager()->setVisible(false);
 	m_pRootBone->setArmature(this);
+	m_pRootBone->setRootBone(true);
 }
 
 void Armature::internalSort()

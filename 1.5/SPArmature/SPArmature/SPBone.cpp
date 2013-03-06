@@ -145,6 +145,7 @@ Bone::Bone()
     m_iZOrder = 0;
 	m_bIgnoreMovementBoneData = false;
 	m_pGlobalTransformMatrix = CCAffineTransformMake(1, 0, 0, 1, 0, 0);
+	m_bRootBone = false;
 }
 
 
@@ -298,19 +299,31 @@ void Bone::updateTransform()
         m_pSlefTransformMatrix.tx = m_pCombinedData->m_fX;
         m_pSlefTransformMatrix.ty = m_pCombinedData->m_fY;
     }
+
     
     if (m_pChildren && m_pChildren->count() > 0)
     {
-        /*
-         *  m_pTransformMatrixForChildren is used for children, and it don't contain
-         *  the parent scale value
-         */
-        m_pTransformMatrixForChildren.a = cosY;
-        m_pTransformMatrixForChildren.b = sinY;
-        m_pTransformMatrixForChildren.c = sinX;
-        m_pTransformMatrixForChildren.d = cosX;
-        m_pTransformMatrixForChildren.tx = m_pCombinedData->m_fX;
-        m_pTransformMatrixForChildren.ty = m_pCombinedData->m_fY;
+		if(m_bRootBone)
+		{
+			m_pTransformMatrixForChildren = m_pSlefTransformMatrix;
+		}
+		else
+		{
+			
+			/*
+			 *  m_pTransformMatrixForChildren is used for children, and it don't contain
+			 *  the parent scale value
+			 */
+			m_pTransformMatrixForChildren.a = cosY;
+			m_pTransformMatrixForChildren.b = sinY;
+			m_pTransformMatrixForChildren.c = sinX;
+			m_pTransformMatrixForChildren.d = cosX;
+			m_pTransformMatrixForChildren.tx = m_pCombinedData->m_fX;
+			m_pTransformMatrixForChildren.ty = m_pCombinedData->m_fY;
+		}
+
+
+
         
     }
     

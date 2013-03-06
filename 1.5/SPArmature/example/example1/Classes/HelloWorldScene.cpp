@@ -60,10 +60,12 @@ bool HelloWorld::init()
 
 		//! use BATCHNODE_VERTEXZ you can change display in different batchnode
 		BatchNodeManager::sharedBatchNodeManager()->getBatchNode("weapon.png")->setRenderType(BATCHNODE_VERTEXZ);
+		BatchNodeManager::sharedBatchNodeManager()->getBatchNode("cyborg.png")->setZOrder(2);
 
 		armature = Armature::create("Knight_f/Knight");
 		armature->getAnimation()->play("run");
-		armature->setPosition(size.width/2 + 50, size.height/2);
+		armature->setPosition(size.width/2 + 50, size.height/2-150);
+		armature->setScale(2);
 		armatures->addObject(armature);
 
 
@@ -71,13 +73,13 @@ bool HelloWorld::init()
 		armature->getAnimation()->play("run");
 		armature->setPosition(size.width/2 + 130, size.height/2);
 		armature->getAnimation()->MovementEventSignal.connect(this, &HelloWorld::onMovementEvent);	
-		armature->setZOrder(2);
+		armature->setScale(0.5);
 		armatures->addObject(armature);
 // 				 
 		armature = Armature::create("Zombie_f/Zombie");
 		armature->getAnimation()->play("run");
 		armature->setPosition(size.width/2 + 100, size.height/2);
-		armature->setZOrder(1);
+		armature->setScale(2);
 		armatures->addObject(armature);
 				 		
 		
