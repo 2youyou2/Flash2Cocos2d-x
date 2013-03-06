@@ -38,7 +38,7 @@
     <OutDir>$(SolutionDir)..\..\..\..\$(Configuration).win32\</OutDir>
     <IntDir>$(Configuration).win32\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>F:\game\cocos2d-x\src\cocos2d-2.1beta3-x-2.1.1\Debug.win32;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)..\..\..\..\$(Configuration).win32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
