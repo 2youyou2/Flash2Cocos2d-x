@@ -273,7 +273,7 @@ void Bone::updateTransform()
     m_pCombinedData->m_fSkewY = m_pUserData->m_fSkewY + m_pTweenData->m_fSkewY;
     
     m_pCombinedData->m_fScaleX = m_pUserData->m_fScaleX + m_pTweenData->m_fScaleX - 1;
-    m_pCombinedData->m_fScaleY = m_pUserData->m_fScaleX + m_pTweenData->m_fScaleY - 1;
+    m_pCombinedData->m_fScaleY = m_pUserData->m_fScaleY + m_pTweenData->m_fScaleY - 1;
     
     MovementBoneData *_moveBoneData = getTween()->getMoveBoneData();
     if(_moveBoneData && _moveBoneData->getUseColorInfo())
