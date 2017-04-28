@@ -1,4 +1,4 @@
-My blog : rainynote.com <br>
+My blog : 2youyou2.com <br>
 You can go to my blog discuss this skeleton lib<br>
 <br>
 1.5:<br>
